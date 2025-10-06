@@ -331,8 +331,9 @@
         </div>
         
         <div class="cta-section">
-            <form class="subscribe-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form class="subscribe-form" action="https://formspree.io/f/mnngzoee" method="POST" id="subscribeForm">
                 <input type="email" name="email" class="email-input" placeholder="Enter your email" required aria-label="Email address">
+                <input type="hidden" name="_subject" value="New Offbeat AI Watch Subscriber">
                 <button type="submit" class="subscribe-btn">Subscribe</button>
             </form>
             <div class="privacy-note">No spam. Unsubscribe anytime. Your email stays private.</div>
@@ -357,5 +358,50 @@
             <p>© 2025 Offbeat AI Watch • By <span itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="https://www.linkedin.com/in/shashwatghosh/" itemprop="url" style="color: #999999; text-decoration: none;"><span itemprop="name">Shashwat Ghosh</span></a>, <span itemprop="affiliation">Helix Consulting</span></span></p>
         </footer>
     </div>
+    <script>
+    document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const form = this;
+        const email = form.querySelector('input[type="email"]').value;
+        const button = form.querySelector('button');
+        const originalText = button.textContent;
+        
+        // Show loading state
+        button.disabled = true;
+        button.textContent = 'Subscribing...';
+        
+        // Submit form
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                // Success!
+                form.innerHTML = `
+                    <div style="text-align: center; padding: 30px; background: #28a745; color: white; border-radius: 8px;">
+                        <div style="font-size: 48px; margin-bottom: 15px;">✅</div>
+                        <h3 style="margin-bottom: 10px; font-size: 20px;">Successfully Subscribed!</h3>
+                        <p style="font-size: 14px; opacity: 0.9;">Check your email (${email}) for confirmation.</p>
+                    </div>
+                `;
+            } else {
+                throw new Error('Subscription failed');
+            }
+        })
+        .catch(error => {
+            // Error handling
+            button.disabled = false;
+            button.textContent = originalText;
+            alert('Oops! Something went wrong. Please try again.');
+        });
+    });
+    </script>
+</body>
+</html>
 </body>
 </html>
