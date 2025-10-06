@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://shashwatgtm.github.io/ai-trendwatch/</loc>
+    <lastmod>2025-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Newsletter Issue #1 -->
+  <url>
+    <loc>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-10-05.html</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Offbeat AI Watch</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-10-05</news:publication_date>
+      <news:title>Fusion Energy Gets AI Shield in Milliseconds</news:title>
+    </news:news>
+  </url>
+  
+  <!-- Archive Page -->
+  <url>
+    <loc>https://shashwatgtm.github.io/ai-trendwatch/archive.html</loc>
+    <lastmod>2025-10-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+</urlset>
