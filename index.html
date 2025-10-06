@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offbeat AI Watch - Weekly Intelligence Brief</title>
+    <meta name="description" content="Unconventional AI insights delivered weekly. Distilling signal from noise in artificial intelligence.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #0066cc 0%, #00b8d4 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 700px;
+            background-color: #ffffff;
+            padding: 60px 50px;
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 48px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 10px;
+            line-height: 1.1;
+        }
+        
+        .tagline {
+            font-size: 14px;
+            color: #0066cc;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        
+        .description {
+            font-size: 18px;
+            color: #333333;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 40px 0;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .feature-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .feature-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .feature-text {
+            flex: 1;
+        }
+        
+        .feature-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 5px;
+        }
+        
+        .feature-description {
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.5;
+        }
+        
+        .cta-section {
+            margin-top: 40px;
+        }
+        
+        .subscribe-form {
+            display: flex;
+            gap: 10px;
+            max-width: 500px;
+            margin: 30px auto 20px;
+        }
+        
+        .email-input {
+            flex: 1;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        
+        .email-input:focus {
+            border-color: #0066cc;
+        }
+        
+        .subscribe-btn {
+            background-color: #0066cc;
+            color: #ffffff;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+        }
+        
+        .subscribe-btn:hover {
+            background-color: #0052a3;
+        }
+        
+        .privacy-note {
+            font-size: 12px;
+            color: #999999;
+            margin-top: 15px;
+        }
+        
+        .latest-issue {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 2px solid #e0e0e0;
+        }
+        
+        .latest-issue h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        
+        .issue-preview {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 6px;
+            text-align: left;
+            border-left: 4px solid #0066cc;
+        }
+        
+        .issue-date {
+            font-size: 12px;
+            color: #0066cc;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        
+        .issue-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+        
+        .issue-excerpt {
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .read-more {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        .read-more::after {
+            content: " →";
+            margin-left: 5px;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999999;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 40px 30px;
+            }
+            
+            .logo {
+                font-size: 36px;
+            }
+            
+            .subscribe-form {
+                flex-direction: column;
+            }
+            
+            .subscribe-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">Offbeat AI Watch</h1>
+        <div class="tagline">Weekly Intelligence Brief</div>
+        
+        <p class="description">
+            Technology moves at breathtaking speed. We distill the signal from the noise and deliver what truly matters in artificial intelligence, every week.
+        </p>
+        
+        <div class="features">
+            <div class="feature-item">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-text">
+                    <div class="feature-title">Unconventional Insights</div>
+                    <div class="feature-description">Beyond the headlines—we surface the AI stories others miss</div>
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-text">
+                    <div class="feature-title">Curated Weekly</div>
+                    <div class="feature-description">Every Saturday, a concise intelligence brief of the week's most significant AI developments</div>
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">🧠</div>
+                <div class="feature-text">
+                    <div class="feature-title">Signal Over Noise</div>
+                    <div class="feature-description">Cutting through the hype to deliver actionable intelligence on AI trends</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <form class="subscribe-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="email" name="email" class="email-input" placeholder="Enter your email" required>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+            <div class="privacy-note">No spam. Unsubscribe anytime. Your email stays private.</div>
+        </div>
+        
+        <div class="latest-issue">
+            <h2>Latest Issue</h2>
+            <div class="issue-preview">
+                <div class="issue-date">INAUGURAL ISSUE • OCT 5, 2025</div>
+                <div class="issue-title">Fusion Energy Gets AI Shield in Milliseconds</div>
+                <div class="issue-excerpt">
+                    HEAT-ML deep-learning model maps fusion plasma heat in milliseconds. Plus: AI weather models run 45,000x faster, Delphi-2M forecasts 1,256 diseases, and the latest moves from Amazon, Apple, Google, Microsoft, Meta, and Samsung.
+                </div>
+                <a href="issues/2025-10-05.html" class="read-more">Read Full Issue</a>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="archive.html" style="color: #0066cc; text-decoration: none; font-weight: 600; font-size: 14px;">View All Issues →</a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 Offbeat AI Watch • By Shashwat Ghosh, Helix Consulting</p>
+        </div>
+    </div>
+</body>
+</html>
