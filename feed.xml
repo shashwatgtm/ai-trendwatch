@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Offbeat AI Watch</title>
+    <link>https://shashwatgtm.github.io/ai-trendwatch/</link>
+    <description>Weekly intelligence brief on AI infrastructure, GTM strategy, and regulatory developments for B2B companies. No fluff—just verified signals that matter.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Oct 2025 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://shashwatgtm.github.io/ai-trendwatch/feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://shashwatgtm.github.io/ai-trendwatch/images/logo.png</url>
+      <title>Offbeat AI Watch</title>
+      <link>https://shashwatgtm.github.io/ai-trendwatch/</link>
+    </image>
+    
+    <!-- Issue #2 -->
+    <item>
+      <title>Microsoft Deploys 4,600 Blackwell Ultra GPUs - Offbeat AI Watch</title>
+      <link>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-10-13.html</link>
+      <description>Microsoft's massive AI infrastructure deployment signals infrastructure race escalation. Plus OpenAI's custom silicon strategy, AMD equity warrants, and regulatory tightening across UK/EU.</description>
+      <pubDate>Sun, 13 Oct 2025 00:00:00 GMT</pubDate>
+      <guid>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-10-13.html</guid>
+      <author>Shashwat Ghosh</author>
+      <category>Artificial Intelligence</category>
+      <category>Technology</category>
+      <category>Infrastructure</category>
+    </item>
+    
+    <!-- Issue #1 -->
+    <item>
+      <title>The Week AI Went Everywhere - Offbeat AI Watch</title>
+      <link>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-10-05.html</link>
+      <description>From fusion reactors to your living room: how artificial intelligence embedded itself into every corner of technology. HEAT-ML fusion breakthrough, AI weather forecasting revolution, and major hardware launches from Amazon, Apple, and Google.</description>
+      <pubDate>Sat, 05 Oct 2025 00:00:00 GMT</pubDate>
+      <guid>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-10-05.html</guid>
+      <author>Shashwat Ghosh</author>
+      <category>Artificial Intelligence</category>
+      <category>Technology</category>
+      <category>Hardware</category>
+    </item>
+    
+  </channel>
+</rss>
