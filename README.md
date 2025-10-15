@@ -1,7 +1,7 @@
 # Offbeat AI Watch
 
 ![Offbeat AI Watch](https://img.shields.io/badge/Status-Active-success)
-![Issue](https://img.shields.io/badge/Latest-Inaugural%20Issue-blue)
+![Issue](https://img.shields.io/badge/Latest-Issue%20%232-blue)
 
 **Unconventional AI insights delivered weekly.**
 
@@ -9,35 +9,44 @@ Offbeat AI Watch is a curated weekly intelligence brief that distills the signal
 
 ## 🎯 What We Cover
 
-- **Breakthrough Research**: AI developments in fusion energy, weather forecasting, healthcare, and more
-- **Big Tech Moves**: Strategic pivots and product launches from industry giants
+- **Infrastructure & Compute**: AI hardware deployments, custom silicon strategies, and datacenter buildouts
+- **Strategic Partnerships**: Cross-industry alliances reshaping the AI landscape
+- **Product Launches**: New AI capabilities hitting the market
+- **Regulatory Developments**: Policy shifts across jurisdictions
 - **Emerging Trends**: Pattern recognition across AI developments
-- **Economic Shifts**: How AI is reshaping markets and business models
 
 ## 📬 Subscribe
 
-Visit [offbeat-ai-watch.github.io](https://shashwatgtm.github.io/offbeat-ai-watch/) to subscribe and receive weekly updates every Monday Afternoon.
+Visit [shashwatgtm.github.io/ai-trendwatch](https://shashwatgtm.github.io/ai-trendwatch/) to subscribe and receive weekly updates every Monday.
 
 ## 📰 Latest Issue
 
-**Inaugural Issue - October 5, 2025**
+**Issue #2 - October 13, 2025**
 
-- 🔬 **Lead Story**: Fusion Energy Gets AI Shield in Milliseconds
-- ⚡ **Weather**: AI Models Run 45,000x Faster
-- 🏥 **Healthcare**: Delphi-2M Forecasts 1,256 Diseases
-- 💰 **Economics**: DeepSeek Cuts Costs 70%
-- 🏢 **Big Tech**: Amazon, Apple, Google, Microsoft, Meta, Samsung
+- 💻 **Lead Story**: Microsoft Deploys 4,600 Blackwell Ultra GPUs
+- 🔧 **OpenAI's Silicon Play**: Custom chips with Broadcom targeting 10 GW
+- 💰 **AMD Partnership**: Equity stake deal with OpenAI
+- 🎥 **Sora 2 Launch**: 1M+ downloads in under 5 days
+- 🏢 **Big Tech**: Google Gemini Enterprise, Microsoft multi-model strategy
+- ⚖️ **Regulation**: UK CMA, EU DSA enforcement intensifies
 
-[Read the full issue →](issues/2025-10-05.html)
+[Read Issue #2 →](issues/2025-10-13.html)
 
 ## 📚 Archive
 
-- [October 5, 2025](issues/2025-10-05.html) - Inaugural Issue
+- [October 13, 2025](issues/2025-10-13.html) - Issue #2: Microsoft's GB300 AI Factory
+- [October 5, 2025](issues/2025-10-05.html) - Inaugural Issue: Fusion Energy Gets AI Shield
 
 ## 👤 About
 
 Curated by **Shashwat Ghosh**  
-Cofounder & Fractional CMO, Helix Consulting
+Cofounder & Fractional CMO, Helix Consulting  
+AI Go-To-Market Strategist
+
+**Connect:**
+- LinkedIn: [linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/)
+- Newsletter: [Offbeat AI Watch](https://shashwatgtm.github.io/ai-trendwatch/)
+- GitHub: [@shashwatgtm](https://github.com/shashwatgtm)
 
 ---
 
@@ -48,6 +57,7 @@ This newsletter is built with:
 - Hosted on GitHub Pages
 - Mobile-responsive design
 - Optimized for email clients
+- SEO and Schema.org structured data
 
 ## 📄 License
 
@@ -55,4 +65,4 @@ This newsletter is built with:
 
 ---
 
-**Weekly Intelligence Brief** • Delivered every Saturday
+**Weekly Intelligence Brief** • Delivered every Monday
