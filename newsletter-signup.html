@@ -1,14 +1,72 @@
-<!-- Google Reader Revenue Manager - Newsletter Signup -->
-<!-- Add this snippet just before the closing </body> tag in your newsletter issue pages -->
-<script async type="application/javascript"
-    src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
-<script>
-(self.SWG_BASIC = self.SWG_BASIC || []).push( basicSubscriptions => {
-  basicSubscriptions.init({
-    type: "NewsArticle",
-    isPartOfType: ["Product"],
-    isPartOfProductId: "CAow6-rBDA:openaccess",
-    clientOptions: { theme: "light", lang: "en" },
-  });
-});
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Signup - Offbeat AI Watch</title>
+    <meta name="description" content="Subscribe to Offbeat AI Watch - Weekly intelligence brief on AI trends and insights">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #0066cc;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Offbeat AI Watch</h1>
+        <p>This page is part of the Google Reader Revenue Manager integration for Offbeat AI Watch newsletter.</p>
+        <p>Subscribe to our weekly intelligence brief on artificial intelligence trends and insights.</p>
+        <a href="/ai-trendwatch/" class="back-link">← Go to Homepage</a>
+    </div>
+
+    <!-- Google Reader Revenue Manager - Newsletter Signup -->
+    <script async type="application/javascript"
+        src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
+    <script>
+    (self.SWG_BASIC = self.SWG_BASIC || []).push( basicSubscriptions => {
+      basicSubscriptions.init({
+        type: "NewsArticle",
+        isPartOfType: ["Product"],
+        isPartOfProductId: "CAow6-rBDA:openaccess",
+        clientOptions: { theme: "light", lang: "en" },
+      });
+    });
+    </script>
+</body>
+</html>
+
+
