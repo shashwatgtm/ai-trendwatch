@@ -580,5 +580,29 @@
             </div>
         </footer>
     </div>
+<!-- Google Reader Revenue Manager - Newsletter Signup (Loaded Dynamically) -->
+    <div id="newsletter-signup-container"></div>
+    <script>
+    fetch('/ai-trendwatch/newsletter-signup.html')
+      .then(response => response.text())
+      .then(html => {
+        const container = document.getElementById('newsletter-signup-container');
+        container.innerHTML = html;
+        // Execute any scripts in the loaded content
+        const scripts = container.getElementsByTagName('script');
+        for (let script of scripts) {
+          const newScript = document.createElement('script');
+          if (script.src) {
+            newScript.src = script.src;
+            newScript.async = script.async;
+            newScript.type = script.type || 'text/javascript';
+          } else {
+            newScript.textContent = script.textContent;
+          }
+          document.body.appendChild(newScript);
+        }
+      })
+      .catch(err => console.log('Newsletter signup script not loaded:', err));
+    </script>
 </body>
 </html>
