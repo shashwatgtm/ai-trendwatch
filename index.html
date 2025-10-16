@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Offbeat AI Watch - Weekly AI Intelligence Brief by Shashwat Ghosh | Fractional CMO & AI GTM Expert</title>
+    <meta name="description" content="Unconventional AI insights delivered weekly. Technology moves at breathtaking speed—we distill the signal from the noise in artificial intelligence. By Shashwat Ghosh, Fractional CMO & AI Go-To-Market Expert.">
+    <meta name="keywords" content="AI newsletter, artificial intelligence insights, AI trends weekly, machine learning news, AI strategy, Shashwat Ghosh, Fractional CMO, AI GTM expert, technology newsletter, AI intelligence brief">
+    <meta name="author" content="Shashwat Ghosh">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shashwatgtm.github.io/ai-trendwatch/">
+    <meta property="og:title" content="Offbeat AI Watch - Weekly AI Intelligence Brief">
+    <meta property="og:description" content="Unconventional AI insights delivered weekly. Signal over noise in artificial intelligence.">
+    <meta property="og:site_name" content="Offbeat AI Watch">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://shashwatgtm.github.io/ai-trendwatch/">
+    <meta property="twitter:title" content="Offbeat AI Watch - Weekly Intelligence Brief">
+    <meta property="twitter:description" content="Unconventional AI insights delivered weekly by Shashwat Ghosh">
+    <meta name="twitter:creator" content="@shashwatghosh">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://shashwatgtm.github.io/ai-trendwatch/">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Offbeat AI Watch",
+      "description": "Weekly intelligence brief delivering unconventional AI insights beyond the headlines",
+      "url": "https://shashwatgtm.github.io/ai-trendwatch/",
+      "author": {
+        "@type": "Person",
+        "name": "Shashwat Ghosh",
+        "jobTitle": "Fractional CMO & AI GTM Expert",
+        "description": "AI Go-To-Market strategist and Fractional Chief Marketing Officer",
+        "url": "https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/",
+        "sameAs": [
+          "https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/",
+          "https://twitter.com/shashwatghosh",
+          "https://github.com/shashwatgtm"
+        ],
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Helix Consulting"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Offbeat AI Watch",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://shashwatgtm.github.io/ai-trendwatch/images/logo.png"
+        }
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://shashwatgtm.github.io/ai-trendwatch/archive.html",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #0066cc 0%, #00b8d4 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 700px;
+            background-color: #ffffff;
+            padding: 60px 50px;
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 48px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 10px;
+            line-height: 1.1;
+        }
+        
+        .tagline {
+            font-size: 14px;
+            color: #0066cc;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+        
+        .description {
+            font-size: 18px;
+            color: #333333;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 40px 0;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .feature-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .feature-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .feature-text {
+            flex: 1;
+        }
+        
+        .feature-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 5px;
+        }
+        
+        .feature-description {
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.5;
+        }
+        
+        .cta-section {
+            margin-top: 40px;
+        }
+        
+        .subscribe-form {
+            display: flex;
+            gap: 10px;
+            max-width: 500px;
+            margin: 30px auto 20px;
+        }
+        
+        .email-input {
+            flex: 1;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        
+        .email-input:focus {
+            border-color: #0066cc;
+        }
+        
+        .subscribe-btn {
+            background-color: #0066cc;
+            color: #ffffff;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+        }
+        
+        .subscribe-btn:hover {
+            background-color: #0052a3;
+        }
+        
+        .privacy-note {
+            font-size: 12px;
+            color: #999999;
+            margin-top: 15px;
+        }
+        
+        .latest-issue {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 2px solid #e0e0e0;
+        }
+        
+        .latest-issue h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        
+        .issue-preview {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 6px;
+            text-align: left;
+            border-left: 4px solid #0066cc;
+        }
+        
+        .issue-date {
+            font-size: 12px;
+            color: #0066cc;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        
+        .issue-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 10px;
+        }
+        
+        .issue-excerpt {
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .read-more {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        .read-more::after {
+            content: " →";
+            margin-left: 5px;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999999;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 40px 30px;
+            }
+            
+            .logo {
+                font-size: 36px;
+            }
+            
+            .subscribe-form {
+                flex-direction: column;
+            }
+            
+            .subscribe-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" itemscope itemtype="https://schema.org/WebSite">
+        <h1 class="logo" itemprop="name">Offbeat AI Watch</h1>
+        <div class="tagline">Weekly Intelligence Brief</div>
+        
+        <p class="description" itemprop="description">
+            Technology moves at breathtaking speed. We distill the signal from the noise and deliver what truly matters in artificial intelligence, every week.
+        </p>
+        
+        <div class="features">
+            <div class="feature-item">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-text">
+                    <div class="feature-title">Unconventional Insights</div>
+                    <div class="feature-description">Beyond the headlines—we surface the AI stories others miss</div>
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-text">
+                    <div class="feature-title">Curated Weekly</div>
+                    <div class="feature-description">Every Monday, a concise intelligence brief of the week's most significant AI developments</div>
+                </div>
+            </div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">🧠</div>
+                <div class="feature-text">
+                    <div class="feature-title">Signal Over Noise</div>
+                    <div class="feature-description">Cutting through the hype to deliver actionable intelligence on AI trends</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <form class="subscribe-form" action="https://formspree.io/f/mnngzoee" method="POST" id="subscribeForm">
+                <input type="email" name="email" class="email-input" placeholder="Enter your email" required aria-label="Email address">
+                <input type="hidden" name="_subject" value="New Offbeat AI Watch Subscriber">
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+            <div class="privacy-note">No spam. Unsubscribe anytime. Your email stays private.</div>
+        </div>
+        
+        <article class="latest-issue">
+            <h2>Latest Issue</h2>
+            <div class="issue-preview" itemscope itemtype="https://schema.org/NewsArticle">
+                <div class="issue-date">ISSUE #2 • OCT 13, 2025</div>
+                <div class="issue-title" itemprop="headline">Microsoft Deploys 4,600 Blackwell Ultra GPUs</div>
+                <div class="issue-excerpt" itemprop="description">
+                    Microsoft's GB300 AI factory goes live. Plus: OpenAI's custom silicon play with Broadcom, AMD's equity stake deal, Sora 2's explosive growth, Google's Gemini Enterprise launch, and regulatory intensification across UK and EU.
+                </div>
+                <a href="issues/2025-10-13.html" class="read-more" itemprop="url">Read Full Issue</a>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="archive.html" style="color: #0066cc; text-decoration: none; font-weight: 600; font-size: 14px;">View All Issues →</a>
+            </div>
+        </article>
+        
+        <footer class="footer" role="contentinfo">
+            <p>© 2025 Offbeat AI Watch • By <span itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/" itemprop="url" style="color: #999999; text-decoration: none;"><span itemprop="name">Shashwat Ghosh</span></a>, <span itemprop="affiliation">Helix Consulting</span></span></p>
+        </footer>
+    </div>
+    <script>
+    document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const form = this;
+        const email = form.querySelector('input[type="email"]').value;
+        const button = form.querySelector('button');
+        const originalText = button.textContent;
+        
+        // Show loading state
+        button.disabled = true;
+        button.textContent = 'Subscribing...';
+        
+        // Submit form
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                // Success!
+                form.innerHTML = `
+                    <div style="text-align: center; padding: 30px; background: #28a745; color: white; border-radius: 8px;">
+                        <div style="font-size: 48px; margin-bottom: 15px;">✅</div>
+                        <h3 style="margin-bottom: 10px; font-size: 20px;">Successfully Subscribed!</h3>
+                        <p style="font-size: 14px; opacity: 0.9;">Check your email (${email}) for confirmation.</p>
+                    </div>
+                `;
+            } else {
+                throw new Error('Subscription failed');
+            }
+        })
+        .catch(error => {
+            // Error handling
+            button.disabled = false;
+            button.textContent = originalText;
+            alert('Oops! Something went wrong. Please try again.');
+        });
+    });
+    </script>
+    
+    <!-- Google Reader Revenue Manager - Newsletter Signup (Loaded Dynamically) -->
+    <div id="newsletter-signup-container"></div>
+    <script>
+    fetch('/ai-trendwatch/newsletter-signup.html')
+      .then(response => response.text())
+      .then(html => {
+        const container = document.getElementById('newsletter-signup-container');
+        container.innerHTML = html;
+        // Execute any scripts in the loaded content
+        const scripts = container.getElementsByTagName('script');
+        for (let script of scripts) {
+          const newScript = document.createElement('script');
+          if (script.src) {
+            newScript.src = script.src;
+            newScript.async = script.async;
+            newScript.type = script.type || 'text/javascript';
+          } else {
+            newScript.textContent = script.textContent;
+          }
+          document.body.appendChild(newScript);
+        }
+      })
+      .catch(err => console.log('Newsletter signup script not loaded:', err));
+    </script>
+</body>
+</html>
