@@ -5,14 +5,28 @@
     <link>https://shashwatgtm.github.io/ai-trendwatch/</link>
     <description>Weekly intelligence brief on AI infrastructure, GTM strategy, and regulatory developments for B2B companies. No fluff—just verified signals that matter.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Oct 2025 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 03 Nov 2025 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://shashwatgtm.github.io/ai-trendwatch/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://shashwatgtm.github.io/ai-trendwatch/images/logo.png</url>
       <title>Offbeat AI Watch</title>
       <link>https://shashwatgtm.github.io/ai-trendwatch/</link>
     </image>
-    
+
+    <!-- Issue #3 -->
+    <item>
+      <title>OpenAI DevDay Spotlights Enterprise-Ready Agents - Offbeat AI Watch</title>
+      <link>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-11-03.html</link>
+      <description>OpenAI DevDay unveils AgentKit and GPT-5 Pro for enterprise AI workflows. Plus Microsoft's agentic productivity tools, Amazon AWS growth, Apple's Q4 record revenue, Anthropic Claude Skills, and Windows 11 AI upgrades—covering 3 weeks of AI evolution toward governance-embedded agents and precision models.</description>
+      <pubDate>Sun, 03 Nov 2025 00:00:00 GMT</pubDate>
+      <guid>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-11-03.html</guid>
+      <author>Shashwat Ghosh</author>
+      <category>Artificial Intelligence</category>
+      <category>Technology</category>
+      <category>Enterprise AI</category>
+      <category>OpenAI</category>
+    </item>
+
     <!-- Issue #2 -->
     <item>
       <title>Microsoft Deploys 4,600 Blackwell Ultra GPUs - Offbeat AI Watch</title>
