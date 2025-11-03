@@ -278,12 +278,14 @@
             margin-bottom: 12px;
         }
         .product-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
             margin-bottom: 40px;
         }
         .product-item {
             border-left: 4px solid #0066cc;
             padding: 20px;
-            margin-bottom: 20px;
             background-color: #fafafa;
         }
         .product-name {
@@ -421,10 +423,10 @@
                 width: 100%;
                 margin-bottom: 30px;
             }
-            .story-grid, .trends-grid {
+            .story-grid, .trends-grid, .product-list {
                 display: block;
             }
-            .story-item, .trend-item {
+            .story-item, .trend-item, .product-item {
                 margin-bottom: 20px;
             }
             .story-title {
@@ -475,7 +477,7 @@
             <div class="editor-note-box">
                 <div class="column-title">EDITOR'S NOTE</div>
                 <div class="column-text">
-                    Due to Diwali vacations, I had taken a 2-week break from publishing. This edition covers the key developments over the last 3 weeks. This period uncovers subtle evolutions in AI toward governance-embedded agents, precision-optimized models, and hybrid execution frameworks—offering CXOs in enterprises, midmarket, SMBs, B2B startups, and ITeS companies pathways to derisk AI investments while unlocking productivity in niche, high-stakes workflows.
+                    Due to Diwali vacations, I had taken a 2-week break from publishing. This edition covers the key developments over the last 3 weeks. This period uncovers subtle evolutions in AI toward governance-embedded agents, precision-optimized models, and hybrid execution frameworks—offering CXOs in enterprises, midmarket, SMBs, B2B startups, and ITeS companies pathways to derisk AI investments while unlocking productivity in niche, high-stakes workflows. OpenAI's AgentKit marks a pivotal shift from experimental pilots to production-ready orchestration—finally addressing the observability and reliability gaps that stalled enterprise adoption. The convergence of governance-embedded tooling and cost-optimized mini models signals that 2025 is when AI agents move from boardroom demos to operational reality.
                     <div class="editor-name">Shashwat Ghosh</div>
                     <div class="editor-title">Cofounder & Fractional CMO<br>Helix Consulting</div>
                 </div>
@@ -541,22 +543,6 @@
                 <h4 class="product-name">OpenAI AgentKit</h4>
                 <p class="product-description">
                     Toolkit for orchestrating production-grade agents at scale, with features for reliable deployment in enterprise workflows.
-                </p>
-                <a href="https://openai.com/devday/" class="source-link" rel="noopener" target="_blank">OpenAI ↗</a>
-            </div>
-
-            <div class="product-item">
-                <h4 class="product-name">Sora 2 API</h4>
-                <p class="product-description">
-                    API for integrating video generation into apps, supporting simulations and content for B2B training or marketing.
-                </p>
-                <a href="https://openai.com/devday/" class="source-link" rel="noopener" target="_blank">OpenAI ↗</a>
-            </div>
-
-            <div class="product-item">
-                <h4 class="product-name">GPT-5 Pro</h4>
-                <p class="product-description">
-                    Model optimized for precision in high-stakes tasks, ideal for midmarket analytics and SMB decision-making.
                 </p>
                 <a href="https://openai.com/devday/" class="source-link" rel="noopener" target="_blank">OpenAI ↗</a>
             </div>
