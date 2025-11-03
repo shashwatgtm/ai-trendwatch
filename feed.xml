@@ -17,7 +17,7 @@
     <item>
       <title>OpenAI DevDay Spotlights Enterprise-Ready Agents - Offbeat AI Watch</title>
       <link>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-11-03.html</link>
-      <description>OpenAI DevDay unveils AgentKit and GPT-5 Pro for enterprise AI workflows. Plus Microsoft's agentic productivity tools, Amazon AWS growth, Apple's Q4 record revenue, Anthropic Claude Skills, and Windows 11 AI upgrades—covering 3 weeks of AI evolution toward governance-embedded agents and precision models.</description>
+      <description>OpenAI DevDay unveils AgentKit for enterprise AI. Plus new launches: Ada AI Data Analyst, Peakflo AI Voice Agents, Salesforce Agentforce 360, and Microsoft Dragon Copilot—covering 3 weeks of AI evolution with focus on autonomous data analysis, voice automation, and agentic platforms.</description>
       <pubDate>Sun, 03 Nov 2025 00:00:00 GMT</pubDate>
       <guid>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-11-03.html</guid>
       <author>Shashwat Ghosh</author>
@@ -25,6 +25,9 @@
       <category>Technology</category>
       <category>Enterprise AI</category>
       <category>OpenAI</category>
+      <category>Agentic AI</category>
+      <category>Data Analysis</category>
+      <category>Voice Automation</category>
     </item>
 
     <!-- Issue #2 -->
