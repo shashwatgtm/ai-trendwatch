@@ -1,7 +1,7 @@
 # Offbeat AI Watch
 
 ![Offbeat AI Watch](https://img.shields.io/badge/Status-Active-success)
-![Issue](https://img.shields.io/badge/Latest-Issue%20%232-blue)
+![Issue](https://img.shields.io/badge/Latest-Issue%20%233-blue)
 
 **Unconventional AI insights delivered weekly.**
 
@@ -21,19 +21,20 @@ Visit [shashwatgtm.github.io/ai-trendwatch](https://shashwatgtm.github.io/ai-tre
 
 ## 📰 Latest Issue
 
-**Issue #2 - October 13, 2025**
+**Issue #3 - November 3, 2025**
 
-- 💻 **Lead Story**: Microsoft Deploys 4,600 Blackwell Ultra GPUs
-- 🔧 **OpenAI's Silicon Play**: Custom chips with Broadcom targeting 10 GW
-- 💰 **AMD Partnership**: Equity stake deal with OpenAI
-- 🎥 **Sora 2 Launch**: 1M+ downloads in under 5 days
-- 🏢 **Big Tech**: Google Gemini Enterprise, Microsoft multi-model strategy
-- ⚖️ **Regulation**: UK CMA, EU DSA enforcement intensifies
+- 🤖 **Lead Story**: OpenAI DevDay Spotlights Enterprise-Ready Agents
+- 🔧 **AgentKit Launch**: Production-ready orchestration for enterprise AI
+- 📊 **Ada AI Data Analyst**: World's first autonomous data analysis platform
+- 🎙️ **Peakflo AI Voice Agents**: Humanlike business voice automation
+- 🏢 **Salesforce Agentforce 360**: Enterprise agentic platform with pre-built agents
+- 🏥 **Microsoft Dragon Copilot**: AI documentation extended to nursing workflows
 
-[Read Issue #2 →](issues/2025-10-13.html)
+[Read Issue #3 →](issues/2025-11-03.html)
 
 ## 📚 Archive
 
+- [November 3, 2025](issues/2025-11-03.html) - Issue #3: OpenAI DevDay Spotlights Enterprise-Ready Agents
 - [October 13, 2025](issues/2025-10-13.html) - Issue #2: Microsoft's GB300 AI Factory
 - [October 5, 2025](issues/2025-10-05.html) - Inaugural Issue: Fusion Energy Gets AI Shield
 
