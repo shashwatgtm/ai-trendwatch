@@ -5,13 +5,30 @@
     <link>https://shashwatgtm.github.io/ai-trendwatch/</link>
     <description>Weekly intelligence brief on AI infrastructure, GTM strategy, and regulatory developments for B2B companies. No fluff—just verified signals that matter.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 Nov 2025 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 03 Dec 2025 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://shashwatgtm.github.io/ai-trendwatch/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://shashwatgtm.github.io/ai-trendwatch/images/logo.png</url>
       <title>Offbeat AI Watch</title>
       <link>https://shashwatgtm.github.io/ai-trendwatch/</link>
     </image>
+
+    <!-- Issue #4 -->
+    <item>
+      <title>First AI-Orchestrated Cyber Espionage Campaign Disclosed - Offbeat AI Watch</title>
+      <link>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-12-03.html</link>
+      <description>Anthropic reveals the first documented large-scale AI cyberattack with 80-90% automation across 30 global organizations. Plus Microsoft Fara-7B on-device agents, Google HOPE continual learning, Scribe hits unicorn status, and 5 trends reshaping enterprise AI security and deployment.</description>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate>
+      <guid>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-12-03.html</guid>
+      <author>Shashwat Ghosh</author>
+      <category>Artificial Intelligence</category>
+      <category>Technology</category>
+      <category>Enterprise AI</category>
+      <category>Cybersecurity</category>
+      <category>AI Security</category>
+      <category>Edge Computing</category>
+      <category>Continual Learning</category>
+    </item>
 
     <!-- Issue #3 -->
     <item>
