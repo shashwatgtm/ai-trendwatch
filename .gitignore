@@ -2,6 +2,10 @@
 PRIVATE/
 *.local.md
 
+# Internal guidelines (security)
+.github/NEWSLETTER_GUIDELINES.md
+.github/SUBMISSION_GUIDE.md
+
 # OS files
 .DS_Store
 Thumbs.db
