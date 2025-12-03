@@ -1,7 +1,7 @@
 # Offbeat AI Watch
 
 ![Offbeat AI Watch](https://img.shields.io/badge/Status-Active-success)
-![Issue](https://img.shields.io/badge/Latest-Issue%20%233-blue)
+![Issue](https://img.shields.io/badge/Latest-Issue%20%234-blue)
 
 **Unconventional AI insights delivered weekly.**
 
@@ -21,19 +21,22 @@ Visit [shashwatgtm.github.io/ai-trendwatch](https://shashwatgtm.github.io/ai-tre
 
 ## 📰 Latest Issue
 
-**Issue #3 - November 3, 2025**
+**Issue #4 - December 3, 2025**
 
-- 🤖 **Lead Story**: OpenAI DevDay Spotlights Enterprise-Ready Agents
-- 🔧 **AgentKit Launch**: Production-ready orchestration for enterprise AI
-- 📊 **Ada AI Data Analyst**: World's first autonomous data analysis platform
-- 🎙️ **Peakflo AI Voice Agents**: Humanlike business voice automation
-- 🏢 **Salesforce Agentforce 360**: Enterprise agentic platform with pre-built agents
-- 🏥 **Microsoft Dragon Copilot**: AI documentation extended to nursing workflows
+- 🔒 **Lead Story**: Anthropic Discloses First AI-Orchestrated Cyber Espionage Campaign
+- 💻 **Microsoft Fara-7B**: On-device agent for computer automation
+- 🧬 **MIT BoltzGen**: Generative AI for undruggable protein targets
+- 🧠 **Google HOPE**: Nested learning for continual model adaptation
+- 🦄 **Scribe**: Hits unicorn status with $75M Series C
+- 🌤️ **DeepMind WeatherNext 2**: Probabilistic forecasts in under 1 minute
+- 🇮🇳 **Google India**: 9 AI learning features across Gemini, NotebookLM, Search
+- 🎙️ **ElevenLabs**: Enterprise AI agent capabilities launch
 
-[Read Issue #3 →](issues/2025-11-03.html)
+[Read Issue #4 →](issues/2025-12-03.html)
 
 ## 📚 Archive
 
+- [December 3, 2025](issues/2025-12-03.html) - Issue #4: First AI-Orchestrated Cyber Espionage Campaign Disclosed
 - [November 3, 2025](issues/2025-11-03.html) - Issue #3: OpenAI DevDay Spotlights Enterprise-Ready Agents
 - [October 13, 2025](issues/2025-10-13.html) - Issue #2: Microsoft's GB300 AI Factory
 - [October 5, 2025](issues/2025-10-05.html) - Inaugural Issue: Fusion Energy Gets AI Shield
