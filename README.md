@@ -17,7 +17,7 @@ Offbeat AI Watch is a curated fortnightly intelligence brief that distills the s
 
 ## 📬 Subscribe
 
-Visit [shashwatgtm.github.io/ai-trendwatch](https://shashwatgtm.github.io/ai-trendwatch/) to subscribe and receive fortnightly updates every alternate Wednesday.
+Visit [shashwatgtm.github.io/ai-trendwatch](https://shashwatgtm.github.io/ai-trendwatch/) to subscribe and receive fortnightly updates on alternate Wednesdays.
 
 ## 📰 Latest Issue
 
@@ -43,8 +43,8 @@ Visit [shashwatgtm.github.io/ai-trendwatch](https://shashwatgtm.github.io/ai-tre
 
 ## 👤 About
 
-Curated by **Shashwat Ghosh**  
-Cofounder & Fractional CMO, Helix Consulting  
+Curated by **Shashwat Ghosh**
+Cofounder & Fractional CMO, Helix Consulting
 AI Go-To-Market Strategist
 
 **Connect:**
@@ -69,4 +69,4 @@ This newsletter is built with:
 
 ---
 
-**Fortnightly Intelligence Brief** • Delivered every alternate Wednesday
+**Fortnightly Intelligence Brief** • Delivered alternate Wednesdays
