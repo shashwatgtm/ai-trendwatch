@@ -17,7 +17,7 @@ Offbeat AI Watch is a curated fortnightly intelligence brief that distills the s
 
 ## 📬 Subscribe
 
-Visit [shashwatgtm.github.io/ai-trendwatch](https://shashwatgtm.github.io/ai-trendwatch/) to subscribe and receive weekly updates every Monday.
+Visit [shashwatgtm.github.io/ai-trendwatch](https://shashwatgtm.github.io/ai-trendwatch/) to subscribe and receive fortnightly updates on alternate Wednesdays.
 
 ## 📰 Latest Issue
 
