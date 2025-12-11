@@ -3,9 +3,9 @@
 ![Offbeat AI Watch](https://img.shields.io/badge/Status-Active-success)
 ![Issue](https://img.shields.io/badge/Latest-Issue%20%234-blue)
 
-**Unconventional AI insights delivered weekly.**
+**Unconventional AI insights delivered fortnightly.**
 
-Offbeat AI Watch is a curated weekly intelligence brief that distills the signal from the noise in artificial intelligence. Beyond the headlines, we surface the stories that matter.
+Offbeat AI Watch is a curated fortnightly intelligence brief that distills the signal from the noise in artificial intelligence. Beyond the headlines, we surface the stories that matter.
 
 ## 🎯 What We Cover
 
@@ -17,7 +17,7 @@ Offbeat AI Watch is a curated weekly intelligence brief that distills the signal
 
 ## 📬 Subscribe
 
-Visit [shashwatgtm.github.io/ai-trendwatch](https://shashwatgtm.github.io/ai-trendwatch/) to subscribe and receive weekly updates every Monday.
+Visit [shashwatgtm.github.io/ai-trendwatch](https://shashwatgtm.github.io/ai-trendwatch/) to subscribe and receive fortnightly updates every alternate Wednesday.
 
 ## 📰 Latest Issue
 
@@ -69,4 +69,4 @@ This newsletter is built with:
 
 ---
 
-**Weekly Intelligence Brief** • Delivered every Monday
+**Fortnightly Intelligence Brief** • Delivered every alternate Wednesday
