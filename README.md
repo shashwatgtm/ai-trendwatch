@@ -43,8 +43,8 @@ Visit [shashwatgtm.github.io/ai-trendwatch](https://shashwatgtm.github.io/ai-tre
 
 ## 👤 About
 
-Curated by **Shashwat Ghosh**  
-Cofounder & Fractional CMO, Helix Consulting  
+Curated by **Shashwat Ghosh**
+Cofounder & Fractional CMO, Helix Consulting
 AI Go-To-Market Strategist
 
 **Connect:**
