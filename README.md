@@ -69,4 +69,4 @@ This newsletter is built with:
 
 ---
 
-**Weekly Intelligence Brief** • Delivered every Monday
+**Fortnightly Intelligence Brief** • Delivered alternate Wednesdays
