@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+  <!-- Newsletter Issue #5 - December 17, 2025 -->
+  <url>
+    <loc>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-12-17.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Offbeat AI Watch</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-17</news:publication_date>
+      <news:title>Tech Giants Unite: Agentic AI Foundation Launches with MCP at Its Core</news:title>
+    </news:news>
+  </url>
+
+  <!-- Newsletter Issue #4 - December 3, 2025 -->
+  <url>
+    <loc>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-12-03.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Offbeat AI Watch</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-12-03</news:publication_date>
+      <news:title>First AI-Orchestrated Cyber Espionage Campaign Disclosed</news:title>
+    </news:news>
+  </url>
+
+  <!-- Newsletter Issue #3 - November 3, 2025 -->
+  <url>
+    <loc>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-11-03.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Offbeat AI Watch</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-11-03</news:publication_date>
+      <news:title>OpenAI DevDay Spotlights Enterprise-Ready Agents</news:title>
+    </news:news>
+  </url>
+
+  <!-- Newsletter Issue #2 - October 13, 2025 -->
+  <url>
+    <loc>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-10-13.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Offbeat AI Watch</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-10-13</news:publication_date>
+      <news:title>Microsoft Deploys 4,600 Blackwell Ultra GPUs</news:title>
+    </news:news>
+  </url>
+
+  <!-- Newsletter Issue #1 - October 5, 2025 -->
+  <url>
+    <loc>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-10-05.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Offbeat AI Watch</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-10-05</news:publication_date>
+      <news:title>Fusion Energy Gets AI Shield in Milliseconds</news:title>
+    </news:news>
+  </url>
+
+</urlset>
