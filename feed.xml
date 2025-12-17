@@ -5,13 +5,30 @@
     <link>https://shashwatgtm.github.io/ai-trendwatch/</link>
     <description>Fortnightly intelligence brief on AI infrastructure, GTM strategy, and regulatory developments for B2B companies. No fluff—just verified signals that matter.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 03 Dec 2025 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 17 Dec 2025 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://shashwatgtm.github.io/ai-trendwatch/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://shashwatgtm.github.io/ai-trendwatch/images/logo.png</url>
       <title>Offbeat AI Watch</title>
       <link>https://shashwatgtm.github.io/ai-trendwatch/</link>
     </image>
+
+    <!-- Issue #5 -->
+    <item>
+      <title>Tech Giants Unite: Agentic AI Foundation Launches with MCP at Its Core - Offbeat AI Watch</title>
+      <link>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-12-17.html</link>
+      <description>OpenAI, Anthropic, Google, and Microsoft form Agentic AI Foundation to standardize AI agent interoperability. MCP becomes the USB-C for AI with 10,000+ servers and neutral Linux Foundation governance.</description>
+      <pubDate>Wed, 17 Dec 2025 00:00:00 GMT</pubDate>
+      <guid>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-12-17.html</guid>
+      <author>Shashwat Ghosh</author>
+      <category>Artificial Intelligence</category>
+      <category>Technology</category>
+      <category>Enterprise AI</category>
+      <category>AI Standards</category>
+      <category>MCP</category>
+      <category>Agentic AI</category>
+      <category>Interoperability</category>
+    </item>
 
     <!-- Issue #4 -->
     <item>
