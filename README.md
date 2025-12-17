@@ -24,13 +24,13 @@ Visit [shashwatgtm.github.io/ai-trendwatch](https://shashwatgtm.github.io/ai-tre
 **Issue #5 - December 17, 2025**
 
 - 🤝 **Lead Story**: Tech Giants Unite—Agentic AI Foundation Launches with MCP at Its Core
-- 🔌 **MCP Standard**: 10,000+ servers, neutral Linux Foundation governance
-- 💳 **Block**: MCP integration across Square platform
-- 🤖 **Google Gemini 2.0**: Native agentic capabilities launch
-- 🌐 **OpenAI Operator**: Autonomous web navigation agent previewed
-- 🏢 **Microsoft Copilot Studio**: MCP connector support announced
-- 🖥️ **Anthropic Claude**: Computer use moves to production
-- 👨‍💻 **Sourcegraph Cody**: Leading MCP adoption in dev tools
+- 🎬 **Disney + OpenAI**: $1B Sora IP licensing deal for character-consistent video generation
+- 🏛️ **White House AI EO**: Framework for AI in critical infrastructure
+- 💼 **IBM No AI Bubble**: CEO Arvind Krishna compares to dotcom fiber buildout (1000x cost drop)
+- 🏢 **Microsoft Frontier Firms**: TCS, Wipro, Cognizant, Infosys collectively surpass 200K Copilot licenses
+- 📊 **Anthropic 40% Share**: Dominates enterprise LLM API market ($4B of $7.3B spend)
+- 🎭 **a16z Cinderella Effect**: AI user retention peaks at midnight, drops 75% by month 2
+- 🚀 **TrueFoundry**: Named Gartner Cool Vendor 2024 for AI engineering
 
 [Read Issue #5 →](issues/2025-12-17.html)
 
