@@ -1,7 +1,7 @@
 # Offbeat AI Watch
 
 ![Offbeat AI Watch](https://img.shields.io/badge/Status-Active-success)
-![Issue](https://img.shields.io/badge/Latest-Issue%20%234-blue)
+![Issue](https://img.shields.io/badge/Latest-Issue%20%235-blue)
 
 **Unconventional AI insights delivered fortnightly.**
 
@@ -21,21 +21,22 @@ Visit [shashwatgtm.github.io/ai-trendwatch](https://shashwatgtm.github.io/ai-tre
 
 ## 📰 Latest Issue
 
-**Issue #4 - December 3, 2025**
+**Issue #5 - December 17, 2025**
 
-- 🔒 **Lead Story**: Anthropic Discloses First AI-Orchestrated Cyber Espionage Campaign
-- 💻 **Microsoft Fara-7B**: On-device agent for computer automation
-- 🧬 **MIT BoltzGen**: Generative AI for undruggable protein targets
-- 🧠 **Google HOPE**: Nested learning for continual model adaptation
-- 🦄 **Scribe**: Hits unicorn status with $75M Series C
-- 🌤️ **DeepMind WeatherNext 2**: Probabilistic forecasts in under 1 minute
-- 🇮🇳 **Google India**: 9 AI learning features across Gemini, NotebookLM, Search
-- 🎙️ **ElevenLabs**: Enterprise AI agent capabilities launch
+- 🤝 **Lead Story**: Tech Giants Unite—Agentic AI Foundation Launches with MCP at Its Core
+- 🔌 **MCP Standard**: 10,000+ servers, neutral Linux Foundation governance
+- 💳 **Block**: MCP integration across Square platform
+- 🤖 **Google Gemini 2.0**: Native agentic capabilities launch
+- 🌐 **OpenAI Operator**: Autonomous web navigation agent previewed
+- 🏢 **Microsoft Copilot Studio**: MCP connector support announced
+- 🖥️ **Anthropic Claude**: Computer use moves to production
+- 👨‍💻 **Sourcegraph Cody**: Leading MCP adoption in dev tools
 
-[Read Issue #4 →](issues/2025-12-03.html)
+[Read Issue #5 →](issues/2025-12-17.html)
 
 ## 📚 Archive
 
+- [December 17, 2025](issues/2025-12-17.html) - Issue #5: Tech Giants Unite—Agentic AI Foundation Launches
 - [December 3, 2025](issues/2025-12-03.html) - Issue #4: First AI-Orchestrated Cyber Espionage Campaign Disclosed
 - [November 3, 2025](issues/2025-11-03.html) - Issue #3: OpenAI DevDay Spotlights Enterprise-Ready Agents
 - [October 13, 2025](issues/2025-10-13.html) - Issue #2: Microsoft's GB300 AI Factory
