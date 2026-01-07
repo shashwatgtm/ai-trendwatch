@@ -1,7 +1,7 @@
 # Offbeat AI Watch
 
 ![Offbeat AI Watch](https://img.shields.io/badge/Status-Active-success)
-![Issue](https://img.shields.io/badge/Latest-Issue%20%235-blue)
+![Issue](https://img.shields.io/badge/Latest-Issue%20%236-blue)
 
 **Unconventional AI insights delivered fortnightly.**
 
@@ -21,21 +21,21 @@ Visit [shashwatgtm.github.io/ai-trendwatch](https://shashwatgtm.github.io/ai-tre
 
 ## 📰 Latest Issue
 
-**Issue #5 - December 17, 2025**
+**Issue #6 - January 7, 2026**
 
-- 🤝 **Lead Story**: Tech Giants Unite—Agentic AI Foundation Launches with MCP at Its Core
-- 🎬 **Disney + OpenAI**: $1B Sora IP licensing deal for character-consistent video generation
-- 🏛️ **White House AI EO**: Framework for AI in critical infrastructure
-- 💼 **IBM No AI Bubble**: CEO Arvind Krishna compares to dotcom fiber buildout (1000x cost drop)
-- 🏢 **Microsoft Frontier Firms**: TCS, Wipro, Cognizant, Infosys collectively surpass 200K Copilot licenses
-- 📊 **Anthropic 40% Share**: Dominates enterprise LLM API market ($4B of $7.3B spend)
-- 🎭 **a16z Cinderella Effect**: AI user retention peaks at midnight, drops 75% by month 2
-- 🚀 **TrueFoundry**: Named Gartner Cool Vendor 2024 for AI engineering
+- 🔍 **Lead Story**: Google's AI Content Reckoning—December 2025 Core Update Changes Everything
+- 🤖 **Meta-Manus $2B**: Meta acquires AI agent startup with $100M ARR
+- 💰 **Nvidia-Groq $20B**: Largest AI infrastructure deal, signals inference market shift
+- 🔒 **ServiceNow-Armis $7.75B**: Enterprise security consolidation accelerates
+- 🇨🇳 **China 700+ Models**: Unprecedented government-cleared AI deployment scale
+- 🇮🇳 **India SOAR Initiative**: President Murmu launches #SkilltheNation AI challenge
+- 📱 **Amazon Ring AI**: Facial recognition "Familiar Faces" sparks privacy debate
 
-[Read Issue #5 →](issues/2025-12-17.html)
+[Read Issue #6 →](issues/2026-01-07.html)
 
 ## 📚 Archive
 
+- [January 7, 2026](issues/2026-01-07.html) - Issue #6: Google's AI Content Reckoning—December 2025 Core Update
 - [December 17, 2025](issues/2025-12-17.html) - Issue #5: Tech Giants Unite—Agentic AI Foundation Launches
 - [December 3, 2025](issues/2025-12-03.html) - Issue #4: First AI-Orchestrated Cyber Espionage Campaign Disclosed
 - [November 3, 2025](issues/2025-11-03.html) - Issue #3: OpenAI DevDay Spotlights Enterprise-Ready Agents

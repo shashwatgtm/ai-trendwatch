@@ -4,9 +4,17 @@
   <!-- Homepage -->
   <url>
     <loc>https://shashwatgtm.github.io/ai-trendwatch/</loc>
-    <lastmod>2025-12-17</lastmod>
+    <lastmod>2026-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Newsletter Issue #6 - January 7, 2026 -->
+  <url>
+    <loc>https://shashwatgtm.github.io/ai-trendwatch/issues/2026-01-07.html</loc>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- Newsletter Issue #5 - December 17, 2025 -->
@@ -52,7 +60,7 @@
   <!-- Archive Page -->
   <url>
     <loc>https://shashwatgtm.github.io/ai-trendwatch/archive.html</loc>
-    <lastmod>2025-12-17</lastmod>
+    <lastmod>2026-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

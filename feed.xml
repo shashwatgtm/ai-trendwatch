@@ -5,13 +5,33 @@
     <link>https://shashwatgtm.github.io/ai-trendwatch/</link>
     <description>Fortnightly intelligence brief on AI infrastructure, GTM strategy, and regulatory developments for B2B companies. No fluff—just verified signals that matter.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Dec 2025 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://shashwatgtm.github.io/ai-trendwatch/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://shashwatgtm.github.io/ai-trendwatch/images/logo.png</url>
       <title>Offbeat AI Watch</title>
       <link>https://shashwatgtm.github.io/ai-trendwatch/</link>
     </image>
+
+    <!-- Issue #6 -->
+    <item>
+      <title>Google's AI Content Reckoning: December 2025 Core Update Changes Everything - Offbeat AI Watch</title>
+      <link>https://shashwatgtm.github.io/ai-trendwatch/issues/2026-01-07.html</link>
+      <description>Google's December 2025 core update targets AI-generated content quality with 87% negative impact on bulk AI. Plus Meta acquires Manus for $2B, Nvidia-Groq $20B deal, ServiceNow-Armis $7.75B, China clears 700+ AI models, India launches SOAR initiative, and Amazon Ring facial recognition sparks privacy debate.</description>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 GMT</pubDate>
+      <guid>https://shashwatgtm.github.io/ai-trendwatch/issues/2026-01-07.html</guid>
+      <author>Shashwat Ghosh</author>
+      <category>Artificial Intelligence</category>
+      <category>Technology</category>
+      <category>Enterprise AI</category>
+      <category>Google Core Update</category>
+      <category>EEAT</category>
+      <category>Meta Manus</category>
+      <category>Nvidia Groq</category>
+      <category>ServiceNow Armis</category>
+      <category>China AI</category>
+      <category>India SOAR</category>
+    </item>
 
     <!-- Issue #5 -->
     <item>
