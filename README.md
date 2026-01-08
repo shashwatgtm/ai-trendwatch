@@ -29,7 +29,6 @@ Visit [shashwatgtm.github.io/ai-trendwatch](https://shashwatgtm.github.io/ai-tre
 - 🔒 **ServiceNow-Armis $7.75B**: Enterprise security consolidation accelerates
 - 🇨🇳 **China 700+ Models**: Unprecedented government-cleared AI deployment scale
 - 🇮🇳 **India SOAR Initiative**: President Murmu launches #SkilltheNation AI challenge
-- 📱 **Amazon Ring AI**: Facial recognition "Familiar Faces" sparks privacy debate
 
 [Read Issue #6 →](issues/2026-01-07.html)
 
