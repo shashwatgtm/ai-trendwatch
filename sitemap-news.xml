@@ -2,6 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 
+  <!-- Newsletter Issue #6 - January 7, 2026 -->
+  <url>
+    <loc>https://shashwatgtm.github.io/ai-trendwatch/issues/2026-01-07.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>Offbeat AI Watch</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-01-07</news:publication_date>
+      <news:title>Google's AI Content Reckoning: December 2025 Core Update Changes Everything</news:title>
+    </news:news>
+  </url>
+
   <!-- Newsletter Issue #5 - December 17, 2025 -->
   <url>
     <loc>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-12-17.html</loc>
