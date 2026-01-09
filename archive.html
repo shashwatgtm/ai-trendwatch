@@ -2,12 +2,350 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://gtmhelix.com/ai-trendwatch/archive.html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive - Offbeat AI Watch</title>
+    <meta name="description" content="Browse all issues of Offbeat AI Watch - curated AI insights for B2B leaders and GTM professionals.">
+
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://gtmhelix.com/ai-trendwatch/archive.html">
-    <title>Redirecting to Offbeat AI Watch Archive...</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Archive - Offbeat AI Watch">
+    <meta property="og:description" content="Browse all issues of Offbeat AI Watch - curated AI insights for B2B leaders.">
+    <meta property="og:url" content="https://gtmhelix.com/ai-trendwatch/archive.html">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background-color: #151617;
+            color: #FFFFFF;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: #0B0B10;
+            padding: 20px;
+            border-bottom: 1px solid #1A1A24;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #FAA1A1;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: #F2F2F2;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #FAA1A1;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #151617 0%, #0B0B10 100%);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .page-header h1 span {
+            color: #FAA1A1;
+        }
+
+        .page-header p {
+            color: #F2F2F2;
+            font-size: 1.2rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Archive Grid */
+        .archive {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .issue-card {
+            background-color: #1A1A24;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .issue-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            border-color: #FAA1A1;
+        }
+
+        .issue-card-image {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .issue-number {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: #FAA1A1;
+            color: #151617;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .issue-card-content {
+            padding: 25px;
+        }
+
+        .issue-date {
+            color: #F2F2F2;
+            font-size: 0.9rem;
+            opacity: 0.7;
+            margin-bottom: 10px;
+        }
+
+        .issue-card-content h3 {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .issue-card-content h3 a {
+            color: #FFFFFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .issue-card-content h3 a:hover {
+            color: #FAA1A1;
+        }
+
+        .issue-card-content p {
+            color: #F2F2F2;
+            font-size: 0.95rem;
+            opacity: 0.8;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .read-more {
+            color: #FAA1A1;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .read-more:hover {
+            gap: 10px;
+        }
+
+        .read-more::after {
+            content: '→';
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0B0B10;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid #1A1A24;
+        }
+
+        footer p {
+            color: #F2F2F2;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        footer a {
+            color: #FAA1A1;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav ul {
+                gap: 20px;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .archive-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting to <a href="https://gtmhelix.com/ai-trendwatch/archive.html">gtmhelix.com/ai-trendwatch/archive.html</a></p>
-    <script>window.location.replace("https://gtmhelix.com/ai-trendwatch/archive.html");</script>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">Offbeat <span>AI</span> Watch</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="archive.html">Archive</a></li>
+                    <li><a href="feed.xml">RSS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Issue <span>Archive</span></h1>
+        <p>Browse all past issues of Offbeat AI Watch. Curated AI insights for B2B leaders, published fortnightly.</p>
+    </section>
+
+    <!-- Archive Grid -->
+    <section class="archive">
+        <div class="archive-grid">
+            <!-- Issue #6 -->
+            <article class="issue-card">
+                <div class="issue-card-image" style="background-image: url('images/google-dec-2025-core-update-1280x680.jpg');">
+                    <span class="issue-number">Issue #6</span>
+                </div>
+                <div class="issue-card-content">
+                    <p class="issue-date">January 7, 2026</p>
+                    <h3><a href="issues/2026-01-07.html">Google December 2025 Core Update: What B2B Marketers Need to Know</a></h3>
+                    <p>The latest core update shakes up search rankings with a focus on AI-generated content quality and E-E-A-T signals.</p>
+                    <a href="issues/2026-01-07.html" class="read-more">Read Issue</a>
+                </div>
+            </article>
+
+            <!-- Issue #5 -->
+            <article class="issue-card">
+                <div class="issue-card-image" style="background-image: url('images/aaif-mcp-foundation-1280x680.jpg');">
+                    <span class="issue-number">Issue #5</span>
+                </div>
+                <div class="issue-card-content">
+                    <p class="issue-date">December 17, 2025</p>
+                    <h3><a href="issues/2025-12-17.html">Tech Giants Unite: Agentic AI Interoperability Foundation</a></h3>
+                    <p>Microsoft, Anthropic, and others form the AAIF to standardize agentic AI interactions through MCP.</p>
+                    <a href="issues/2025-12-17.html" class="read-more">Read Issue</a>
+                </div>
+            </article>
+
+            <!-- Issue #4 -->
+            <article class="issue-card">
+                <div class="issue-card-image" style="background-image: url('images/ai-cyber-espionage-1280x680.jpg');">
+                    <span class="issue-number">Issue #4</span>
+                </div>
+                <div class="issue-card-content">
+                    <p class="issue-date">December 3, 2025</p>
+                    <h3><a href="issues/2025-12-03.html">AI-Powered Cyber Espionage: The New Threat Landscape</a></h3>
+                    <p>State-sponsored actors leverage AI for sophisticated cyber attacks targeting enterprise infrastructure.</p>
+                    <a href="issues/2025-12-03.html" class="read-more">Read Issue</a>
+                </div>
+            </article>
+
+            <!-- Issue #3 -->
+            <article class="issue-card">
+                <div class="issue-card-image" style="background-image: url('images/openai-devday-2025-1280x680.jpg');">
+                    <span class="issue-number">Issue #3</span>
+                </div>
+                <div class="issue-card-content">
+                    <p class="issue-date">November 3, 2025</p>
+                    <h3><a href="issues/2025-11-03.html">OpenAI DevDay 2025: Enterprise AI Takes Center Stage</a></h3>
+                    <p>Key announcements from OpenAI's developer conference and what they mean for B2B adoption.</p>
+                    <a href="issues/2025-11-03.html" class="read-more">Read Issue</a>
+                </div>
+            </article>
+
+            <!-- Issue #2 -->
+            <article class="issue-card">
+                <div class="issue-card-image" style="background-image: url('images/msft-azure-gb300-1280x680-1.jpg');">
+                    <span class="issue-number">Issue #2</span>
+                </div>
+                <div class="issue-card-content">
+                    <p class="issue-date">October 13, 2025</p>
+                    <h3><a href="issues/2025-10-13.html">Microsoft Azure GB300: The Enterprise AI Infrastructure Play</a></h3>
+                    <p>Microsoft's next-gen AI infrastructure and implications for enterprise cloud adoption.</p>
+                    <a href="issues/2025-10-13.html" class="read-more">Read Issue</a>
+                </div>
+            </article>
+
+            <!-- Issue #1 -->
+            <article class="issue-card">
+                <div class="issue-card-image" style="background-image: url('images/fusion-ai-1280x680.jpg');">
+                    <span class="issue-number">Issue #1</span>
+                </div>
+                <div class="issue-card-content">
+                    <p class="issue-date">October 5, 2025</p>
+                    <h3><a href="issues/2025-10-05.html">Inaugural Issue: Fusion AI and the Future of B2B</a></h3>
+                    <p>Welcome to Offbeat AI Watch - exploring the intersection of AI innovation and B2B strategy.</p>
+                    <a href="issues/2025-10-05.html" class="read-more">Read Issue</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Offbeat AI Watch by <a href="https://gtmhelix.com">Helix GTM Consulting</a></p>
+    </footer>
 </body>
 </html>

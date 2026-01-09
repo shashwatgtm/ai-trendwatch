@@ -117,16 +117,58 @@ After publishing each issue:
 
 ---
 
-## Color Palette
+## Brand Style Guide (Shashwat GTM Expert)
+
+### Background Colors
 
 | Element | Color | Hex |
 |---------|-------|-----|
-| Primary (Headers) | Blue | `#0066cc` |
-| Secondary | Cyan | `#00b8d4` |
-| Accent | Purple | `#7b1fa2` |
-| Text | Dark Gray | `#333333` |
-| Background | White | `#ffffff` |
-| Light Background | Light Gray | `#f5f5f5` |
+| Primary Dark (Hero) | Dark Gray | `#151617` |
+| Secondary Dark | Dark Blue-Gray | `#15151B` |
+| Tertiary Dark | Deep Black | `#0B0B10` |
+| Light Background 1 | Off White | `#F6F5F8` |
+| Light Background 2 | Lavender Tint | `#F6F1FF` |
+| White | Pure White | `#FFFFFF` |
+
+### Accent Colors
+
+| Element | Color | Hex |
+|---------|-------|-----|
+| **Primary Accent** | Coral Pink | `#FAA1A1` |
+| Dark Card Background | Dark Purple-Gray | `#1A1A24` |
+| Light Card Background | Near White | `#FBFBFD` |
+| Borders/Outlines | Light Gray | `#D3D3D3` |
+
+### Text Colors
+
+| Element | Color | Hex |
+|---------|-------|-----|
+| Primary Text (Dark BG) | White | `#FFFFFF` |
+| Stats/Secondary Text | Off White | `#F2F2F2` |
+| Primary Text (Light BG) | Dark Gray | `#333333` |
+
+### Typography
+
+- **Display:** Medium size (used for name/headlines)
+- **Headings:** H1-H4 default sizes
+- **Body:** Default font size
+- **Small:** Small size for disclaimers, footer
+- **Font Family:** System fonts (-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif)
+
+### Button Styling
+
+| Type | Style | Color |
+|------|-------|-------|
+| Primary CTA | Solid | `#FAA1A1` (coral pink) |
+| Secondary CTA | Solid | Default |
+| Tertiary | Outline | Border only |
+
+### Design Principles
+
+- **Dark mode aesthetic:** Heavy use of dark backgrounds (#151617, #0B0B10, #1A1A24)
+- **High contrast:** White/light text on dark backgrounds
+- **Primary accent:** Coral pink (#FAA1A1) for emphasis, CTAs, and key messaging
+- **Cards:** Dark (#1A1A24) or light (#FBFBFD) backgrounds with subtle borders
 
 ---
 
