@@ -44,8 +44,8 @@ git push origin main
 
 ### Step 4: Wait for Deployment
 - GitHub Pages will take 1-3 minutes to build
-- Your site will be live at: `https://shashwatgtm.github.io/ai-trendwatch/`
-  (or `https://shashwatgtm.github.io/offbeat-ai-watch/` if you renamed)
+- Your site will be live at: `https://gtmhelix.com/ai-trendwatch/`
+  (or `https://gtmhelix.com/offbeat-ai-watch/` if you renamed)
 
 ### Step 5: Update Subscribe Form
 

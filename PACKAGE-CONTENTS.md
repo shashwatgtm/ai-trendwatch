@@ -48,7 +48,7 @@ offbeat-ai-watch-github/
 - [ ] Enable GitHub Pages in repository settings
 - [ ] Update Formspree form ID in index.html
 - [ ] Wait 2-3 minutes for deployment
-- [ ] Test your site at: https://shashwatgtm.github.io/ai-trendwatch/
+- [ ] Test your site at: https://gtmhelix.com/ai-trendwatch/
 
 ## 🔧 Customization Points
 
