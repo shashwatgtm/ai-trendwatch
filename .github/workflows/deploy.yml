@@ -14,22 +14,12 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy to GoDaddy via SFTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: sftp
           port: 22
-          local-dir: ./
-          server-dir: /ai-trendwatch/
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            .github/**
-            README.md
-            DEPLOYMENT.md
-            PACKAGE-CONTENTS.md
-            NEWSLETTER_GUIDELINES.md
-            SUBMISSION_GUIDE.md
+          local_path: './*'
+          remote_path: '/ai-trendwatch/'
+          sftpArgs: '-o StrictHostKeyChecking=no'
