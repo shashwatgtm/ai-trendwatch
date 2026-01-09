@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch:  # Allows manual trigger
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -13,13 +13,15 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Deploy to GoDaddy via SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          port: 22
-          local_path: './*'
-          remote_path: '/ai-trendwatch/'
-          sftpArgs: '-o StrictHostKeyChecking=no'
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Deploy via SFTP
+        run: |
+          lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" \
+            -e "set sftp:auto-confirm yes; set ssl:verify-certificate no; \
+            mirror -R --exclude .git/ --exclude .github/ --exclude README.md \
+            --exclude DEPLOYMENT.md --exclude PACKAGE-CONTENTS.md \
+            --exclude NEWSLETTER_GUIDELINES.md --exclude SUBMISSION_GUIDE.md \
+            ./ /ai-trendwatch/; quit" \
+            sftp://${{ secrets.FTP_SERVER }}
