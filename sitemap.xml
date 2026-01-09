@@ -3,7 +3,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://shashwatgtm.github.io/ai-trendwatch/</loc>
+    <loc>https://gtmhelix.com/ai-trendwatch/</loc>
     <lastmod>2026-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -11,7 +11,7 @@
 
   <!-- Newsletter Issue #6 - January 7, 2026 -->
   <url>
-    <loc>https://shashwatgtm.github.io/ai-trendwatch/issues/2026-01-07.html</loc>
+    <loc>https://gtmhelix.com/ai-trendwatch/issues/2026-01-07.html</loc>
     <lastmod>2026-01-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -19,7 +19,7 @@
 
   <!-- Newsletter Issue #5 - December 17, 2025 -->
   <url>
-    <loc>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-12-17.html</loc>
+    <loc>https://gtmhelix.com/ai-trendwatch/issues/2025-12-17.html</loc>
     <lastmod>2025-12-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -27,7 +27,7 @@
 
   <!-- Newsletter Issue #4 - December 3, 2025 -->
   <url>
-    <loc>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-12-03.html</loc>
+    <loc>https://gtmhelix.com/ai-trendwatch/issues/2025-12-03.html</loc>
     <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -35,7 +35,7 @@
 
   <!-- Newsletter Issue #3 - November 3, 2025 -->
   <url>
-    <loc>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-11-03.html</loc>
+    <loc>https://gtmhelix.com/ai-trendwatch/issues/2025-11-03.html</loc>
     <lastmod>2025-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -43,7 +43,7 @@
 
   <!-- Newsletter Issue #2 - October 13, 2025 -->
   <url>
-    <loc>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-10-13.html</loc>
+    <loc>https://gtmhelix.com/ai-trendwatch/issues/2025-10-13.html</loc>
     <lastmod>2025-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -51,7 +51,7 @@
 
   <!-- Newsletter Issue #1 - October 5, 2025 -->
   <url>
-    <loc>https://shashwatgtm.github.io/ai-trendwatch/issues/2025-10-05.html</loc>
+    <loc>https://gtmhelix.com/ai-trendwatch/issues/2025-10-05.html</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -59,10 +59,26 @@
 
   <!-- Archive Page -->
   <url>
-    <loc>https://shashwatgtm.github.io/ai-trendwatch/archive.html</loc>
+    <loc>https://gtmhelix.com/ai-trendwatch/archive.html</loc>
     <lastmod>2026-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- Privacy Policy -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/privacy-policy.html</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Terms of Service -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/terms-of-service.html</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>

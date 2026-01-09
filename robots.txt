@@ -30,5 +30,6 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemap locations
-Sitemap: https://shashwatgtm.github.io/ai-trendwatch/sitemap.xml
-Sitemap: https://shashwatgtm.github.io/ai-trendwatch/sitemap-news.xml
+Sitemap: https://gtmhelix.com/ai-trendwatch/sitemap-index.xml
+Sitemap: https://gtmhelix.com/ai-trendwatch/sitemap.xml
+Sitemap: https://gtmhelix.com/ai-trendwatch/sitemap-news.xml
