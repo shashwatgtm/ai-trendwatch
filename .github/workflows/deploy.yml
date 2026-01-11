@@ -21,9 +21,16 @@ jobs:
           lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" \
             -e "set sftp:auto-confirm yes; \
             set cmd:fail-exit yes; \
+            debug 3; \
+            pwd; \
+            ls -la; \
             cd ai-trendwatch; \
-            mirror -R --verbose --ignore-time --delete --exclude .git/ --exclude .github/ --exclude README.md \
+            pwd; \
+            ls -la; \
+            mirror -R -v --ignore-time --delete --exclude .git/ --exclude .github/ --exclude README.md \
             --exclude DEPLOYMENT.md --exclude PACKAGE-CONTENTS.md \
             --exclude NEWSLETTER_GUIDELINES.md --exclude SUBMISSION_GUIDE.md \
-            ./ .; quit" \
+            ./ .; \
+            ls -la; \
+            quit" \
             sftp://${{ secrets.FTP_SERVER }}
