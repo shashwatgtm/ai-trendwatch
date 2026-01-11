@@ -19,9 +19,9 @@ jobs:
       - name: Deploy via SFTP
         run: |
           lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" \
-            -e "set sftp:auto-confirm yes; \
+            -e "set sftp:auto-confirm yes; set mirror:use-pget-n 5; \
             mkdir -p ai-trendwatch; \
-            mirror -R --verbose --exclude .git/ --exclude .github/ --exclude README.md \
+            mirror -R --verbose --ignore-time --delete --exclude .git/ --exclude .github/ --exclude README.md \
             --exclude DEPLOYMENT.md --exclude PACKAGE-CONTENTS.md \
             --exclude NEWSLETTER_GUIDELINES.md --exclude SUBMISSION_GUIDE.md \
             ./ ai-trendwatch/; quit" \
