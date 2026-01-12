@@ -58,14 +58,53 @@ AI Go-To-Market Strategist
 
 This newsletter is built with:
 - Pure HTML/CSS (no frameworks)
-- Hosted on GitHub Pages
+- Hosted on GoDaddy Managed WordPress (subfolder: `/ai-trendwatch/`)
 - Mobile-responsive design
-- Optimized for email clients
+- Dark theme (#151617 background, #FAA1A1 accent)
 - SEO and Schema.org structured data
+
+## 🚀 Deployment Guide
+
+### Automatic Deployment
+Push to `main` branch triggers GitHub Actions workflow that deploys to GoDaddy via SFTP.
+
+### Critical Path Configuration
+```
+SFTP uploads to: html/ai-trendwatch/
+Web serves from: gtmhelix.com/ai-trendwatch/
+```
+
+### Image Naming Convention
+All images must use exact filenames as listed in `images/` folder:
+- `google-core-update-eeat-1280x680.jpg` (NOT google-dec-2025...)
+- `anthropic-ai-cyber-espionage-1280x680.jpg` (NOT ai-cyber-espionage...)
+- `openai-devday-agentkit-1280x680.jpg` (NOT openai-devday-2025...)
+- `aaif-mcp-foundation-1280x680.jpg`
+- `msft-azure-gb300-1280x680-1.jpg`
+
+### Post-Deployment Checklist
+1. ✅ Check GitHub Actions → "Deploy to GoDaddy" succeeded
+2. ✅ Go to GoDaddy → Settings → Flush Cache
+3. ✅ Wait 5-15 minutes for CDN propagation
+4. ✅ Test in Incognito + Hard Refresh (Ctrl+Shift+R)
+
+### Troubleshooting
+- **Files not updating**: Verify `deploy.yml` uses `cd html/ai-trendwatch` (NOT just `ai-trendwatch`)
+- **Images broken**: Check exact filename match in `images/` folder
+- **Caching issues**: Add `?v=timestamp` to URL for testing
+
+## 📝 Lessons Learned (RCA)
+
+| Issue | Root Cause | Prevention |
+|-------|-----------|------------|
+| Deploy succeeds but files not updating | Wrong SFTP path (`ai-trendwatch/` vs `html/ai-trendwatch/`) | Always verify path in deploy.yml |
+| Broken images | Filename mismatch in HTML vs actual files | Use exact filenames from images/ folder |
+| Old design showing after deploy | CDN caching | Always flush GoDaddy cache after deploy |
+| Redirect loops on issue pages | Migration created redirect stubs | Never use redirect stubs, always full content |
 
 ## 📄 License
 
-© 2025 Offbeat AI Watch. All rights reserved.
+© 2026 Offbeat AI Watch. All rights reserved.
 
 ---
 
