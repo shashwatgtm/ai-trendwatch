@@ -3,920 +3,428 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GTM Helix - Fractional CMO for B2B Startups</title>
-    <meta name="description" content="Get your GTM on track. Fractional CMO services for B2B startups - SaaS GTM, Enterprise GTM, Marketing Tech Stack, and Marketing Essentials.">
-
+    
+    <!-- SEO Meta Tags -->
+    <title>Offbeat AI Watch - Weekly AI Intelligence Brief by Shashwat Ghosh | Fractional CMO & AI GTM Expert</title>
+    <meta name="description" content="Unconventional AI insights delivered weekly. Technology moves at breathtaking speed—we distill the signal from the noise in artificial intelligence. By Shashwat Ghosh, Fractional CMO & AI Go-To-Market Expert.">
+    <meta name="keywords" content="AI newsletter, artificial intelligence insights, AI trends weekly, machine learning news, AI strategy, Shashwat Ghosh, Fractional CMO, AI GTM expert, technology newsletter, AI intelligence brief">
+    <meta name="author" content="Shashwat Ghosh">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gtmhelix.com/ai-trendwatch/">
+    <meta property="og:title" content="Offbeat AI Watch - Weekly AI Intelligence Brief">
+    <meta property="og:description" content="Unconventional AI insights delivered weekly. Signal over noise in artificial intelligence.">
+    <meta property="og:site_name" content="Offbeat AI Watch">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gtmhelix.com/ai-trendwatch/">
+    <meta property="twitter:title" content="Offbeat AI Watch - Fortnightly Intelligence Brief">
+    <meta property="twitter:description" content="Unconventional AI insights delivered weekly by Shashwat Ghosh">
+    <meta name="twitter:creator" content="@shashwatghosh">
+    
     <!-- Canonical URL -->
     <link rel="canonical" href="https://gtmhelix.com/ai-trendwatch/">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="GTM Helix - Fractional CMO for B2B Startups">
-    <meta property="og:description" content="Get your GTM on track. Fractional CMO services helping B2B startups build and scale their go-to-market engines.">
-    <meta property="og:url" content="https://gtmhelix.com/ai-trendwatch/">
-    <meta property="og:type" content="website">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Offbeat AI Watch",
+      "description": "Weekly intelligence brief delivering unconventional AI insights beyond the headlines",
+      "url": "https://gtmhelix.com/ai-trendwatch/",
+      "author": {
+        "@type": "Person",
+        "name": "Shashwat Ghosh",
+        "jobTitle": "Fractional CMO & AI GTM Expert",
+        "description": "AI Go-To-Market strategist and Fractional Chief Marketing Officer",
+        "url": "https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/",
+        "sameAs": [
+          "https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/",
+          "https://twitter.com/shashwatghosh",
+          "https://github.com/shashwatgtm"
+        ],
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Helix Consulting"
+        }
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Offbeat AI Watch",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://gtmhelix.com/ai-trendwatch/images/logo.png"
+        }
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://gtmhelix.com/ai-trendwatch/archive.html",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            background-color: #151617;
-            color: #FFFFFF;
-            line-height: 1.6;
-        }
-
-        .accent { color: #FAA1A1; }
-
-        /* ==================== HERO SECTION ==================== */
-        .hero {
-            background-color: #151617;
+            background: linear-gradient(135deg, #0066cc 0%, #00b8d4 100%);
             min-height: 100vh;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            position: relative;
-        }
-
-        .hero-content {
-            padding: 80px 60px;
             display: flex;
-            flex-direction: column;
+            align-items: center;
             justify-content: center;
+            padding: 20px;
         }
-
-        .hero-content h1 {
-            font-size: 4rem;
-            font-weight: 700;
-            line-height: 1.1;
-            margin-bottom: 25px;
-        }
-
-        .hero-subtitle {
-            font-size: 1rem;
-            color: #888;
-            margin-bottom: 50px;
-            max-width: 400px;
-        }
-
-        /* Stats Grid - EPIC Style */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            margin-bottom: 50px;
-        }
-
-        .stat-box {
-            border: 1px solid #333;
-            border-left: none;
-            padding: 20px 15px;
+        
+        .container {
+            max-width: 700px;
+            background-color: #ffffff;
+            padding: 60px 50px;
+            border-radius: 8px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             text-align: center;
         }
-
-        .stat-box:first-child {
-            border-left: 1px solid #333;
-        }
-
-        .stat-box h3 {
-            font-size: 0.9rem;
-            color: #F2F2F2;
-            font-weight: 500;
-            margin-bottom: 3px;
-        }
-
-        .stat-box p {
-            font-size: 0.75rem;
-            color: #666;
-        }
-
-        /* Hero Image */
-        .hero-image {
-            background: url('images/hero-polar-bear.jpg') center/cover no-repeat;
-            position: relative;
-        }
-
-        .hero-image::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(90deg, #151617 0%, transparent 40%);
-        }
-
-        /* Arrow CTA */
-        .cta-arrow {
-            display: inline-flex;
-            align-items: center;
-            gap: 15px;
-            text-decoration: none;
-            color: #FFFFFF;
-            font-size: 1rem;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .cta-arrow:hover { gap: 20px; }
-
-        .cta-arrow .arrow {
-            width: 50px;
-            height: 50px;
-            background-color: #FAA1A1;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-        }
-
-        .cta-arrow:hover .arrow {
-            transform: translateX(5px);
-            box-shadow: 0 10px 30px rgba(250, 161, 161, 0.4);
-        }
-
-        .cta-arrow .arrow svg {
-            width: 20px;
-            height: 20px;
-            stroke: #151617;
-            stroke-width: 2;
-            fill: none;
-        }
-
-        /* ==================== ISSUES WE ADDRESS ==================== */
-        .issues-section {
-            background-color: #151617;
-            padding: 80px 60px;
-        }
-
-        .section-label {
-            font-size: 0.8rem;
-            color: #666;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-        }
-
-        .issues-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-        }
-
-        .issue-box {
-            border: 1px solid #333;
-            border-left: none;
-            padding: 25px 20px;
-            min-height: 120px;
-        }
-
-        .issue-box:first-child,
-        .issue-box:nth-child(5) {
-            border-left: 1px solid #333;
-        }
-
-        .issue-box h4 {
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: #FFFFFF;
-        }
-
-        .issue-box p {
-            font-size: 0.8rem;
-            color: #666;
-            line-height: 1.5;
-        }
-
-        /* ==================== VISION SECTION ==================== */
-        .vision-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            min-height: 80vh;
-        }
-
-        .vision-content {
-            background-color: #151617;
-            padding: 80px 60px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .vision-content h2 {
-            font-size: 2.8rem;
+        
+        .logo {
+            font-size: 48px;
             font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 25px;
-        }
-
-        .vision-content p {
-            color: #888;
-            margin-bottom: 15px;
-            font-size: 0.95rem;
-        }
-
-        .vision-content ul {
-            list-style: none;
-            margin: 20px 0 30px;
-        }
-
-        .vision-content ul li {
-            color: #888;
-            font-size: 0.9rem;
-            margin-bottom: 8px;
-            padding-left: 20px;
-            position: relative;
-        }
-
-        .vision-content ul li::before {
-            content: '→';
-            position: absolute;
-            left: 0;
-            color: #FAA1A1;
-        }
-
-        .vision-image {
-            background: url('images/hero-bear-vision.jpg') center/cover no-repeat;
-            position: relative;
-        }
-
-        .vision-image::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(270deg, #151617 0%, transparent 40%);
-        }
-
-        /* ==================== GO EPIC SECTION ==================== */
-        .epic-section {
-            background-color: #0B0B10;
-            padding: 80px 60px;
-        }
-
-        .epic-header {
-            margin-bottom: 50px;
-        }
-
-        .epic-header h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-            margin-bottom: 60px;
-        }
-
-        .feature-card {
-            background-color: #1A1A24;
-            border-radius: 12px;
-            padding: 25px;
-            border: 1px solid #333;
-        }
-
-        .feature-card h4 {
-            font-size: 1rem;
+            color: #000000;
             margin-bottom: 10px;
-            color: #FFFFFF;
+            line-height: 1.1;
         }
-
-        .feature-card p {
-            color: #666;
-            font-size: 0.85rem;
-            line-height: 1.5;
-        }
-
-        /* Activate Ecosystem */
-        .ecosystem-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
-            padding-top: 40px;
-            border-top: 1px solid #333;
-        }
-
-        .ecosystem-content h3 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-        }
-
-        .ecosystem-list {
-            list-style: none;
-        }
-
-        .ecosystem-list li {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            padding: 12px 0;
-            border-bottom: 1px solid #333;
-            color: #888;
-            font-size: 0.9rem;
-        }
-
-        .ecosystem-list li .dot {
-            width: 8px;
-            height: 8px;
-            background: #FAA1A1;
-            border-radius: 50%;
-        }
-
-        .ecosystem-visual {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 300px;
-        }
-
-        .ecosystem-diagram {
-            position: relative;
-            width: 280px;
-            height: 280px;
-        }
-
-        .eco-center {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100px;
-            height: 100px;
-            background: #FAA1A1;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 2;
-        }
-
-        .eco-center span {
-            color: #151617;
-            font-weight: 700;
-            font-size: 0.8rem;
-            text-align: center;
-        }
-
-        .eco-node {
-            position: absolute;
-            background: #1A1A24;
-            border: 1px solid #333;
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-size: 0.7rem;
-            color: #888;
-            white-space: nowrap;
-        }
-
-        .eco-node:nth-child(2) { top: 0; left: 50%; transform: translateX(-50%); }
-        .eco-node:nth-child(3) { top: 20%; right: 0; }
-        .eco-node:nth-child(4) { bottom: 20%; right: 0; }
-        .eco-node:nth-child(5) { bottom: 0; left: 50%; transform: translateX(-50%); }
-        .eco-node:nth-child(6) { bottom: 20%; left: 0; }
-        .eco-node:nth-child(7) { top: 20%; left: 0; }
-
-        /* ==================== GTM OFFERING GRID ==================== */
-        .offering-section {
-            background-color: #151617;
-            padding: 80px 60px;
-        }
-
-        .offering-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 40px;
-        }
-
-        .offering-header h2 {
-            font-size: 2rem;
-        }
-
-        .offering-grid {
-            display: grid;
-            grid-template-columns: 200px repeat(4, 1fr);
-            border: 1px solid #333;
-        }
-
-        .offering-sidebar {
-            background: #0B0B10;
-            border-right: 1px solid #333;
-        }
-
-        .sidebar-item {
-            padding: 15px;
-            border-bottom: 1px solid #333;
-            font-size: 0.8rem;
-            color: #888;
-        }
-
-        .sidebar-item.highlight {
-            background: #1A1A24;
-            color: #FAA1A1;
-        }
-
-        .offering-category {
-            border-right: 1px solid #333;
-        }
-
-        .offering-category:last-child {
-            border-right: none;
-        }
-
-        .offering-category-header {
-            background: #1A1A24;
-            padding: 15px;
-            text-align: center;
-            border-bottom: 1px solid #333;
-            font-size: 0.85rem;
+        
+        .tagline {
+            font-size: 14px;
+            color: #0066cc;
             font-weight: 600;
-            color: #FFFFFF;
-        }
-
-        .offering-item {
-            padding: 12px 15px;
-            border-bottom: 1px solid #333;
-            font-size: 0.8rem;
-            color: #888;
-        }
-
-        .offering-item:last-child {
-            border-bottom: none;
-        }
-
-        /* ==================== CTA SECTION ==================== */
-        .cta-section {
-            background-color: #0B0B10;
-            padding: 80px 60px;
-        }
-
-        .cta-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .cta-text h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-        }
-
-        .cta-text p {
-            color: #666;
-        }
-
-        .cta-arrow-large .arrow {
-            width: 70px;
-            height: 70px;
-            background-color: #FAA1A1;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-        }
-
-        .cta-arrow-large:hover .arrow {
-            transform: scale(1.1);
-            box-shadow: 0 15px 40px rgba(250, 161, 161, 0.4);
-        }
-
-        .cta-arrow-large .arrow svg {
-            width: 28px;
-            height: 28px;
-            stroke: #151617;
-            stroke-width: 2;
-            fill: none;
-        }
-
-        /* ==================== FOOTER ==================== */
-        footer {
-            background-color: #151617;
-            padding: 50px 60px 30px;
-            border-top: 1px solid #333;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
             margin-bottom: 30px;
         }
-
-        .footer-brand h3 {
-            font-size: 1.3rem;
+        
+        .description {
+            font-size: 18px;
+            color: #333333;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 40px 0;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .feature-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .feature-icon {
+            font-size: 24px;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .feature-text {
+            flex: 1;
+        }
+        
+        .feature-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 5px;
+        }
+        
+        .feature-description {
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.5;
+        }
+        
+        .cta-section {
+            margin-top: 40px;
+        }
+        
+        .subscribe-form {
+            display: flex;
+            gap: 10px;
+            max-width: 500px;
+            margin: 30px auto 20px;
+        }
+        
+        .email-input {
+            flex: 1;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: 2px solid #e0e0e0;
+            border-radius: 4px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        
+        .email-input:focus {
+            border-color: #0066cc;
+        }
+        
+        .subscribe-btn {
+            background-color: #0066cc;
+            color: #ffffff;
+            padding: 15px 35px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            white-space: nowrap;
+        }
+        
+        .subscribe-btn:hover {
+            background-color: #0052a3;
+        }
+        
+        .privacy-note {
+            font-size: 12px;
+            color: #999999;
+            margin-top: 15px;
+        }
+        
+        .latest-issue {
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 2px solid #e0e0e0;
+        }
+        
+        .latest-issue h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+        
+        .issue-preview {
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 6px;
+            text-align: left;
+            border-left: 4px solid #0066cc;
+        }
+        
+        .issue-date {
+            font-size: 12px;
+            color: #0066cc;
+            font-weight: 600;
+            letter-spacing: 1px;
             margin-bottom: 10px;
         }
-
-        .footer-brand p {
-            color: #666;
-            font-size: 0.85rem;
+        
+        .issue-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 10px;
         }
-
-        .footer-col h4 {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #666;
+        
+        .issue-excerpt {
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.6;
             margin-bottom: 15px;
         }
-
-        .footer-col ul {
-            list-style: none;
-        }
-
-        .footer-col ul li {
-            margin-bottom: 8px;
-        }
-
-        .footer-col ul li a {
-            color: #888;
+        
+        .read-more {
+            color: #0066cc;
             text-decoration: none;
-            font-size: 0.85rem;
-            transition: color 0.3s ease;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
         }
-
-        .footer-col ul li a:hover {
-            color: #FAA1A1;
+        
+        .read-more:hover {
+            text-decoration: underline;
         }
-
-        .footer-bottom {
-            border-top: 1px solid #333;
-            padding-top: 20px;
-            text-align: center;
+        
+        .read-more::after {
+            content: " →";
+            margin-left: 5px;
         }
-
-        .footer-bottom p {
-            color: #555;
-            font-size: 0.8rem;
+        
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #999999;
         }
-
-        .footer-bottom a {
-            color: #FAA1A1;
-            text-decoration: none;
-        }
-
-        /* ==================== RESPONSIVE ==================== */
-        @media (max-width: 1024px) {
-            .hero, .vision-section {
-                grid-template-columns: 1fr;
+        
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 40px 30px;
             }
-
-            .hero-content, .vision-content {
-                padding: 50px 30px;
+            
+            .logo {
+                font-size: 36px;
             }
-
-            .hero-content h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero-image, .vision-image {
-                min-height: 40vh;
-            }
-
-            .stats-grid, .issues-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .issue-box:nth-child(odd) {
-                border-left: 1px solid #333;
-            }
-
-            .issues-section, .epic-section, .offering-section, .cta-section {
-                padding: 50px 30px;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .ecosystem-section {
-                grid-template-columns: 1fr;
-            }
-
-            .offering-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .offering-sidebar {
-                display: none;
-            }
-
-            .cta-container {
+            
+            .subscribe-form {
                 flex-direction: column;
-                text-align: center;
-                gap: 30px;
             }
-
-            footer {
-                padding: 40px 30px 20px;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 600px) {
-            .hero-content h1 {
-                font-size: 2rem;
-            }
-
-            .vision-content h2 {
-                font-size: 2rem;
-            }
-
-            .stats-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .issues-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .issue-box {
-                border-left: 1px solid #333 !important;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
+            
+            .subscribe-btn {
+                width: 100%;
             }
         }
     </style>
-
-    <!-- Schema.org -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "GTM Helix",
-        "description": "Fractional CMO services for B2B startups",
-        "founder": {
-            "@type": "Person",
-            "name": "Shashwat Ghosh",
-            "jobTitle": "Cofounder & Fractional CMO"
-        }
-    }
-    </script>
 </head>
 <body>
-    <!-- ==================== HERO ==================== -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Get your <span class="accent">GTM</span> on track</h1>
-            <p class="hero-subtitle">We build business goals at the center of our processes. Every metric that matters to you, matters to us more!</p>
-
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <h3>Plan Format</h3>
-                    <p>Strategy</p>
-                </div>
-                <div class="stat-box">
-                    <h3>Live Data</h3>
-                    <p>Analytics</p>
-                </div>
-                <div class="stat-box">
-                    <h3>Low Adoption</h3>
-                    <p>Friction</p>
-                </div>
-                <div class="stat-box">
-                    <h3>Live Churn</h3>
-                    <p>and Signals</p>
+    <div class="container" itemscope itemtype="https://schema.org/WebSite">
+        <h1 class="logo" itemprop="name">Offbeat AI Watch</h1>
+        <div class="tagline">Fortnightly Intelligence Brief</div>
+        
+        <p class="description" itemprop="description">
+            Technology moves at breathtaking speed. We distill the signal from the noise and deliver what truly matters in artificial intelligence, every fortnight.
+        </p>
+        
+        <div class="features">
+            <div class="feature-item">
+                <div class="feature-icon">🎯</div>
+                <div class="feature-text">
+                    <div class="feature-title">Unconventional Insights</div>
+                    <div class="feature-description">Beyond the headlines—we surface the AI stories others miss</div>
                 </div>
             </div>
-
-            <a href="#contact" class="cta-arrow">
-                <span>Get my GTM</span>
-                <span class="arrow">
-                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </span>
-            </a>
-        </div>
-        <div class="hero-image"></div>
-    </section>
-
-    <!-- ==================== ISSUES WE ADDRESS ==================== -->
-    <section class="issues-section">
-        <p class="section-label">Issues we address</p>
-        <div class="issues-grid">
-            <div class="issue-box">
-                <h4>Tech</h4>
-                <p>Marketing technology stack setup and optimization</p>
+            
+            <div class="feature-item">
+                <div class="feature-icon">⚡</div>
+                <div class="feature-text">
+                    <div class="feature-title">Curated Fortnightly</div>
+                    <div class="feature-description">Every alternate Wednesday, a concise intelligence brief of the fortnight's most significant AI developments</div>
+                </div>
             </div>
-            <div class="issue-box">
-                <h4>US Market</h4>
-                <p>Go-to-market strategies for US expansion</p>
-            </div>
-            <div class="issue-box">
-                <h4>ICP</h4>
-                <p>Ideal Customer Profile definition and targeting</p>
-            </div>
-            <div class="issue-box">
-                <h4>Competitor Analysis</h4>
-                <p>Market positioning and competitive intelligence</p>
-            </div>
-            <div class="issue-box">
-                <h4>Web 3</h4>
-                <p>Blockchain and decentralized marketing strategies</p>
-            </div>
-            <div class="issue-box">
-                <h4>PTLF</h4>
-                <p>Product-to-lead framework optimization</p>
-            </div>
-            <div class="issue-box">
-                <h4>Design</h4>
-                <p>Brand identity and marketing collateral</p>
-            </div>
-            <div class="issue-box">
-                <h4>Headcount</h4>
-                <p>Team structure and hiring roadmap</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== VISION SECTION ==================== -->
-    <section class="vision-section">
-        <div class="vision-content">
-            <h2>Your vision needs a unique <span class="accent">GTM</span> plan.</h2>
-            <p>Skip the GTM fluff from your SG's funders!! Our team of experts focus on your product fit. Our scientific framework works for any GTM maturity.</p>
-            <ul>
-                <li>EPIC is data company that understands GTM better.</li>
-                <li>We build a tool for every business framework we use.</li>
-                <li>Our GTM work is a subset of the frameworks, our data products are the driver.</li>
-                <li>We are product-led company, our tools are the product.</li>
-            </ul>
-            <a href="#offering" class="cta-arrow">
-                <span>Let's make GTM</span>
-                <span class="arrow">
-                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </span>
-            </a>
-        </div>
-        <div class="vision-image"></div>
-    </section>
-
-    <!-- ==================== GO EPIC SECTION ==================== -->
-    <section class="epic-section">
-        <div class="epic-header">
-            <h2>Go <span class="accent">Epic</span> or Go Home</h2>
-        </div>
-
-        <div class="features-grid">
-            <div class="feature-card">
-                <h4>Funnel Growth</h4>
-                <p>Optimize every stage of your sales funnel for maximum conversion and growth velocity.</p>
-            </div>
-            <div class="feature-card">
-                <h4>Deal Support</h4>
-                <p>Strategic support for high-value deals with targeted marketing and sales enablement.</p>
-            </div>
-            <div class="feature-card">
-                <h4>Content</h4>
-                <p>Content strategy that drives demand gen and positions you as a thought leader.</p>
-            </div>
-        </div>
-
-        <!-- Activate Your Ecosystem -->
-        <div class="ecosystem-section">
-            <div class="ecosystem-content">
-                <h3>Activate Your <span class="accent">Ecosystem</span></h3>
-                <ul class="ecosystem-list">
-                    <li><span class="dot"></span> Alliances</li>
-                    <li><span class="dot"></span> Academia</li>
-                    <li><span class="dot"></span> Communities</li>
-                    <li><span class="dot"></span> Analysts</li>
-                </ul>
-            </div>
-            <div class="ecosystem-visual">
-                <div class="ecosystem-diagram">
-                    <div class="eco-center"><span>Your<br>Ecosystem</span></div>
-                    <div class="eco-node">Partners</div>
-                    <div class="eco-node">Analysts</div>
-                    <div class="eco-node">Media</div>
-                    <div class="eco-node">Communities</div>
-                    <div class="eco-node">Academia</div>
-                    <div class="eco-node">Alliances</div>
+            
+            <div class="feature-item">
+                <div class="feature-icon">🧠</div>
+                <div class="feature-text">
+                    <div class="feature-title">Signal Over Noise</div>
+                    <div class="feature-description">Cutting through the hype to deliver actionable intelligence on AI trends</div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- ==================== GTM OFFERING GRID ==================== -->
-    <section class="offering-section" id="offering">
-        <div class="offering-header">
-            <h2>Go To Market</h2>
+        
+        <div class="cta-section">
+            <form class="subscribe-form" action="https://formspree.io/f/mnngzoee" method="POST" id="subscribeForm">
+                <input type="email" name="email" class="email-input" placeholder="Enter your email" required aria-label="Email address">
+                <input type="hidden" name="_subject" value="New Offbeat AI Watch Subscriber">
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+            <div class="privacy-note">No spam. Unsubscribe anytime. Your email stays private.</div>
         </div>
-
-        <div class="offering-grid">
-            <div class="offering-sidebar">
-                <div class="sidebar-item">How to start</div>
-                <div class="sidebar-item highlight">Workshops</div>
-                <div class="sidebar-item highlight">Sandstorm Essentials</div>
-                <div class="sidebar-item highlight">Technosync</div>
-                <div class="sidebar-item highlight">GTM Goals</div>
-                <div class="sidebar-item highlight">FCPS Auditor</div>
-                <div class="sidebar-item highlight">Speed version</div>
-                <div class="sidebar-item highlight">PLG Assets</div>
+        
+        <article class="latest-issue">
+            <h2>Latest Issue</h2>
+            <div class="issue-preview" itemscope itemtype="https://schema.org/NewsArticle">
+                <div class="issue-date">ISSUE #6 • JAN 7, 2026</div>
+                <div class="issue-title" itemprop="headline">Google December 2025 Core Update: What B2B Marketers Need to Know</div>
+                <div class="issue-excerpt" itemprop="description">
+                    The latest core update shakes up search rankings with a focus on AI-generated content quality and E-E-A-T signals.
+                </div>
+                <a href="https://gtmhelix.com/ai-trendwatch/issues/2026-01-07.html" class="read-more" itemprop="url">Read Full Issue</a>
             </div>
-
-            <div class="offering-category">
-                <div class="offering-category-header">SaaS GTM</div>
-                <div class="offering-item">PLG Setup</div>
-                <div class="offering-item">Product Analysis</div>
-                <div class="offering-item">In-product Engagement</div>
-                <div class="offering-item">Metric Dashboards</div>
-                <div class="offering-item">Product Hook Design</div>
-                <div class="offering-item">Product Viral Design</div>
-                <div class="offering-item">Community</div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="https://gtmhelix.com/ai-trendwatch/archive.html" style="color: #0066cc; text-decoration: none; font-weight: 600; font-size: 14px;">View All Issues →</a>
             </div>
-
-            <div class="offering-category">
-                <div class="offering-category-header">Enterprise GTM</div>
-                <div class="offering-item">Inbound Marketing</div>
-                <div class="offering-item">Employee Marketing</div>
-                <div class="offering-item">Outbound Marketing</div>
-                <div class="offering-item">Performance Marketing</div>
-                <div class="offering-item">Marketing Tech Stack</div>
-                <div class="offering-item">ABM</div>
-                <div class="offering-item">Customer Upsell Marketing</div>
-            </div>
-
-            <div class="offering-category">
-                <div class="offering-category-header">Tech Stack</div>
-                <div class="offering-item">Marketing Tech Stack</div>
-                <div class="offering-item">Sales Enablement</div>
-                <div class="offering-item">Dashboard Creation</div>
-                <div class="offering-item">Events, Roundtables, Advisory boards</div>
-                <div class="offering-item">AI & ML</div>
-                <div class="offering-item">Channel/Partners</div>
-            </div>
-
-            <div class="offering-category">
-                <div class="offering-category-header">Marketing Essentials</div>
-                <div class="offering-item">Competitor Analysis</div>
-                <div class="offering-item">ICP</div>
-                <div class="offering-item">Positioning</div>
-                <div class="offering-item">Branding</div>
-                <div class="offering-item">Messaging</div>
-                <div class="offering-item">Content Marketing</div>
-                <div class="offering-item">Pitch Cookbook</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==================== CTA SECTION ==================== -->
-    <section class="cta-section" id="contact">
-        <div class="cta-container">
-            <div class="cta-text">
-                <h2>Let's make a <span class="accent">GTM</span> plan now</h2>
-                <p>Ready to accelerate your go-to-market? Let's talk.</p>
-            </div>
-            <a href="mailto:shashwat@gtmhelix.com" class="cta-arrow-large">
-                <span class="arrow">
-                    <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </span>
-            </a>
-        </div>
-    </section>
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer>
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <h3>GTM <span class="accent">Helix</span></h3>
-                <p>Fractional CMO services for B2B startups. Get your GTM on track.</p>
-            </div>
-            <div class="footer-col">
-                <h4>Services</h4>
-                <ul>
-                    <li><a href="#offering">SaaS GTM</a></li>
-                    <li><a href="#offering">Enterprise GTM</a></li>
-                    <li><a href="#offering">Tech Stack</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Resources</h4>
-                <ul>
-                    <li><a href="https://gtmhelix.com/ai-trendwatch/archive.html">Newsletter</a></li>
-                    <li><a href="https://gtmhelix.com/ai-trendwatch/feed.xml">RSS</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>Connect</h4>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/" target="_blank">LinkedIn</a></li>
-                    <li><a href="mailto:shashwat@gtmhelix.com">Email</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 <a href="https://gtmhelix.com">GTM Helix</a>. Built by Shashwat Ghosh.</p>
-        </div>
-    </footer>
+        </article>
+        
+        <footer class="footer" role="contentinfo">
+            <p>© 2026 Offbeat AI Watch • By <span itemprop="author" itemscope itemtype="https://schema.org/Person"><a href="https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/" itemprop="url" style="color: #999999; text-decoration: none;"><span itemprop="name">Shashwat Ghosh</span></a>, <span itemprop="affiliation">Helix Consulting</span></span></p>
+        </footer>
+    </div>
+    <script>
+    document.getElementById('subscribeForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const form = this;
+        const email = form.querySelector('input[type="email"]').value;
+        const button = form.querySelector('button');
+        const originalText = button.textContent;
+        
+        // Show loading state
+        button.disabled = true;
+        button.textContent = 'Subscribing...';
+        
+        // Submit form
+        fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                // Success!
+                form.innerHTML = `
+                    <div style="text-align: center; padding: 30px; background: #28a745; color: white; border-radius: 8px;">
+                        <div style="font-size: 48px; margin-bottom: 15px;">✅</div>
+                        <h3 style="margin-bottom: 10px; font-size: 20px;">Successfully Subscribed!</h3>
+                        <p style="font-size: 14px; opacity: 0.9;">Check your email (${email}) for confirmation.</p>
+                    </div>
+                `;
+            } else {
+                throw new Error('Subscription failed');
+            }
+        })
+        .catch(error => {
+            // Error handling
+            button.disabled = false;
+            button.textContent = originalText;
+            alert('Oops! Something went wrong. Please try again.');
+        });
+    });
+    </script>
+    
+    <!-- Google Reader Revenue Manager - Newsletter Signup (Loaded Dynamically) -->
+    <div id="newsletter-signup-container"></div>
+    <script>
+    fetch('/ai-trendwatch/newsletter-signup.html')
+      .then(response => response.text())
+      .then(html => {
+        const container = document.getElementById('newsletter-signup-container');
+        container.innerHTML = html;
+        // Execute any scripts in the loaded content
+        const scripts = container.getElementsByTagName('script');
+        for (let script of scripts) {
+          const newScript = document.createElement('script');
+          if (script.src) {
+            newScript.src = script.src;
+            newScript.async = script.async;
+            newScript.type = script.type || 'text/javascript';
+          } else {
+            newScript.textContent = script.textContent;
+          }
+          document.body.appendChild(newScript);
+        }
+      })
+      .catch(err => console.log('Newsletter signup script not loaded:', err));
+    </script>
 </body>
 </html>
