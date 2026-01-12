@@ -101,6 +101,15 @@ All images must use exact filenames as listed in `images/` folder:
 | Broken images | Filename mismatch in HTML vs actual files | Use exact filenames from images/ folder |
 | Old design showing after deploy | CDN caching | Always flush GoDaddy cache after deploy |
 | Redirect loops on issue pages | Migration created redirect stubs | Never use redirect stubs, always full content |
+| Light mode CSS incomplete | `@media (prefers-color-scheme: light)` missing some CSS classes | Add ALL CSS classes to light mode override, especially `.tech-*`, `.mini-*`, `.category-header` |
+| Email form goes to wrong newsletter | Google Reader Revenue Manager `isPartOfProductId` linked to wrong publication | Update in Google Publisher Center admin console |
+
+### Google Reader Revenue Manager Configuration
+The email signup uses Google Reader Revenue Manager. The `isPartOfProductId` in `newsletter-signup.html` must match your Google Publisher Center publication:
+```javascript
+isPartOfProductId: "CAow6-rBDA:openaccess"  // Update this in Google Publisher Center
+```
+To change the linked publication, update your settings at [Google Publisher Center](https://publishercenter.google.com/).
 
 ## 📄 License
 
