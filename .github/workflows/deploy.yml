@@ -21,16 +21,30 @@ jobs:
           lftp -u "${{ secrets.FTP_USERNAME }},${{ secrets.FTP_PASSWORD }}" \
             -e "set sftp:auto-confirm yes; \
             set cmd:fail-exit yes; \
-            debug 3; \
+            echo '=== ROOT DIRECTORY ==='; \
             pwd; \
-            ls -la; \
+            ls -l; \
+            echo '=== CHECKING HTML SYMLINK ==='; \
+            ls -l html; \
+            echo '=== EXPLORING HTML DIRECTORY ==='; \
+            cd html; \
+            pwd; \
+            ls -l; \
+            echo '=== CHECKING FOR AI-TRENDWATCH IN HTML ==='; \
+            ls -l ai-trendwatch 2>/dev/null || echo 'No ai-trendwatch in html'; \
+            echo '=== GOING BACK TO ROOT ==='; \
+            cd /; \
+            pwd; \
+            echo '=== NOW CD TO AI-TRENDWATCH ==='; \
             cd ai-trendwatch; \
             pwd; \
-            ls -la; \
+            ls -l; \
+            echo '=== STARTING MIRROR ==='; \
             mirror -R -v --ignore-time --delete --exclude .git/ --exclude .github/ --exclude README.md \
             --exclude DEPLOYMENT.md --exclude PACKAGE-CONTENTS.md \
             --exclude NEWSLETTER_GUIDELINES.md --exclude SUBMISSION_GUIDE.md \
             ./ .; \
-            ls -la; \
+            echo '=== AFTER MIRROR ==='; \
+            ls -l; \
             quit" \
             sftp://${{ secrets.FTP_SERVER }}
