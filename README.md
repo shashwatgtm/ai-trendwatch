@@ -101,6 +101,15 @@ All images must use exact filenames as listed in `images/` folder:
 | Broken images | Filename mismatch in HTML vs actual files | Use exact filenames from images/ folder |
 | Old design showing after deploy | CDN caching | Always flush GoDaddy cache after deploy |
 | Redirect loops on issue pages | Migration created redirect stubs | Never use redirect stubs, always full content |
+| Light mode CSS incomplete | `@media (prefers-color-scheme: light)` missing some CSS classes | Add ALL CSS classes to light mode override, especially `.tech-*`, `.mini-*`, `.category-header` |
+| Email form goes to wrong newsletter | Homepage form action pointed to `gtmexpert.substack.com` instead of Formspree | Always use Formspree endpoint: `https://formspree.io/f/mnngzoee` |
+
+### Email Subscription Configuration
+The homepage uses Formspree for email collection:
+```html
+<form action="https://formspree.io/f/mnngzoee" method="POST">
+```
+Issue pages use Google Reader Revenue Manager (separate from homepage form).
 
 ## 📄 License
 
