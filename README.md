@@ -102,14 +102,14 @@ All images must use exact filenames as listed in `images/` folder:
 | Old design showing after deploy | CDN caching | Always flush GoDaddy cache after deploy |
 | Redirect loops on issue pages | Migration created redirect stubs | Never use redirect stubs, always full content |
 | Light mode CSS incomplete | `@media (prefers-color-scheme: light)` missing some CSS classes | Add ALL CSS classes to light mode override, especially `.tech-*`, `.mini-*`, `.category-header` |
-| Email form goes to wrong newsletter | Google Reader Revenue Manager `isPartOfProductId` linked to wrong publication | Update in Google Publisher Center admin console |
+| Email form goes to wrong newsletter | Homepage form action pointed to `gtmexpert.substack.com` instead of Formspree | Always use Formspree endpoint: `https://formspree.io/f/mnngzoee` |
 
-### Google Reader Revenue Manager Configuration
-The email signup uses Google Reader Revenue Manager. The `isPartOfProductId` in `newsletter-signup.html` must match your Google Publisher Center publication:
-```javascript
-isPartOfProductId: "CAow6-rBDA:openaccess"  // Update this in Google Publisher Center
+### Email Subscription Configuration
+The homepage uses Formspree for email collection:
+```html
+<form action="https://formspree.io/f/mnngzoee" method="POST">
 ```
-To change the linked publication, update your settings at [Google Publisher Center](https://publishercenter.google.com/).
+Issue pages use Google Reader Revenue Manager (separate from homepage form).
 
 ## 📄 License
 
