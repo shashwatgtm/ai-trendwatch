@@ -5,13 +5,33 @@
     <link>https://gtmhelix.com/ai-trendwatch/</link>
     <description>Fortnightly intelligence brief on AI infrastructure, GTM strategy, and regulatory developments for B2B companies. No fluff—just verified signals that matter.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jan 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://gtmhelix.com/ai-trendwatch/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://gtmhelix.com/ai-trendwatch/images/logo.png</url>
       <title>Offbeat AI Watch</title>
       <link>https://gtmhelix.com/ai-trendwatch/</link>
     </image>
+
+    <!-- Special Research Report: India AI Myth Busted -->
+    <item>
+      <title>India AI Myth Busted: Informed Optimism - Google/Ipsos 2025 Survey Analysis</title>
+      <link>https://gtmhelix.com/ai-trendwatch/india-ai-myth-busted.html</link>
+      <description>India leads globally in AI adoption (86%), knowledge (39%), and optimism (69% net positive). Interactive dashboard analyzing Google/Ipsos 2025 AI survey reveals India's unique position of "informed optimism" - combining high AI knowledge with positive sentiment, countering the global pattern of knowledge correlating with skepticism.</description>
+      <pubDate>Tue, 21 Jan 2026 00:00:00 GMT</pubDate>
+      <guid>https://gtmhelix.com/ai-trendwatch/india-ai-myth-busted.html</guid>
+      <author>Shashwat Ghosh</author>
+      <category>Research Report</category>
+      <category>India AI</category>
+      <category>AI Survey</category>
+      <category>Google Ipsos</category>
+      <category>AI Adoption</category>
+      <category>AI Knowledge</category>
+      <category>AI Sentiment</category>
+      <category>Workplace AI</category>
+      <category>Enterprise AI</category>
+      <category>GTM Strategy</category>
+    </item>
 
     <!-- Issue #6 -->
     <item>
