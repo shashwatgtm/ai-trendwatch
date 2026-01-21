@@ -4,13 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>India AI Myth Busted | Offbeat AI Watch</title>
-    <meta name="description" content="Google/Ipsos 2025 survey reveals India leads globally in AI adoption, knowledge, and optimism. Interactive dashboard by Shashwat Ghosh.">
+    <meta name="description" content="Google/Ipsos 2025 survey reveals India leads globally in AI adoption, knowledge, and optimism. Interactive dashboard by Shashwat Ghosh, GTM strategist.">
     <meta name="author" content="Shashwat Ghosh">
-    <meta property="og:title" content="India AI Myth Busted - Informed Optimism">
-    <meta property="og:description" content="India leads on every AI benchmark. 86% usage, 39% deep knowledge, 69% net positive sentiment.">
+    <meta name="keywords" content="India AI adoption, AI survey 2025, Google Ipsos AI, B2B AI GTM strategy, Shashwat Ghosh, Helix GTM Consulting">
+    <meta property="og:title" content="India AI Myth Busted - Informed Optimism | Shashwat Ghosh">
+    <meta property="og:description" content="India leads on every AI benchmark. 86% usage, 39% deep knowledge, 69% net positive sentiment. Analysis by GTM expert Shashwat Ghosh.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://gtmhelix.com/ai-trendwatch/india-ai-myth-busted.html">
     <link rel="canonical" href="https://gtmhelix.com/ai-trendwatch/india-ai-myth-busted.html">
+
+    <!-- Schema.org for SEO/EEAT -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "India AI Myth Busted: Informed Optimism",
+        "author": {
+            "@type": "Person",
+            "name": "Shashwat Ghosh",
+            "url": "https://www.linkedin.com/in/shashwatghosh/",
+            "jobTitle": "Founder & GTM Strategist",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Helix GTM Consulting",
+                "url": "https://gtmhelix.com"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Helix GTM Consulting",
+            "url": "https://gtmhelix.com"
+        },
+        "datePublished": "2025-01-21",
+        "description": "Analysis of Google/Ipsos 2025 AI survey showing India leads globally in AI adoption, knowledge, and optimism."
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -34,749 +63,586 @@
     </script>
     <style>
         .no-select { user-select: none; -webkit-user-select: none; }
-        .chart-bar { transition: all 0.3s ease; }
-        .chart-bar:hover { filter: brightness(1.1); }
+        .quote-box {
+            background: linear-gradient(135deg, rgba(249,115,22,0.1) 0%, rgba(245,158,11,0.05) 100%);
+            border-left: 3px solid #f97316;
+        }
+        .author-card {
+            background: linear-gradient(180deg, rgba(41,37,36,0.9) 0%, rgba(28,25,23,0.95) 100%);
+        }
     </style>
 </head>
 <body class="no-select bg-stone-950 min-h-screen" oncontextmenu="return false;">
     <div id="root" class="p-4 md:p-6 text-white">
         <div class="max-w-7xl mx-auto">
-            <!-- Header -->
-            <div class="mb-6 bg-stone-800/80 rounded-xl border border-stone-700/50 p-4 md:p-6">
-                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                    <div class="flex items-center gap-3 md:gap-4">
-                        <span class="text-4xl">🇮🇳</span>
-                        <div>
-                            <h1 class="text-xl md:text-2xl font-bold text-white">India AI Myth Busted</h1>
-                            <p class="text-stone-500 text-xs">Google/Ipsos "Our Life With AI" 2025 | 21,043 respondents | 21 countries</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <img src="https://media.licdn.com/dms/image/v2/D5603AQHPAun1NQMRBQ/profile-displayphoto-shrink_400_400/B56ZaRzruUHoAg-/0/1746202879498?e=1753920000&v=beta&t=xb4k0fzn3xNxw66K_f_Kg6UvfbY_vJTUZxqNLDp5zMY" alt="Shashwat Ghosh" class="w-10 h-10 rounded-full border-2 border-orange-500 object-cover" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22><rect fill=%22%23f97316%22 width=%2240%22 height=%2240%22 rx=%2220%22/><text x=%2250%%22 y=%2255%%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2216%22 font-weight=%22bold%22>SG</text></svg>'">
-                        <div class="text-right">
-                            <p class="text-white text-sm font-medium">Shashwat Ghosh</p>
-                            <p class="text-stone-500 text-xs">Helix GTM Consulting</p>
-                        </div>
+
+            <!-- Top Branding Bar -->
+            <div class="flex items-center justify-between mb-4 pb-4 border-b border-stone-800">
+                <div class="flex items-center gap-3">
+                    <span class="text-3xl">🇮🇳</span>
+                    <div>
+                        <h1 class="text-lg md:text-xl font-bold text-white">India AI Myth Busted</h1>
+                        <p class="text-stone-500 text-xs">Google/Ipsos 2025 Survey Analysis</p>
                     </div>
                 </div>
-                <p class="text-orange-400 font-medium mt-3 flex items-center gap-2 text-sm">
-                    💡 Narrative: Informed Optimism — Indians KNOW AI deeply AND are more optimistic AND less worried
-                </p>
+                <div class="flex items-center gap-4">
+                    <div class="hidden md:block text-right">
+                        <p class="text-stone-400 text-xs">Research by</p>
+                        <p class="text-white text-sm font-semibold">Shashwat Ghosh</p>
+                    </div>
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQHPAun1NQMRBQ/profile-displayphoto-shrink_400_400/B56ZaRzruUHoAg-/0/1746202879498?e=1753920000&v=beta&t=xb4k0fzn3xNxw66K_f_Kg6UvfbY_vJTUZxqNLDp5zMY" alt="Shashwat Ghosh" class="w-10 h-10 rounded-full border-2 border-orange-500 object-cover" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22><rect fill=%22%23f97316%22 width=%2240%22 height=%2240%22 rx=%2220%22/><text x=%2250%%22 y=%2255%%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2216%22 font-weight=%22bold%22>SG</text></svg>'">
+                    <div class="h-8 w-px bg-stone-700 hidden md:block"></div>
+                    <a href="https://gtmhelix.com" target="_blank" rel="noopener" class="hidden md:flex items-center gap-2">
+                        <div class="flex flex-col leading-none">
+                            <span class="text-red-500 font-black text-sm tracking-tight">HELIX</span>
+                            <span class="text-white text-[8px] tracking-widest">CONSULTING</span>
+                        </div>
+                    </a>
+                </div>
             </div>
 
             <!-- Tab Navigation -->
-            <div class="flex flex-wrap gap-2 mb-6" id="tabs">
-                <button onclick="showTab('overview')" data-tab="overview" class="tab-btn active px-4 py-2 rounded-lg font-medium text-sm flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-lg">📊 Overview</button>
-                <button onclick="showTab('informed')" data-tab="informed" class="tab-btn px-4 py-2 rounded-lg font-medium text-sm flex items-center gap-2 bg-stone-800/80 text-stone-400 hover:bg-stone-700 border border-stone-700/50">🧠 Informed Optimism</button>
-                <button onclick="showTab('sentiment')" data-tab="sentiment" class="tab-btn px-4 py-2 rounded-lg font-medium text-sm flex items-center gap-2 bg-stone-800/80 text-stone-400 hover:bg-stone-700 border border-stone-700/50">😊 Sentiment</button>
-                <button onclick="showTab('workplace')" data-tab="workplace" class="tab-btn px-4 py-2 rounded-lg font-medium text-sm flex items-center gap-2 bg-stone-800/80 text-stone-400 hover:bg-stone-700 border border-stone-700/50">💼 Workplace</button>
-                <button onclick="showTab('trust')" data-tab="trust" class="tab-btn px-4 py-2 rounded-lg font-medium text-sm flex items-center gap-2 bg-stone-800/80 text-stone-400 hover:bg-stone-700 border border-stone-700/50">🤝 Trust</button>
-                <button onclick="showTab('compare')" data-tab="compare" class="tab-btn px-4 py-2 rounded-lg font-medium text-sm flex items-center gap-2 bg-stone-800/80 text-stone-400 hover:bg-stone-700 border border-stone-700/50">🌍 Countries</button>
-                <button onclick="showTab('gtm')" data-tab="gtm" class="tab-btn px-4 py-2 rounded-lg font-medium text-sm flex items-center gap-2 bg-stone-800/80 text-stone-400 hover:bg-stone-700 border border-stone-700/50">🎯 GTM Playbook</button>
+            <div class="flex flex-wrap gap-2 mb-5" id="tabs">
+                <button onclick="showTab('overview')" data-tab="overview" class="tab-btn active px-3 py-2 rounded-lg font-medium text-xs md:text-sm flex items-center gap-1.5 bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-lg">📊 <span class="hidden sm:inline">Overview</span></button>
+                <button onclick="showTab('informed')" data-tab="informed" class="tab-btn px-3 py-2 rounded-lg font-medium text-xs md:text-sm flex items-center gap-1.5 bg-stone-800/80 text-stone-400 hover:bg-stone-700 border border-stone-700/50">🧠 <span class="hidden sm:inline">Informed Optimism</span></button>
+                <button onclick="showTab('sentiment')" data-tab="sentiment" class="tab-btn px-3 py-2 rounded-lg font-medium text-xs md:text-sm flex items-center gap-1.5 bg-stone-800/80 text-stone-400 hover:bg-stone-700 border border-stone-700/50">😊 <span class="hidden sm:inline">Sentiment</span></button>
+                <button onclick="showTab('workplace')" data-tab="workplace" class="tab-btn px-3 py-2 rounded-lg font-medium text-xs md:text-sm flex items-center gap-1.5 bg-stone-800/80 text-stone-400 hover:bg-stone-700 border border-stone-700/50">💼 <span class="hidden sm:inline">Workplace</span></button>
+                <button onclick="showTab('trust')" data-tab="trust" class="tab-btn px-3 py-2 rounded-lg font-medium text-xs md:text-sm flex items-center gap-1.5 bg-stone-800/80 text-stone-400 hover:bg-stone-700 border border-stone-700/50">🤝 <span class="hidden sm:inline">Trust</span></button>
+                <button onclick="showTab('compare')" data-tab="compare" class="tab-btn px-3 py-2 rounded-lg font-medium text-xs md:text-sm flex items-center gap-1.5 bg-stone-800/80 text-stone-400 hover:bg-stone-700 border border-stone-700/50">🌍 <span class="hidden sm:inline">Countries</span></button>
+                <button onclick="showTab('gtm')" data-tab="gtm" class="tab-btn px-3 py-2 rounded-lg font-medium text-xs md:text-sm flex items-center gap-1.5 bg-stone-800/80 text-stone-400 hover:bg-stone-700 border border-stone-700/50">🎯 <span class="hidden sm:inline">GTM Playbook</span></button>
             </div>
 
-            <!-- Tab Content -->
-            <div id="tab-content">
-                <!-- Overview Tab -->
-                <div id="overview" class="tab-panel space-y-6">
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-                        <div class="p-4 rounded-xl bg-gradient-to-br from-orange-500 to-amber-600" style="box-shadow: 0 8px 32px rgba(249,115,22,0.25)">
-                            <h3 class="text-xs font-medium text-orange-100">AI Usage (Q3)</h3>
-                            <div class="mt-2 flex items-baseline gap-2"><span class="text-2xl font-bold text-white">86%</span><span class="text-xs text-orange-200">IND</span></div>
-                            <div class="mt-1 flex items-center gap-2"><span class="text-xs text-orange-100">vs 66% Global</span><span class="text-xs px-2 py-0.5 rounded-full font-semibold bg-orange-900/40 text-orange-200">+20pp</span></div>
-                        </div>
-                        <div class="p-4 rounded-xl bg-stone-800/80 border border-stone-700/50">
-                            <h3 class="text-xs font-medium text-stone-400">AI Knowledge (Q1)</h3>
-                            <div class="mt-2 flex items-baseline gap-2"><span class="text-2xl font-bold text-orange-400">39%</span><span class="text-xs text-stone-500">IND</span></div>
-                            <div class="mt-1 flex items-center gap-2"><span class="text-xs text-stone-500">vs 14% Global</span><span class="text-xs px-2 py-0.5 rounded-full font-semibold bg-orange-900/40 text-orange-300">+25pp</span></div>
-                        </div>
-                        <div class="p-4 rounded-xl bg-stone-800/80 border border-stone-700/50">
-                            <h3 class="text-xs font-medium text-stone-400">Pure Excitement</h3>
-                            <div class="mt-2 flex items-baseline gap-2"><span class="text-2xl font-bold text-orange-400">31%</span><span class="text-xs text-stone-500">IND</span></div>
-                            <div class="mt-1 flex items-center gap-2"><span class="text-xs text-stone-500">vs 16% Global</span><span class="text-xs px-2 py-0.5 rounded-full font-semibold bg-orange-900/40 text-orange-300">+15pp</span></div>
-                        </div>
-                        <div class="p-4 rounded-xl bg-gradient-to-br from-orange-500 to-amber-600" style="box-shadow: 0 8px 32px rgba(249,115,22,0.25)">
-                            <h3 class="text-xs font-medium text-orange-100">Net Positive</h3>
-                            <div class="mt-2 flex items-baseline gap-2"><span class="text-2xl font-bold text-white">69%</span><span class="text-xs text-orange-200">IND</span></div>
-                            <div class="mt-1 flex items-center gap-2"><span class="text-xs text-orange-100">vs 53% Global</span><span class="text-xs px-2 py-0.5 rounded-full font-semibold bg-orange-900/40 text-orange-200">+16pp</span></div>
-                        </div>
-                        <div class="p-4 rounded-xl bg-stone-800/80 border border-stone-700/50">
-                            <h3 class="text-xs font-medium text-stone-400">Job Optimism</h3>
-                            <div class="mt-2 flex items-baseline gap-2"><span class="text-2xl font-bold text-orange-400">69%</span><span class="text-xs text-stone-500">IND</span></div>
-                            <div class="mt-1 flex items-center gap-2"><span class="text-xs text-stone-500">vs 49% Global</span><span class="text-xs px-2 py-0.5 rounded-full font-semibold bg-orange-900/40 text-orange-300">+20pp</span></div>
-                        </div>
-                        <div class="p-4 rounded-xl bg-stone-800/80 border border-stone-700/50">
-                            <h3 class="text-xs font-medium text-stone-400">Data Trust</h3>
-                            <div class="mt-2 flex items-baseline gap-2"><span class="text-2xl font-bold text-orange-400">72%</span><span class="text-xs text-stone-500">IND</span></div>
-                            <div class="mt-1 flex items-center gap-2"><span class="text-xs text-stone-500">vs 53% Global</span><span class="text-xs px-2 py-0.5 rounded-full font-semibold bg-orange-900/40 text-orange-300">+19pp</span></div>
-                        </div>
-                    </div>
+            <!-- Main Content Area -->
+            <div class="grid lg:grid-cols-4 gap-5">
+                <!-- Left: Tab Content (3 cols) -->
+                <div class="lg:col-span-3">
+                    <div id="tab-content">
 
-                    <!-- Radar Chart Visualization -->
-                    <div class="bg-stone-800/80 p-6 rounded-xl border border-stone-700/50">
-                        <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">🎯 India vs World: The Gap</h2>
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div class="space-y-4">
-                                <div class="space-y-2">
-                                    <div class="flex justify-between text-sm"><span class="text-stone-300">AI Usage</span><span class="text-orange-400 font-bold">86% vs 66%</span></div>
-                                    <div class="h-3 bg-stone-700 rounded-full overflow-hidden flex">
-                                        <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" style="width: 86%"></div>
+                        <!-- Overview Tab -->
+                        <div id="overview" class="tab-panel space-y-5">
+                            <!-- Quote Box -->
+                            <div class="quote-box p-4 rounded-lg">
+                                <p class="text-stone-300 italic text-sm">"The data is unequivocal: India isn't just adopting AI—it's leading the global conversation. When 86% of a population uses AI and 39% deeply understand it, you're not looking at an emerging market. You're looking at a leading indicator."</p>
+                                <p class="text-orange-400 text-xs mt-2 font-semibold">— Shashwat Ghosh, Founder, Helix GTM Consulting</p>
+                            </div>
+
+                            <div class="grid grid-cols-2 md:grid-cols-3 gap-3">
+                                <div class="p-4 rounded-xl bg-gradient-to-br from-orange-500 to-amber-600" style="box-shadow: 0 8px 32px rgba(249,115,22,0.25)">
+                                    <h3 class="text-xs font-medium text-orange-100">AI Usage (Q3)</h3>
+                                    <div class="mt-2 flex items-baseline gap-2"><span class="text-2xl font-bold text-white">86%</span><span class="text-xs text-orange-200">IND</span></div>
+                                    <div class="mt-1 flex items-center gap-2"><span class="text-xs text-orange-100">vs 66% Global</span><span class="text-xs px-2 py-0.5 rounded-full font-semibold bg-orange-900/40 text-orange-200">+20pp</span></div>
+                                </div>
+                                <div class="p-4 rounded-xl bg-stone-800/80 border border-stone-700/50">
+                                    <h3 class="text-xs font-medium text-stone-400">AI Knowledge (Q1)</h3>
+                                    <div class="mt-2 flex items-baseline gap-2"><span class="text-2xl font-bold text-orange-400">39%</span><span class="text-xs text-stone-500">IND</span></div>
+                                    <div class="mt-1 flex items-center gap-2"><span class="text-xs text-stone-500">vs 14% Global</span><span class="text-xs px-2 py-0.5 rounded-full font-semibold bg-orange-900/40 text-orange-300">+25pp</span></div>
+                                </div>
+                                <div class="p-4 rounded-xl bg-stone-800/80 border border-stone-700/50">
+                                    <h3 class="text-xs font-medium text-stone-400">Pure Excitement</h3>
+                                    <div class="mt-2 flex items-baseline gap-2"><span class="text-2xl font-bold text-orange-400">31%</span><span class="text-xs text-stone-500">IND</span></div>
+                                    <div class="mt-1 flex items-center gap-2"><span class="text-xs text-stone-500">vs 16% Global</span><span class="text-xs px-2 py-0.5 rounded-full font-semibold bg-orange-900/40 text-orange-300">+15pp</span></div>
+                                </div>
+                                <div class="p-4 rounded-xl bg-gradient-to-br from-orange-500 to-amber-600" style="box-shadow: 0 8px 32px rgba(249,115,22,0.25)">
+                                    <h3 class="text-xs font-medium text-orange-100">Net Positive</h3>
+                                    <div class="mt-2 flex items-baseline gap-2"><span class="text-2xl font-bold text-white">69%</span><span class="text-xs text-orange-200">IND</span></div>
+                                    <div class="mt-1 flex items-center gap-2"><span class="text-xs text-orange-100">vs 53% Global</span><span class="text-xs px-2 py-0.5 rounded-full font-semibold bg-orange-900/40 text-orange-200">+16pp</span></div>
+                                </div>
+                                <div class="p-4 rounded-xl bg-stone-800/80 border border-stone-700/50">
+                                    <h3 class="text-xs font-medium text-stone-400">Job Optimism</h3>
+                                    <div class="mt-2 flex items-baseline gap-2"><span class="text-2xl font-bold text-orange-400">69%</span><span class="text-xs text-stone-500">IND</span></div>
+                                    <div class="mt-1 flex items-center gap-2"><span class="text-xs text-stone-500">vs 49% Global</span><span class="text-xs px-2 py-0.5 rounded-full font-semibold bg-orange-900/40 text-orange-300">+20pp</span></div>
+                                </div>
+                                <div class="p-4 rounded-xl bg-stone-800/80 border border-stone-700/50">
+                                    <h3 class="text-xs font-medium text-stone-400">Data Trust</h3>
+                                    <div class="mt-2 flex items-baseline gap-2"><span class="text-2xl font-bold text-orange-400">72%</span><span class="text-xs text-stone-500">IND</span></div>
+                                    <div class="mt-1 flex items-center gap-2"><span class="text-xs text-stone-500">vs 53% Global</span><span class="text-xs px-2 py-0.5 rounded-full font-semibold bg-orange-900/40 text-orange-300">+19pp</span></div>
+                                </div>
+                            </div>
+
+                            <div class="bg-stone-800/80 p-5 rounded-xl border border-stone-700/50">
+                                <h2 class="text-base font-bold text-white mb-4 flex items-center gap-2">🎯 India vs World: The Gap</h2>
+                                <div class="grid md:grid-cols-2 gap-5">
+                                    <div class="space-y-3">
+                                        <div class="space-y-1.5">
+                                            <div class="flex justify-between text-xs"><span class="text-stone-300">AI Usage</span><span class="text-orange-400 font-bold">86% vs 66%</span></div>
+                                            <div class="h-2.5 bg-stone-700 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" style="width: 86%"></div></div>
+                                            <div class="h-2.5 bg-stone-700 rounded-full overflow-hidden"><div class="h-full bg-stone-500 rounded-full" style="width: 66%"></div></div>
+                                        </div>
+                                        <div class="space-y-1.5">
+                                            <div class="flex justify-between text-xs"><span class="text-stone-300">AI Knowledge</span><span class="text-orange-400 font-bold">39% vs 14%</span></div>
+                                            <div class="h-2.5 bg-stone-700 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" style="width: 78%"></div></div>
+                                            <div class="h-2.5 bg-stone-700 rounded-full overflow-hidden"><div class="h-full bg-stone-500 rounded-full" style="width: 28%"></div></div>
+                                        </div>
+                                        <div class="space-y-1.5">
+                                            <div class="flex justify-between text-xs"><span class="text-stone-300">Excitement</span><span class="text-orange-400 font-bold">31% vs 16%</span></div>
+                                            <div class="h-2.5 bg-stone-700 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" style="width: 62%"></div></div>
+                                            <div class="h-2.5 bg-stone-700 rounded-full overflow-hidden"><div class="h-full bg-stone-500 rounded-full" style="width: 32%"></div></div>
+                                        </div>
                                     </div>
-                                    <div class="h-3 bg-stone-700 rounded-full overflow-hidden flex">
-                                        <div class="h-full bg-stone-500 rounded-full" style="width: 66%"></div>
+                                    <div class="space-y-3">
+                                        <div class="space-y-1.5">
+                                            <div class="flex justify-between text-xs"><span class="text-stone-300">Job Optimism</span><span class="text-orange-400 font-bold">69% vs 49%</span></div>
+                                            <div class="h-2.5 bg-stone-700 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" style="width: 69%"></div></div>
+                                            <div class="h-2.5 bg-stone-700 rounded-full overflow-hidden"><div class="h-full bg-stone-500 rounded-full" style="width: 49%"></div></div>
+                                        </div>
+                                        <div class="space-y-1.5">
+                                            <div class="flex justify-between text-xs"><span class="text-stone-300">Data Trust</span><span class="text-orange-400 font-bold">72% vs 53%</span></div>
+                                            <div class="h-2.5 bg-stone-700 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" style="width: 72%"></div></div>
+                                            <div class="h-2.5 bg-stone-700 rounded-full overflow-hidden"><div class="h-full bg-stone-500 rounded-full" style="width: 53%"></div></div>
+                                        </div>
+                                        <div class="space-y-1.5">
+                                            <div class="flex justify-between text-xs"><span class="text-stone-300">Net Positive</span><span class="text-orange-400 font-bold">69% vs 53%</span></div>
+                                            <div class="h-2.5 bg-stone-700 rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" style="width: 69%"></div></div>
+                                            <div class="h-2.5 bg-stone-700 rounded-full overflow-hidden"><div class="h-full bg-stone-500 rounded-full" style="width: 53%"></div></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="space-y-2">
-                                    <div class="flex justify-between text-sm"><span class="text-stone-300">AI Knowledge</span><span class="text-orange-400 font-bold">39% vs 14%</span></div>
-                                    <div class="h-3 bg-stone-700 rounded-full overflow-hidden flex">
-                                        <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" style="width: 78%"></div>
-                                    </div>
-                                    <div class="h-3 bg-stone-700 rounded-full overflow-hidden flex">
-                                        <div class="h-full bg-stone-500 rounded-full" style="width: 28%"></div>
+                                <div class="mt-3 flex items-center justify-center gap-6 text-xs">
+                                    <span class="flex items-center gap-2"><span class="w-3 h-3 rounded bg-gradient-to-r from-orange-500 to-amber-500"></span> India</span>
+                                    <span class="flex items-center gap-2"><span class="w-3 h-3 rounded bg-stone-500"></span> World</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-gradient-to-r from-orange-500 to-amber-600 p-4 rounded-xl" style="box-shadow: 0 8px 32px rgba(249,115,22,0.25)">
+                                <h2 class="text-lg font-bold mb-1 flex items-center gap-2">🏆 The Verdict: India 6/6</h2>
+                                <p class="text-orange-100 text-sm">India leads on every single benchmark metric. This isn't emergence — it's dominance.</p>
+                            </div>
+                        </div>
+
+                        <!-- Informed Optimism Tab -->
+                        <div id="informed" class="tab-panel hidden space-y-5">
+                            <div class="quote-box p-4 rounded-lg">
+                                <p class="text-stone-300 italic text-sm">"Stop calling Indian AI optimism 'naive enthusiasm.' When you're 3x more knowledgeable about AI than the global average, your optimism isn't blind—it's informed. This changes everything about how we should approach GTM in India."</p>
+                                <p class="text-orange-400 text-xs mt-2 font-semibold">— Shashwat Ghosh, Founder, Helix GTM Consulting</p>
+                            </div>
+
+                            <div class="bg-gradient-to-br from-orange-500/20 to-amber-500/10 p-5 rounded-xl border border-orange-500/30">
+                                <div class="flex items-start gap-3 mb-4">
+                                    <div class="p-2 bg-orange-500/20 rounded-lg text-2xl">🧠</div>
+                                    <div>
+                                        <h2 class="text-lg font-bold text-white">Informed Optimism</h2>
+                                        <p class="text-stone-400 text-sm">Why India's AI confidence is credible — backed by knowledge, not blind hope</p>
                                     </div>
                                 </div>
-                                <div class="space-y-2">
-                                    <div class="flex justify-between text-sm"><span class="text-stone-300">Excitement</span><span class="text-orange-400 font-bold">31% vs 16%</span></div>
-                                    <div class="h-3 bg-stone-700 rounded-full overflow-hidden flex">
-                                        <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" style="width: 62%"></div>
-                                    </div>
-                                    <div class="h-3 bg-stone-700 rounded-full overflow-hidden flex">
-                                        <div class="h-full bg-stone-500 rounded-full" style="width: 32%"></div>
+                                <div class="bg-stone-900/60 rounded-lg p-4">
+                                    <div class="flex flex-wrap items-center justify-center gap-3 text-center">
+                                        <div class="px-3 py-2 bg-stone-800 rounded-lg">
+                                            <div class="text-xl font-bold text-orange-400">3x</div>
+                                            <div class="text-[10px] text-stone-400">More Knowledgeable</div>
+                                        </div>
+                                        <div class="text-xl text-stone-600">+</div>
+                                        <div class="px-3 py-2 bg-stone-800 rounded-lg">
+                                            <div class="text-xl font-bold text-orange-400">+6%</div>
+                                            <div class="text-[10px] text-stone-400">More Optimistic</div>
+                                        </div>
+                                        <div class="text-xl text-stone-600">+</div>
+                                        <div class="px-3 py-2 bg-stone-800 rounded-lg">
+                                            <div class="text-xl font-bold text-orange-400">-11%</div>
+                                            <div class="text-[10px] text-stone-400">Less Worried</div>
+                                        </div>
+                                        <div class="text-xl text-stone-600">=</div>
+                                        <div class="px-4 py-2 bg-gradient-to-r from-orange-500 to-amber-500 rounded-lg">
+                                            <div class="text-lg font-bold text-white">Informed Optimism</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="space-y-4">
-                                <div class="space-y-2">
-                                    <div class="flex justify-between text-sm"><span class="text-stone-300">Job Optimism</span><span class="text-orange-400 font-bold">69% vs 49%</span></div>
-                                    <div class="h-3 bg-stone-700 rounded-full overflow-hidden flex">
-                                        <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" style="width: 69%"></div>
+
+                            <div class="bg-stone-800/80 p-5 rounded-xl border border-stone-700/50">
+                                <h3 class="text-base font-bold text-white mb-4 flex items-center gap-2">📊 Head-to-Head Comparison</h3>
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="flex justify-between items-center mb-1.5">
+                                            <span class="text-stone-300 font-medium text-xs">AI Knowledge — 'Know a lot about AI' (Q1)</span>
+                                            <span class="text-[10px] px-2 py-0.5 rounded-full font-semibold bg-orange-500/20 text-orange-400">India leads</span>
+                                        </div>
+                                        <div class="space-y-1.5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[10px] text-stone-500 w-10">India</span>
+                                                <div class="flex-1 h-6 bg-stone-700 rounded overflow-hidden">
+                                                    <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded flex items-center justify-end pr-2" style="width: 39%">
+                                                        <span class="text-white font-bold text-xs">39%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[10px] text-stone-500 w-10">World</span>
+                                                <div class="flex-1 h-6 bg-stone-700 rounded overflow-hidden">
+                                                    <div class="h-full bg-stone-500 rounded flex items-center justify-end pr-2" style="width: 14%">
+                                                        <span class="text-stone-300 font-bold text-xs">14%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="h-3 bg-stone-700 rounded-full overflow-hidden flex">
-                                        <div class="h-full bg-stone-500 rounded-full" style="width: 49%"></div>
+                                    <div>
+                                        <div class="flex justify-between items-center mb-1.5">
+                                            <span class="text-stone-300 font-medium text-xs">AI is Promising — Scale 1-10 (Q27)</span>
+                                            <span class="text-[10px] px-2 py-0.5 rounded-full font-semibold bg-orange-500/20 text-orange-400">India leads</span>
+                                        </div>
+                                        <div class="space-y-1.5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[10px] text-stone-500 w-10">India</span>
+                                                <div class="flex-1 h-6 bg-stone-700 rounded overflow-hidden">
+                                                    <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded flex items-center justify-end pr-2" style="width: 70.9%">
+                                                        <span class="text-white font-bold text-xs">7.09</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[10px] text-stone-500 w-10">World</span>
+                                                <div class="flex-1 h-6 bg-stone-700 rounded overflow-hidden">
+                                                    <div class="h-full bg-stone-500 rounded flex items-center justify-end pr-2" style="width: 66.7%">
+                                                        <span class="text-stone-300 font-bold text-xs">6.67</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="space-y-2">
-                                    <div class="flex justify-between text-sm"><span class="text-stone-300">Data Trust</span><span class="text-orange-400 font-bold">72% vs 53%</span></div>
-                                    <div class="h-3 bg-stone-700 rounded-full overflow-hidden flex">
-                                        <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" style="width: 72%"></div>
+                                    <div>
+                                        <div class="flex justify-between items-center mb-1.5">
+                                            <span class="text-stone-300 font-medium text-xs">AI is Concerning — Scale 1-10 (Q28)</span>
+                                            <span class="text-[10px] px-2 py-0.5 rounded-full font-semibold bg-orange-500/20 text-orange-400">India leads (lower)</span>
+                                        </div>
+                                        <div class="space-y-1.5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[10px] text-stone-500 w-10">India</span>
+                                                <div class="flex-1 h-6 bg-stone-700 rounded overflow-hidden">
+                                                    <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded flex items-center justify-end pr-2" style="width: 66.9%">
+                                                        <span class="text-white font-bold text-xs">6.69</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[10px] text-stone-500 w-10">World</span>
+                                                <div class="flex-1 h-6 bg-stone-700 rounded overflow-hidden">
+                                                    <div class="h-full bg-stone-500 rounded flex items-center justify-end pr-2" style="width: 75.2%">
+                                                        <span class="text-stone-300 font-bold text-xs">7.52</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="h-3 bg-stone-700 rounded-full overflow-hidden flex">
-                                        <div class="h-full bg-stone-500 rounded-full" style="width: 53%"></div>
-                                    </div>
-                                </div>
-                                <div class="space-y-2">
-                                    <div class="flex justify-between text-sm"><span class="text-stone-300">Net Positive</span><span class="text-orange-400 font-bold">69% vs 53%</span></div>
-                                    <div class="h-3 bg-stone-700 rounded-full overflow-hidden flex">
-                                        <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-full" style="width: 69%"></div>
-                                    </div>
-                                    <div class="h-3 bg-stone-700 rounded-full overflow-hidden flex">
-                                        <div class="h-full bg-stone-500 rounded-full" style="width: 53%"></div>
+                                    <div>
+                                        <div class="flex justify-between items-center mb-1.5">
+                                            <span class="text-stone-300 font-medium text-xs">Net Positive Sentiment (Q10)</span>
+                                            <span class="text-[10px] px-2 py-0.5 rounded-full font-semibold bg-orange-500/20 text-orange-400">India leads</span>
+                                        </div>
+                                        <div class="space-y-1.5">
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[10px] text-stone-500 w-10">India</span>
+                                                <div class="flex-1 h-6 bg-stone-700 rounded overflow-hidden">
+                                                    <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded flex items-center justify-end pr-2" style="width: 69%">
+                                                        <span class="text-white font-bold text-xs">69%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="flex items-center gap-2">
+                                                <span class="text-[10px] text-stone-500 w-10">World</span>
+                                                <div class="flex-1 h-6 bg-stone-700 rounded overflow-hidden">
+                                                    <div class="h-full bg-stone-500 rounded flex items-center justify-end pr-2" style="width: 53%">
+                                                        <span class="text-stone-300 font-bold text-xs">53%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="mt-4 flex items-center justify-center gap-6 text-sm">
-                            <span class="flex items-center gap-2"><span class="w-4 h-4 rounded bg-gradient-to-r from-orange-500 to-amber-500"></span> India</span>
-                            <span class="flex items-center gap-2"><span class="w-4 h-4 rounded bg-stone-500"></span> World</span>
-                        </div>
-                    </div>
 
-                    <div class="bg-gradient-to-r from-orange-500 to-amber-600 p-5 rounded-xl" style="box-shadow: 0 8px 32px rgba(249,115,22,0.25)">
-                        <h2 class="text-xl font-bold mb-2 flex items-center gap-3">🏆 The Verdict: India 6/6</h2>
-                        <p class="text-orange-100">India leads on every single benchmark metric. This isn't emergence — it's dominance.</p>
+                            <div class="bg-gradient-to-r from-orange-500 to-amber-600 p-4 rounded-xl">
+                                <h2 class="text-base font-bold mb-1 flex items-center gap-2">💡 The Strategic Takeaway</h2>
+                                <p class="text-orange-100 text-sm">Indians aren't optimistic because they don't understand AI risks. They're optimistic <span class="font-bold text-white">because</span> they understand AI deeply. This is <span class="font-bold text-white">informed confidence</span>.</p>
+                            </div>
+                        </div>
+
+                        <!-- Sentiment Tab -->
+                        <div id="sentiment" class="tab-panel hidden space-y-5">
+                            <div class="quote-box p-4 rounded-lg">
+                                <p class="text-stone-300 italic text-sm">"A 16-point sentiment gap isn't noise—it's a signal. When Indian consumers show 69% net positive sentiment vs. 53% globally, fear-based marketing isn't just ineffective here—it's counterproductive. Lead with opportunity, not caution."</p>
+                                <p class="text-orange-400 text-xs mt-2 font-semibold">— Shashwat Ghosh, Founder, Helix GTM Consulting</p>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-stone-800/80 p-4 rounded-xl border border-stone-700/50">
+                                    <h2 class="text-base font-bold text-white mb-3 flex items-center gap-2">🇮🇳 India Sentiment (Q10)</h2>
+                                    <div class="space-y-2">
+                                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded" style="background: #f97316"></div><span class="text-stone-300 flex-1 text-xs">Pure Excitement</span><span class="text-orange-400 font-bold text-sm">31%</span></div>
+                                        <div class="h-5 bg-stone-700 rounded overflow-hidden"><div class="h-full rounded" style="width: 31%; background: #f97316"></div></div>
+                                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded" style="background: #fb923c"></div><span class="text-stone-300 flex-1 text-xs">Mostly Excited</span><span class="text-orange-400 font-bold text-sm">38%</span></div>
+                                        <div class="h-5 bg-stone-700 rounded overflow-hidden"><div class="h-full rounded" style="width: 38%; background: #fb923c"></div></div>
+                                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded" style="background: #57534e"></div><span class="text-stone-300 flex-1 text-xs">Mostly Concerned</span><span class="text-stone-400 font-bold text-sm">22%</span></div>
+                                        <div class="h-5 bg-stone-700 rounded overflow-hidden"><div class="h-full rounded" style="width: 22%; background: #57534e"></div></div>
+                                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded" style="background: #78716c"></div><span class="text-stone-300 flex-1 text-xs">Pure Concern</span><span class="text-stone-400 font-bold text-sm">9%</span></div>
+                                        <div class="h-5 bg-stone-700 rounded overflow-hidden"><div class="h-full rounded" style="width: 9%; background: #78716c"></div></div>
+                                    </div>
+                                    <p class="text-center text-orange-400 font-bold mt-3 text-sm">Net Positive: 69%</p>
+                                </div>
+                                <div class="bg-stone-800/80 p-4 rounded-xl border border-stone-700/50">
+                                    <h2 class="text-base font-bold text-white mb-3 flex items-center gap-2">🌍 World Sentiment (Q10)</h2>
+                                    <div class="space-y-2">
+                                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded" style="background: #f97316"></div><span class="text-stone-300 flex-1 text-xs">Pure Excitement</span><span class="text-stone-400 font-bold text-sm">16%</span></div>
+                                        <div class="h-5 bg-stone-700 rounded overflow-hidden"><div class="h-full rounded" style="width: 16%; background: #f97316"></div></div>
+                                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded" style="background: #fb923c"></div><span class="text-stone-300 flex-1 text-xs">Mostly Excited</span><span class="text-stone-400 font-bold text-sm">37%</span></div>
+                                        <div class="h-5 bg-stone-700 rounded overflow-hidden"><div class="h-full rounded" style="width: 37%; background: #fb923c"></div></div>
+                                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded" style="background: #57534e"></div><span class="text-stone-300 flex-1 text-xs">Mostly Concerned</span><span class="text-stone-400 font-bold text-sm">28%</span></div>
+                                        <div class="h-5 bg-stone-700 rounded overflow-hidden"><div class="h-full rounded" style="width: 28%; background: #57534e"></div></div>
+                                        <div class="flex items-center gap-2"><div class="w-3 h-3 rounded" style="background: #78716c"></div><span class="text-stone-300 flex-1 text-xs">Pure Concern</span><span class="text-stone-400 font-bold text-sm">18%</span></div>
+                                        <div class="h-5 bg-stone-700 rounded overflow-hidden"><div class="h-full rounded" style="width: 18%; background: #78716c"></div></div>
+                                    </div>
+                                    <p class="text-center text-stone-400 font-bold mt-3 text-sm">Net Positive: 53%</p>
+                                </div>
+                            </div>
+                            <div class="bg-stone-800/50 p-4 rounded-xl border border-orange-500/30">
+                                <h3 class="font-bold text-orange-400 flex items-center gap-2 text-sm">💡 Key Insight</h3>
+                                <p class="text-stone-300 mt-1 text-sm">India's net positive sentiment is <strong class="text-orange-400">+16pp</strong> higher than global average. Fear-based messaging will backfire here.</p>
+                            </div>
+                        </div>
+
+                        <!-- Workplace Tab -->
+                        <div id="workplace" class="tab-panel hidden space-y-5">
+                            <div class="quote-box p-4 rounded-lg">
+                                <p class="text-stone-300 italic text-sm">"In the West, AI job displacement is a existential threat narrative. In India, 69% see AI-driven job changes as positive. This isn't denial—it's a growth mindset at scale. Position AI upskilling as a career accelerator, not a safety net."</p>
+                                <p class="text-orange-400 text-xs mt-2 font-semibold">— Shashwat Ghosh, Founder, Helix GTM Consulting</p>
+                            </div>
+
+                            <div class="bg-stone-800/80 p-5 rounded-xl border border-stone-700/50">
+                                <h2 class="text-base font-bold text-white mb-4 flex items-center gap-2">💼 Workplace & Future Outlook</h2>
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="flex justify-between mb-1.5 text-xs"><span class="text-stone-300">AI Job Changes = Good (Q21)</span></div>
+                                        <div class="flex items-center gap-2 mb-1">
+                                            <span class="text-[10px] text-stone-500 w-10">IND</span>
+                                            <div class="flex-1 h-7 bg-stone-700 rounded"><div class="h-full bg-orange-500 rounded flex items-center justify-end pr-2" style="width: 69%"><span class="text-white text-xs font-bold">69%</span></div></div>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-[10px] text-stone-500 w-10">World</span>
+                                            <div class="flex-1 h-7 bg-stone-700 rounded"><div class="h-full bg-stone-500 rounded flex items-center justify-end pr-2" style="width: 49%"><span class="text-stone-300 text-xs font-bold">49%</span></div></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1.5 text-xs"><span class="text-stone-300">AI Will Benefit Workers (Q13)</span></div>
+                                        <div class="flex items-center gap-2 mb-1">
+                                            <span class="text-[10px] text-stone-500 w-10">IND</span>
+                                            <div class="flex-1 h-7 bg-stone-700 rounded"><div class="h-full bg-orange-500 rounded flex items-center justify-end pr-2" style="width: 82%"><span class="text-white text-xs font-bold">82%</span></div></div>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-[10px] text-stone-500 w-10">World</span>
+                                            <div class="flex-1 h-7 bg-stone-700 rounded"><div class="h-full bg-stone-500 rounded flex items-center justify-end pr-2" style="width: 67%"><span class="text-stone-300 text-xs font-bold">67%</span></div></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1.5 text-xs"><span class="text-stone-300">AI Good for Economy (Q19)</span></div>
+                                        <div class="flex items-center gap-2 mb-1">
+                                            <span class="text-[10px] text-stone-500 w-10">IND</span>
+                                            <div class="flex-1 h-7 bg-stone-700 rounded"><div class="h-full bg-orange-500 rounded flex items-center justify-end pr-2" style="width: 54%"><span class="text-white text-xs font-bold">54%</span></div></div>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-[10px] text-stone-500 w-10">World</span>
+                                            <div class="flex-1 h-7 bg-stone-700 rounded"><div class="h-full bg-stone-500 rounded flex items-center justify-end pr-2" style="width: 45%"><span class="text-stone-300 text-xs font-bold">45%</span></div></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1.5 text-xs"><span class="text-stone-300">AI Creates New Jobs (Q26)</span></div>
+                                        <div class="flex items-center gap-2 mb-1">
+                                            <span class="text-[10px] text-stone-500 w-10">IND</span>
+                                            <div class="flex-1 h-7 bg-stone-700 rounded"><div class="h-full bg-orange-500 rounded flex items-center justify-end pr-2" style="width: 63%"><span class="text-white text-xs font-bold">63%</span></div></div>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-[10px] text-stone-500 w-10">World</span>
+                                            <div class="flex-1 h-7 bg-stone-700 rounded"><div class="h-full bg-stone-500 rounded flex items-center justify-end pr-2" style="width: 50%"><span class="text-stone-300 text-xs font-bold">50%</span></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3 flex items-center justify-center gap-6 text-xs">
+                                    <span class="flex items-center gap-2"><span class="w-3 h-3 rounded bg-orange-500"></span> India</span>
+                                    <span class="flex items-center gap-2"><span class="w-3 h-3 rounded bg-stone-500"></span> World</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trust Tab -->
+                        <div id="trust" class="tab-panel hidden space-y-5">
+                            <div class="quote-box p-4 rounded-lg">
+                                <p class="text-stone-300 italic text-sm">"72% data-sharing willingness in India vs. 53% globally isn't just a statistic—it's a competitive moat. This trust premium enables faster product iteration, richer training data, and shorter feedback loops. For AI companies, India isn't just a market—it's a development accelerator."</p>
+                                <p class="text-orange-400 text-xs mt-2 font-semibold">— Shashwat Ghosh, Founder, Helix GTM Consulting</p>
+                            </div>
+
+                            <div class="bg-stone-800/80 p-5 rounded-xl border border-stone-700/50">
+                                <h2 class="text-base font-bold text-white mb-4 flex items-center gap-2">🤝 Trust & Data Sharing</h2>
+                                <div class="space-y-4">
+                                    <div>
+                                        <div class="flex justify-between mb-1.5 text-xs"><span class="text-stone-300">High Trust in AI (Q12)</span></div>
+                                        <div class="flex items-center gap-2 mb-1">
+                                            <span class="text-[10px] text-stone-500 w-10">IND</span>
+                                            <div class="flex-1 h-8 bg-stone-700 rounded"><div class="h-full bg-orange-500 rounded flex items-center justify-end pr-2" style="width: 58%"><span class="text-white font-bold text-sm">58%</span></div></div>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-[10px] text-stone-500 w-10">World</span>
+                                            <div class="flex-1 h-8 bg-stone-700 rounded"><div class="h-full bg-stone-500 rounded flex items-center justify-end pr-2" style="width: 25%"><span class="text-stone-300 font-bold text-sm">25%</span></div></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="flex justify-between mb-1.5 text-xs"><span class="text-stone-300">Willing to Share Data (Q35)</span></div>
+                                        <div class="flex items-center gap-2 mb-1">
+                                            <span class="text-[10px] text-stone-500 w-10">IND</span>
+                                            <div class="flex-1 h-8 bg-stone-700 rounded"><div class="h-full bg-orange-500 rounded flex items-center justify-end pr-2" style="width: 72%"><span class="text-white font-bold text-sm">72%</span></div></div>
+                                        </div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-[10px] text-stone-500 w-10">World</span>
+                                            <div class="flex-1 h-8 bg-stone-700 rounded"><div class="h-full bg-stone-500 rounded flex items-center justify-end pr-2" style="width: 53%"><span class="text-stone-300 font-bold text-sm">53%</span></div></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-stone-800/50 p-4 rounded-xl border border-orange-500/30">
+                                <h3 class="font-bold text-orange-400 flex items-center gap-2 text-sm">💡 Key Insight</h3>
+                                <p class="text-stone-300 mt-1 text-sm">India's 72% data-sharing willingness enables faster product iteration. The trust premium is a competitive moat.</p>
+                            </div>
+                        </div>
+
+                        <!-- Countries Tab -->
+                        <div id="compare" class="tab-panel hidden space-y-5">
+                            <div class="quote-box p-4 rounded-lg">
+                                <p class="text-stone-300 italic text-sm">"Look at this table and tell me India is an 'emerging' AI market. 86% usage beats Singapore. 31% excitement beats South Korea. 69% job optimism beats the USA by 44 points. The West is concerned about AI. India is building with it."</p>
+                                <p class="text-orange-400 text-xs mt-2 font-semibold">— Shashwat Ghosh, Founder, Helix GTM Consulting</p>
+                            </div>
+
+                            <div class="bg-stone-800/80 p-4 rounded-xl border border-stone-700/50">
+                                <h2 class="text-base font-bold text-white mb-3 flex items-center gap-2">🌍 Country Comparison</h2>
+                                <div class="overflow-x-auto">
+                                    <table class="w-full text-xs">
+                                        <thead>
+                                            <tr class="border-b border-stone-700">
+                                                <th class="text-left py-2 px-2 text-stone-400">Country</th>
+                                                <th class="text-center py-2 px-2 text-orange-400">Usage</th>
+                                                <th class="text-center py-2 px-2 text-amber-400">Excite</th>
+                                                <th class="text-center py-2 px-2 text-orange-300">Jobs</th>
+                                                <th class="text-center py-2 px-2 text-yellow-400">Know</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="border-b border-stone-700/50 bg-orange-500/10">
+                                                <td class="py-2 px-2 font-bold text-orange-400">🇮🇳 India</td>
+                                                <td class="text-center py-2 px-2 font-bold text-orange-400">86</td>
+                                                <td class="text-center py-2 px-2 font-bold text-orange-400">31</td>
+                                                <td class="text-center py-2 px-2 font-bold text-orange-400">69</td>
+                                                <td class="text-center py-2 px-2 font-bold text-orange-400">39</td>
+                                            </tr>
+                                            <tr class="border-b border-stone-700/50"><td class="py-2 px-2 text-stone-300">🇸🇬 Singapore</td><td class="text-center py-2 px-2 text-stone-400">72</td><td class="text-center py-2 px-2 text-stone-400">11</td><td class="text-center py-2 px-2 text-stone-400">53</td><td class="text-center py-2 px-2 text-stone-400">18</td></tr>
+                                            <tr class="border-b border-stone-700/50"><td class="py-2 px-2 text-stone-300">🇰🇷 S. Korea</td><td class="text-center py-2 px-2 text-stone-400">72</td><td class="text-center py-2 px-2 text-stone-400">19</td><td class="text-center py-2 px-2 text-stone-400">60</td><td class="text-center py-2 px-2 text-stone-400">22</td></tr>
+                                            <tr class="border-b border-stone-700/50"><td class="py-2 px-2 text-stone-300">🇦🇺 Australia</td><td class="text-center py-2 px-2 text-stone-400">63</td><td class="text-center py-2 px-2 text-stone-400">13</td><td class="text-center py-2 px-2 text-stone-400">42</td><td class="text-center py-2 px-2 text-stone-400">12</td></tr>
+                                            <tr class="border-b border-stone-700/50"><td class="py-2 px-2 text-stone-300">🇯🇵 Japan</td><td class="text-center py-2 px-2 text-stone-400">46</td><td class="text-center py-2 px-2 text-stone-400">10</td><td class="text-center py-2 px-2 text-stone-400">58</td><td class="text-center py-2 px-2 text-stone-400">8</td></tr>
+                                            <tr class="border-b border-stone-700/50"><td class="py-2 px-2 text-stone-300">🇺🇸 USA</td><td class="text-center py-2 px-2 text-stone-400">54</td><td class="text-center py-2 px-2 text-stone-400">6</td><td class="text-center py-2 px-2 text-stone-400">25</td><td class="text-center py-2 px-2 text-stone-400">10</td></tr>
+                                            <tr class="border-b border-stone-700/50"><td class="py-2 px-2 text-stone-300">🇬🇧 UK</td><td class="text-center py-2 px-2 text-stone-400">62</td><td class="text-center py-2 px-2 text-stone-400">11</td><td class="text-center py-2 px-2 text-stone-400">38</td><td class="text-center py-2 px-2 text-stone-400">11</td></tr>
+                                            <tr><td class="py-2 px-2 text-stone-300">🇩🇪 Germany</td><td class="text-center py-2 px-2 text-stone-400">56</td><td class="text-center py-2 px-2 text-stone-400">12</td><td class="text-center py-2 px-2 text-stone-400">39</td><td class="text-center py-2 px-2 text-stone-400">13</td></tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- GTM Playbook Tab -->
+                        <div id="gtm" class="tab-panel hidden space-y-5">
+                            <div class="quote-box p-4 rounded-lg">
+                                <p class="text-stone-300 italic text-sm">"Your India GTM playbook shouldn't be a localized version of your US strategy. It should be the other way around. What works in India—where users are informed, optimistic, and data-willing—becomes your template for global expansion once markets mature."</p>
+                                <p class="text-orange-400 text-xs mt-2 font-semibold">— Shashwat Ghosh, Founder, Helix GTM Consulting</p>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="bg-stone-800/80 p-4 rounded-xl border border-orange-500/30">
+                                    <h2 class="text-base font-bold text-orange-400 mb-3 flex items-center gap-2">🇮🇳 India GTM Strategy</h2>
+                                    <ul class="space-y-2.5 text-stone-300 text-sm">
+                                        <li class="flex items-start gap-2"><span class="text-orange-400 mt-0.5">▸</span><span><strong class="text-white">Skip education</strong> — 86% use AI</span></li>
+                                        <li class="flex items-start gap-2"><span class="text-orange-400 mt-0.5">▸</span><span><strong class="text-white">Lead advanced</strong> — 39% know AI deeply</span></li>
+                                        <li class="flex items-start gap-2"><span class="text-orange-400 mt-0.5">▸</span><span><strong class="text-white">Shorten cycles</strong> — 72% share data</span></li>
+                                        <li class="flex items-start gap-2"><span class="text-orange-400 mt-0.5">▸</span><span><strong class="text-white">Be aggressive</strong> — Informed optimism</span></li>
+                                        <li class="flex items-start gap-2"><span class="text-orange-400 mt-0.5">▸</span><span><strong class="text-white">Opportunity framing</strong> — 69% job positive</span></li>
+                                    </ul>
+                                </div>
+                                <div class="bg-stone-800/50 p-4 rounded-xl border border-stone-700/50">
+                                    <h2 class="text-base font-bold text-stone-400 mb-3 flex items-center gap-2">🌍 Western GTM Strategy</h2>
+                                    <ul class="space-y-2.5 text-stone-500 text-sm">
+                                        <li class="flex items-start gap-2"><span class="text-stone-600 mt-0.5">▸</span><span><strong class="text-stone-400">Address concerns first</strong></span></li>
+                                        <li class="flex items-start gap-2"><span class="text-stone-600 mt-0.5">▸</span><span><strong class="text-stone-400">Build trust slowly</strong></span></li>
+                                        <li class="flex items-start gap-2"><span class="text-stone-600 mt-0.5">▸</span><span><strong class="text-stone-400">Human-AI collab focus</strong></span></li>
+                                        <li class="flex items-start gap-2"><span class="text-stone-600 mt-0.5">▸</span><span><strong class="text-stone-400">Longer education cycles</strong></span></li>
+                                        <li class="flex items-start gap-2"><span class="text-stone-600 mt-0.5">▸</span><span><strong class="text-stone-400">Fear-conscious messaging</strong></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="bg-gradient-to-r from-orange-500 to-amber-600 p-4 rounded-xl">
+                                <h2 class="text-lg font-bold mb-1 flex items-center gap-2">🎯 The Strategic Insight</h2>
+                                <p class="text-orange-100 text-sm">India isn't your emerging market test bed.</p>
+                                <p class="text-white font-bold text-xl mt-1">India is your leading indicator.</p>
+                                <p class="text-orange-100 text-sm mt-1">What achieves product-market fit here predicts global adoption.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Informed Optimism Tab -->
-                <div id="informed" class="tab-panel hidden space-y-6">
-                    <div class="bg-gradient-to-br from-orange-500/20 to-amber-500/10 p-6 md:p-8 rounded-2xl border border-orange-500/30">
-                        <div class="flex items-start gap-4 mb-6">
-                            <div class="p-3 bg-orange-500/20 rounded-xl text-3xl">🧠</div>
-                            <div>
-                                <h2 class="text-xl font-bold text-white mb-1">Informed Optimism</h2>
-                                <p class="text-stone-400">Why India's AI confidence is credible — backed by knowledge, not blind hope</p>
-                            </div>
-                        </div>
-                        <div class="bg-stone-900/60 rounded-xl p-6">
-                            <div class="flex flex-wrap items-center justify-center gap-4 text-center">
-                                <div class="px-4 py-3 bg-stone-800 rounded-lg">
-                                    <div class="text-2xl font-bold text-orange-400">3x</div>
-                                    <div class="text-xs text-stone-400">More Knowledgeable</div>
-                                </div>
-                                <div class="text-2xl text-stone-600">+</div>
-                                <div class="px-4 py-3 bg-stone-800 rounded-lg">
-                                    <div class="text-2xl font-bold text-orange-400">+6%</div>
-                                    <div class="text-xs text-stone-400">More Optimistic</div>
-                                </div>
-                                <div class="text-2xl text-stone-600">+</div>
-                                <div class="px-4 py-3 bg-stone-800 rounded-lg">
-                                    <div class="text-2xl font-bold text-orange-400">-11%</div>
-                                    <div class="text-xs text-stone-400">Less Worried</div>
-                                </div>
-                                <div class="text-2xl text-stone-600">=</div>
-                                <div class="px-6 py-3 bg-gradient-to-r from-orange-500 to-amber-500 rounded-lg">
-                                    <div class="text-xl font-bold text-white">Informed Optimism</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-stone-800/80 p-6 rounded-xl border border-stone-700/50">
-                        <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2">📊 Head-to-Head Comparison</h3>
-
-                        <div class="space-y-6">
-                            <div>
-                                <div class="flex justify-between items-center mb-2">
-                                    <span class="text-stone-300 font-medium text-sm">AI Knowledge — 'Know a lot about AI' (Q1)</span>
-                                    <span class="text-xs px-2 py-1 rounded-full font-semibold bg-orange-500/20 text-orange-400">India leads</span>
-                                </div>
-                                <div class="space-y-2">
-                                    <div class="flex items-center gap-3">
-                                        <span class="text-xs text-stone-500 w-12">India</span>
-                                        <div class="flex-1 h-8 bg-stone-700 rounded-lg overflow-hidden">
-                                            <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-lg flex items-center justify-end pr-3" style="width: 39%">
-                                                <span class="text-white font-bold text-sm">39%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center gap-3">
-                                        <span class="text-xs text-stone-500 w-12">World</span>
-                                        <div class="flex-1 h-8 bg-stone-700 rounded-lg overflow-hidden">
-                                            <div class="h-full bg-stone-500 rounded-lg flex items-center justify-end pr-3" style="width: 14%">
-                                                <span class="text-stone-300 font-bold text-sm">14%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="flex justify-between items-center mb-2">
-                                    <span class="text-stone-300 font-medium text-sm">AI is Promising — Scale 1-10 (Q27)</span>
-                                    <span class="text-xs px-2 py-1 rounded-full font-semibold bg-orange-500/20 text-orange-400">India leads</span>
-                                </div>
-                                <div class="space-y-2">
-                                    <div class="flex items-center gap-3">
-                                        <span class="text-xs text-stone-500 w-12">India</span>
-                                        <div class="flex-1 h-8 bg-stone-700 rounded-lg overflow-hidden">
-                                            <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-lg flex items-center justify-end pr-3" style="width: 70.9%">
-                                                <span class="text-white font-bold text-sm">7.09</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center gap-3">
-                                        <span class="text-xs text-stone-500 w-12">World</span>
-                                        <div class="flex-1 h-8 bg-stone-700 rounded-lg overflow-hidden">
-                                            <div class="h-full bg-stone-500 rounded-lg flex items-center justify-end pr-3" style="width: 66.7%">
-                                                <span class="text-stone-300 font-bold text-sm">6.67</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="flex justify-between items-center mb-2">
-                                    <span class="text-stone-300 font-medium text-sm">AI is Concerning — Scale 1-10 (Q28)</span>
-                                    <span class="text-xs px-2 py-1 rounded-full font-semibold bg-orange-500/20 text-orange-400">India leads (lower is better)</span>
-                                </div>
-                                <div class="space-y-2">
-                                    <div class="flex items-center gap-3">
-                                        <span class="text-xs text-stone-500 w-12">India</span>
-                                        <div class="flex-1 h-8 bg-stone-700 rounded-lg overflow-hidden">
-                                            <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-lg flex items-center justify-end pr-3" style="width: 66.9%">
-                                                <span class="text-white font-bold text-sm">6.69</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center gap-3">
-                                        <span class="text-xs text-stone-500 w-12">World</span>
-                                        <div class="flex-1 h-8 bg-stone-700 rounded-lg overflow-hidden">
-                                            <div class="h-full bg-stone-500 rounded-lg flex items-center justify-end pr-3" style="width: 75.2%">
-                                                <span class="text-stone-300 font-bold text-sm">7.52</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div class="flex justify-between items-center mb-2">
-                                    <span class="text-stone-300 font-medium text-sm">Net Positive Sentiment (Q10)</span>
-                                    <span class="text-xs px-2 py-1 rounded-full font-semibold bg-orange-500/20 text-orange-400">India leads</span>
-                                </div>
-                                <div class="space-y-2">
-                                    <div class="flex items-center gap-3">
-                                        <span class="text-xs text-stone-500 w-12">India</span>
-                                        <div class="flex-1 h-8 bg-stone-700 rounded-lg overflow-hidden">
-                                            <div class="h-full bg-gradient-to-r from-orange-500 to-amber-500 rounded-lg flex items-center justify-end pr-3" style="width: 69%">
-                                                <span class="text-white font-bold text-sm">69%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center gap-3">
-                                        <span class="text-xs text-stone-500 w-12">World</span>
-                                        <div class="flex-1 h-8 bg-stone-700 rounded-lg overflow-hidden">
-                                            <div class="h-full bg-stone-500 rounded-lg flex items-center justify-end pr-3" style="width: 53%">
-                                                <span class="text-stone-300 font-bold text-sm">53%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-gradient-to-r from-orange-500 to-amber-600 p-5 rounded-xl" style="box-shadow: 0 8px 32px rgba(249,115,22,0.25)">
-                        <h2 class="text-lg font-bold mb-2 flex items-center gap-3">💡 The Strategic Takeaway</h2>
-                        <p class="text-orange-100">Indians aren't optimistic because they don't understand AI risks. They're optimistic <span class="font-bold text-white">because</span> they understand AI deeply. This is <span class="font-bold text-white">informed confidence</span> — the most valuable market signal.</p>
-                    </div>
-                </div>
-
-                <!-- Sentiment Tab -->
-                <div id="sentiment" class="tab-panel hidden space-y-6">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="bg-stone-800/80 p-6 rounded-xl border border-stone-700/50">
-                            <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">🇮🇳 India Sentiment (Q10)</h2>
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-4 h-4 rounded" style="background: #f97316"></div>
-                                    <span class="text-stone-300 flex-1">Pure Excitement</span>
-                                    <span class="text-orange-400 font-bold">31%</span>
-                                </div>
-                                <div class="h-6 bg-stone-700 rounded-lg overflow-hidden">
-                                    <div class="h-full rounded-lg" style="width: 31%; background: #f97316"></div>
-                                </div>
-                                <div class="flex items-center gap-3">
-                                    <div class="w-4 h-4 rounded" style="background: #fb923c"></div>
-                                    <span class="text-stone-300 flex-1">Mostly Excited</span>
-                                    <span class="text-orange-400 font-bold">38%</span>
-                                </div>
-                                <div class="h-6 bg-stone-700 rounded-lg overflow-hidden">
-                                    <div class="h-full rounded-lg" style="width: 38%; background: #fb923c"></div>
-                                </div>
-                                <div class="flex items-center gap-3">
-                                    <div class="w-4 h-4 rounded" style="background: #57534e"></div>
-                                    <span class="text-stone-300 flex-1">Mostly Concerned</span>
-                                    <span class="text-stone-400 font-bold">22%</span>
-                                </div>
-                                <div class="h-6 bg-stone-700 rounded-lg overflow-hidden">
-                                    <div class="h-full rounded-lg" style="width: 22%; background: #57534e"></div>
-                                </div>
-                                <div class="flex items-center gap-3">
-                                    <div class="w-4 h-4 rounded" style="background: #78716c"></div>
-                                    <span class="text-stone-300 flex-1">Pure Concern</span>
-                                    <span class="text-stone-400 font-bold">9%</span>
-                                </div>
-                                <div class="h-6 bg-stone-700 rounded-lg overflow-hidden">
-                                    <div class="h-full rounded-lg" style="width: 9%; background: #78716c"></div>
-                                </div>
-                            </div>
-                            <p class="text-center text-orange-400 font-bold mt-4">Net Positive: 69%</p>
-                        </div>
-                        <div class="bg-stone-800/80 p-6 rounded-xl border border-stone-700/50">
-                            <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">🌍 World Sentiment (Q10)</h2>
-                            <div class="space-y-3">
-                                <div class="flex items-center gap-3">
-                                    <div class="w-4 h-4 rounded" style="background: #f97316"></div>
-                                    <span class="text-stone-300 flex-1">Pure Excitement</span>
-                                    <span class="text-stone-400 font-bold">16%</span>
-                                </div>
-                                <div class="h-6 bg-stone-700 rounded-lg overflow-hidden">
-                                    <div class="h-full rounded-lg" style="width: 16%; background: #f97316"></div>
-                                </div>
-                                <div class="flex items-center gap-3">
-                                    <div class="w-4 h-4 rounded" style="background: #fb923c"></div>
-                                    <span class="text-stone-300 flex-1">Mostly Excited</span>
-                                    <span class="text-stone-400 font-bold">37%</span>
-                                </div>
-                                <div class="h-6 bg-stone-700 rounded-lg overflow-hidden">
-                                    <div class="h-full rounded-lg" style="width: 37%; background: #fb923c"></div>
-                                </div>
-                                <div class="flex items-center gap-3">
-                                    <div class="w-4 h-4 rounded" style="background: #57534e"></div>
-                                    <span class="text-stone-300 flex-1">Mostly Concerned</span>
-                                    <span class="text-stone-400 font-bold">28%</span>
-                                </div>
-                                <div class="h-6 bg-stone-700 rounded-lg overflow-hidden">
-                                    <div class="h-full rounded-lg" style="width: 28%; background: #57534e"></div>
-                                </div>
-                                <div class="flex items-center gap-3">
-                                    <div class="w-4 h-4 rounded" style="background: #78716c"></div>
-                                    <span class="text-stone-300 flex-1">Pure Concern</span>
-                                    <span class="text-stone-400 font-bold">18%</span>
-                                </div>
-                                <div class="h-6 bg-stone-700 rounded-lg overflow-hidden">
-                                    <div class="h-full rounded-lg" style="width: 18%; background: #78716c"></div>
-                                </div>
-                            </div>
-                            <p class="text-center text-stone-400 font-bold mt-4">Net Positive: 53%</p>
-                        </div>
-                    </div>
-                    <div class="bg-stone-800/50 p-5 rounded-xl border border-orange-500/30">
-                        <h3 class="font-bold text-orange-400 flex items-center gap-2">💡 Key Insight</h3>
-                        <p class="text-stone-300 mt-2">India's net positive sentiment is <strong class="text-orange-400">+16 percentage points</strong> higher than global average. Fear-based messaging will backfire here.</p>
-                    </div>
-                </div>
-
-                <!-- Workplace Tab -->
-                <div id="workplace" class="tab-panel hidden space-y-6">
-                    <div class="bg-stone-800/80 p-6 rounded-xl border border-stone-700/50">
-                        <h2 class="text-lg font-bold text-white mb-6 flex items-center gap-2">💼 Workplace & Future Outlook</h2>
-                        <div class="space-y-6">
-                            <div>
-                                <div class="flex justify-between mb-2 text-sm">
-                                    <span class="text-stone-300">AI Job Changes = Good (Q21)</span>
-                                </div>
-                                <div class="flex items-center gap-2 mb-1">
-                                    <span class="text-xs text-stone-500 w-10">IND</span>
-                                    <div class="flex-1 h-8 bg-stone-700 rounded">
-                                        <div class="h-full bg-orange-500 rounded flex items-center justify-end pr-2" style="width: 69%">
-                                            <span class="text-white text-sm font-bold">69%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <span class="text-xs text-stone-500 w-10">World</span>
-                                    <div class="flex-1 h-8 bg-stone-700 rounded">
-                                        <div class="h-full bg-stone-500 rounded flex items-center justify-end pr-2" style="width: 49%">
-                                            <span class="text-stone-300 text-sm font-bold">49%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between mb-2 text-sm">
-                                    <span class="text-stone-300">AI Will Benefit Workers (Q13)</span>
-                                </div>
-                                <div class="flex items-center gap-2 mb-1">
-                                    <span class="text-xs text-stone-500 w-10">IND</span>
-                                    <div class="flex-1 h-8 bg-stone-700 rounded">
-                                        <div class="h-full bg-orange-500 rounded flex items-center justify-end pr-2" style="width: 82%">
-                                            <span class="text-white text-sm font-bold">82%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <span class="text-xs text-stone-500 w-10">World</span>
-                                    <div class="flex-1 h-8 bg-stone-700 rounded">
-                                        <div class="h-full bg-stone-500 rounded flex items-center justify-end pr-2" style="width: 67%">
-                                            <span class="text-stone-300 text-sm font-bold">67%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between mb-2 text-sm">
-                                    <span class="text-stone-300">AI Good for Economy (Q19)</span>
-                                </div>
-                                <div class="flex items-center gap-2 mb-1">
-                                    <span class="text-xs text-stone-500 w-10">IND</span>
-                                    <div class="flex-1 h-8 bg-stone-700 rounded">
-                                        <div class="h-full bg-orange-500 rounded flex items-center justify-end pr-2" style="width: 54%">
-                                            <span class="text-white text-sm font-bold">54%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <span class="text-xs text-stone-500 w-10">World</span>
-                                    <div class="flex-1 h-8 bg-stone-700 rounded">
-                                        <div class="h-full bg-stone-500 rounded flex items-center justify-end pr-2" style="width: 45%">
-                                            <span class="text-stone-300 text-sm font-bold">45%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between mb-2 text-sm">
-                                    <span class="text-stone-300">AI Creates New Jobs (Q26)</span>
-                                </div>
-                                <div class="flex items-center gap-2 mb-1">
-                                    <span class="text-xs text-stone-500 w-10">IND</span>
-                                    <div class="flex-1 h-8 bg-stone-700 rounded">
-                                        <div class="h-full bg-orange-500 rounded flex items-center justify-end pr-2" style="width: 63%">
-                                            <span class="text-white text-sm font-bold">63%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <span class="text-xs text-stone-500 w-10">World</span>
-                                    <div class="flex-1 h-8 bg-stone-700 rounded">
-                                        <div class="h-full bg-stone-500 rounded flex items-center justify-end pr-2" style="width: 50%">
-                                            <span class="text-stone-300 text-sm font-bold">50%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-4 flex items-center justify-center gap-6 text-sm">
-                            <span class="flex items-center gap-2"><span class="w-4 h-4 rounded bg-orange-500"></span> India</span>
-                            <span class="flex items-center gap-2"><span class="w-4 h-4 rounded bg-stone-500"></span> World</span>
-                        </div>
-                    </div>
-                    <div class="bg-stone-800/50 p-5 rounded-xl border border-orange-500/30">
-                        <h3 class="font-bold text-orange-400 flex items-center gap-2">💡 Key Insight</h3>
-                        <p class="text-stone-300 mt-2">69% of Indians see AI job changes as positive (+20pp vs world). Position AI upskilling as opportunity, not threat.</p>
-                    </div>
-                </div>
-
-                <!-- Trust Tab -->
-                <div id="trust" class="tab-panel hidden space-y-6">
-                    <div class="bg-stone-800/80 p-6 rounded-xl border border-stone-700/50">
-                        <h2 class="text-lg font-bold text-white mb-6 flex items-center gap-2">🤝 Trust & Data Sharing</h2>
-                        <div class="space-y-6">
-                            <div>
-                                <div class="flex justify-between mb-2 text-sm">
-                                    <span class="text-stone-300">High Trust in AI (Q12)</span>
-                                </div>
-                                <div class="flex items-center gap-2 mb-1">
-                                    <span class="text-xs text-stone-500 w-10">IND</span>
-                                    <div class="flex-1 h-10 bg-stone-700 rounded">
-                                        <div class="h-full bg-orange-500 rounded flex items-center justify-end pr-3" style="width: 58%">
-                                            <span class="text-white font-bold">58%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <span class="text-xs text-stone-500 w-10">World</span>
-                                    <div class="flex-1 h-10 bg-stone-700 rounded">
-                                        <div class="h-full bg-stone-500 rounded flex items-center justify-end pr-3" style="width: 25%">
-                                            <span class="text-stone-300 font-bold">25%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex justify-between mb-2 text-sm">
-                                    <span class="text-stone-300">Willing to Share Data (Q35)</span>
-                                </div>
-                                <div class="flex items-center gap-2 mb-1">
-                                    <span class="text-xs text-stone-500 w-10">IND</span>
-                                    <div class="flex-1 h-10 bg-stone-700 rounded">
-                                        <div class="h-full bg-orange-500 rounded flex items-center justify-end pr-3" style="width: 72%">
-                                            <span class="text-white font-bold">72%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <span class="text-xs text-stone-500 w-10">World</span>
-                                    <div class="flex-1 h-10 bg-stone-700 rounded">
-                                        <div class="h-full bg-stone-500 rounded flex items-center justify-end pr-3" style="width: 53%">
-                                            <span class="text-stone-300 font-bold">53%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-4 flex items-center justify-center gap-6 text-sm">
-                            <span class="flex items-center gap-2"><span class="w-4 h-4 rounded bg-orange-500"></span> India</span>
-                            <span class="flex items-center gap-2"><span class="w-4 h-4 rounded bg-stone-500"></span> World</span>
-                        </div>
-                    </div>
-                    <div class="bg-stone-800/50 p-5 rounded-xl border border-orange-500/30">
-                        <h3 class="font-bold text-orange-400 flex items-center gap-2">💡 Key Insight</h3>
-                        <p class="text-stone-300 mt-2">India's 72% data-sharing willingness enables faster product iteration. The trust premium is a competitive moat.</p>
-                    </div>
-                </div>
-
-                <!-- Countries Tab -->
-                <div id="compare" class="tab-panel hidden space-y-6">
-                    <div class="bg-stone-800/80 p-6 rounded-xl border border-stone-700/50">
-                        <h2 class="text-lg font-bold text-white mb-6 flex items-center gap-2">🌍 Country Comparison</h2>
-                        <div class="overflow-x-auto">
-                            <table class="w-full text-sm">
-                                <thead>
-                                    <tr class="border-b border-stone-700">
-                                        <th class="text-left py-3 px-2 text-stone-400">Country</th>
-                                        <th class="text-center py-3 px-2 text-orange-400">Usage %</th>
-                                        <th class="text-center py-3 px-2 text-amber-400">Excitement %</th>
-                                        <th class="text-center py-3 px-2 text-orange-300">Job Optimism %</th>
-                                        <th class="text-center py-3 px-2 text-yellow-400">Knowledge %</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="border-b border-stone-700/50 bg-orange-500/10">
-                                        <td class="py-3 px-2 font-bold text-orange-400">🇮🇳 India</td>
-                                        <td class="text-center py-3 px-2 font-bold text-orange-400">86</td>
-                                        <td class="text-center py-3 px-2 font-bold text-orange-400">31</td>
-                                        <td class="text-center py-3 px-2 font-bold text-orange-400">69</td>
-                                        <td class="text-center py-3 px-2 font-bold text-orange-400">39</td>
-                                    </tr>
-                                    <tr class="border-b border-stone-700/50">
-                                        <td class="py-3 px-2 text-stone-300">🇸🇬 Singapore</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">72</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">11</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">53</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">18</td>
-                                    </tr>
-                                    <tr class="border-b border-stone-700/50">
-                                        <td class="py-3 px-2 text-stone-300">🇰🇷 S. Korea</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">72</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">19</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">60</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">22</td>
-                                    </tr>
-                                    <tr class="border-b border-stone-700/50">
-                                        <td class="py-3 px-2 text-stone-300">🇦🇺 Australia</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">63</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">13</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">42</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">12</td>
-                                    </tr>
-                                    <tr class="border-b border-stone-700/50">
-                                        <td class="py-3 px-2 text-stone-300">🇯🇵 Japan</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">46</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">10</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">58</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">8</td>
-                                    </tr>
-                                    <tr class="border-b border-stone-700/50">
-                                        <td class="py-3 px-2 text-stone-300">🇺🇸 USA</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">54</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">6</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">25</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">10</td>
-                                    </tr>
-                                    <tr class="border-b border-stone-700/50">
-                                        <td class="py-3 px-2 text-stone-300">🇬🇧 UK</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">62</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">11</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">38</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">11</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="py-3 px-2 text-stone-300">🇩🇪 Germany</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">56</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">12</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">39</td>
-                                        <td class="text-center py-3 px-2 text-stone-400">13</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="bg-stone-800/50 p-5 rounded-xl border border-orange-500/30">
-                        <h3 class="font-bold text-orange-400 flex items-center gap-2">💡 Key Insight</h3>
-                        <p class="text-stone-300 mt-2">India leads every Asian market and outperforms Western economies on all key metrics. This is global leadership.</p>
-                    </div>
-                </div>
-
-                <!-- GTM Playbook Tab -->
-                <div id="gtm" class="tab-panel hidden space-y-6">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="bg-stone-800/80 p-6 rounded-xl border border-orange-500/30">
-                            <h2 class="text-lg font-bold text-orange-400 mb-4 flex items-center gap-2">🇮🇳 India GTM Strategy</h2>
-                            <ul class="space-y-4 text-stone-300">
-                                <li class="flex items-start gap-3">
-                                    <span class="text-orange-400 mt-0.5">▸</span>
-                                    <span><strong class="text-white">Skip the education phase</strong> — 86% already use AI</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-orange-400 mt-0.5">▸</span>
-                                    <span><strong class="text-white">Lead with advanced use cases</strong> — 39% deeply understand AI</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-orange-400 mt-0.5">▸</span>
-                                    <span><strong class="text-white">Shorten sales cycles</strong> — 72% willing to share data</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-orange-400 mt-0.5">▸</span>
-                                    <span><strong class="text-white">Test aggressive positioning</strong> — Informed Optimism means they get it</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-orange-400 mt-0.5">▸</span>
-                                    <span><strong class="text-white">Position AI as opportunity</strong> — 69% see job changes as positive</span>
-                                </li>
-                            </ul>
+                <!-- Right: Author Sidebar (1 col) -->
+                <div class="lg:col-span-1">
+                    <div class="author-card rounded-xl border border-stone-700/50 p-4 sticky top-4">
+                        <div class="text-center mb-4">
+                            <img src="https://media.licdn.com/dms/image/v2/D5603AQHPAun1NQMRBQ/profile-displayphoto-shrink_400_400/B56ZaRzruUHoAg-/0/1746202879498?e=1753920000&v=beta&t=xb4k0fzn3xNxw66K_f_Kg6UvfbY_vJTUZxqNLDp5zMY" alt="Shashwat Ghosh" class="w-20 h-20 rounded-full border-3 border-orange-500 object-cover mx-auto" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 80 80%22><rect fill=%22%23f97316%22 width=%2280%22 height=%2280%22 rx=%2240%22/><text x=%2250%%22 y=%2255%%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2228%22 font-weight=%22bold%22>SG</text></svg>'">
+                            <h3 class="text-white font-bold mt-3">Shashwat Ghosh</h3>
+                            <p class="text-stone-400 text-xs">Founder & GTM Strategist</p>
                         </div>
 
-                        <div class="bg-stone-800/50 p-6 rounded-xl border border-stone-700/50">
-                            <h2 class="text-lg font-bold text-stone-400 mb-4 flex items-center gap-2">🌍 Western GTM Strategy</h2>
-                            <ul class="space-y-4 text-stone-500">
-                                <li class="flex items-start gap-3">
-                                    <span class="text-stone-600 mt-0.5">▸</span>
-                                    <span><strong class="text-stone-400">Address concerns before benefits</strong> — Higher worry levels</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-stone-600 mt-0.5">▸</span>
-                                    <span><strong class="text-stone-400">Build trust through transparency</strong> — Lower data willingness</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-stone-600 mt-0.5">▸</span>
-                                    <span><strong class="text-stone-400">Emphasize human-AI collaboration</strong> — Job anxiety is real</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-stone-600 mt-0.5">▸</span>
-                                    <span><strong class="text-stone-400">Longer education cycles required</strong> — Only 14% know AI deeply</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <span class="text-stone-600 mt-0.5">▸</span>
-                                    <span><strong class="text-stone-400">Fear-conscious messaging</strong> — Net positive only 53%</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                        <a href="https://gtmhelix.com" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 mb-4 py-2 px-3 bg-stone-800 rounded-lg hover:bg-stone-700 transition-colors">
+                            <div class="flex flex-col leading-none">
+                                <span class="text-red-500 font-black text-base tracking-tight">HELIX</span>
+                                <span class="text-white text-[7px] tracking-widest">CONSULTING</span>
+                            </div>
+                        </a>
 
-                    <div class="bg-gradient-to-r from-orange-500 to-amber-600 p-6 rounded-xl" style="box-shadow: 0 8px 32px rgba(249,115,22,0.25)">
-                        <h2 class="text-xl font-bold mb-2 flex items-center gap-3">🎯 The Strategic Insight</h2>
-                        <p class="text-orange-100 text-lg">India isn't your emerging market test bed.</p>
-                        <p class="text-white font-bold text-2xl mt-2">India is your leading indicator.</p>
-                        <p class="text-orange-100 mt-2">What achieves product-market fit here predicts global adoption.</p>
+                        <div class="space-y-2 text-xs">
+                            <a href="https://www.linkedin.com/in/shashwatghosh/" target="_blank" rel="noopener" class="flex items-center gap-2 text-stone-400 hover:text-orange-400 transition-colors">
+                                <span>🔗</span> LinkedIn
+                            </a>
+                            <a href="https://twitter.com/Shashwat_Ghosh" target="_blank" rel="noopener" class="flex items-center gap-2 text-stone-400 hover:text-orange-400 transition-colors">
+                                <span>𝕏</span> Twitter
+                            </a>
+                            <a href="https://gtmhelix.com/ai-trendwatch" target="_blank" rel="noopener" class="flex items-center gap-2 text-stone-400 hover:text-orange-400 transition-colors">
+                                <span>📰</span> Offbeat AI Watch
+                            </a>
+                        </div>
+
+                        <div class="mt-4 pt-4 border-t border-stone-700/50">
+                            <p class="text-stone-500 text-[10px] leading-relaxed">
+                                Data: Google/Ipsos "Our Life With AI" 2025 Survey<br>
+                                21,043 adults | 21 countries<br>
+                                Sep-Oct 2024
+                            </p>
+                            <a href="https://storage.googleapis.com/gweb-uniblog-publish-prod/documents/Google_Ipsos_Our_Life_with_AI_Jan_2025.pdf" target="_blank" rel="noopener" class="text-orange-400 hover:underline text-[10px] mt-2 inline-block">
+                                📄 Download Report
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Footer -->
-            <div class="mt-8 bg-stone-800/80 rounded-xl border border-stone-700/50 p-6">
-                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-                    <div class="flex items-center gap-4">
-                        <img src="https://media.licdn.com/dms/image/v2/D5603AQHPAun1NQMRBQ/profile-displayphoto-shrink_400_400/B56ZaRzruUHoAg-/0/1746202879498?e=1753920000&v=beta&t=xb4k0fzn3xNxw66K_f_Kg6UvfbY_vJTUZxqNLDp5zMY" alt="Shashwat Ghosh" class="w-14 h-14 rounded-full border-2 border-orange-500 object-cover" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 56 56%22><rect fill=%22%23f97316%22 width=%2256%22 height=%2256%22 rx=%2228%22/><text x=%2250%%22 y=%2255%%22 text-anchor=%22middle%22 fill=%22white%22 font-size=%2220%22 font-weight=%22bold%22>SG</text></svg>'">
-                        <div>
-                            <p class="text-white font-bold">Shashwat Ghosh</p>
-                            <p class="text-stone-400 text-sm">Founder, Helix GTM Consulting</p>
-                            <div class="flex gap-3 mt-1">
-                                <a href="https://www.linkedin.com/in/shashwatghosh/" target="_blank" rel="noopener" class="text-orange-400 hover:text-orange-300 text-xs">LinkedIn</a>
-                                <span class="text-stone-600">|</span>
-                                <a href="https://twitter.com/Shashwat_Ghosh" target="_blank" rel="noopener" class="text-orange-400 hover:text-orange-300 text-xs">Twitter</a>
-                                <span class="text-stone-600">|</span>
-                                <a href="https://gtmhelix.com" target="_blank" rel="noopener" class="text-orange-400 hover:text-orange-300 text-xs">GTM Expert</a>
-                            </div>
-                        </div>
-                    </div>
-                    <img src="https://gtmhelix.com/wp-content/uploads/2024/03/gtmhelix-logo.png" alt="Helix GTM" class="h-10 object-contain" onerror="this.style.display='none'">
-                </div>
-                <div class="mt-4 pt-4 border-t border-stone-700/50 text-center">
-                    <p class="text-stone-500 text-xs">Data: Google/Ipsos "Our Life With AI" 2025 | 21,043 adults | 21 countries | Sep-Oct 2024</p>
-                    <p class="text-stone-500 text-xs mt-1">
-                        <a href="https://gtmhelix.com/ai-trendwatch" class="text-orange-400 hover:underline">Offbeat AI Watch</a>
-                        <span class="mx-2">•</span>
-                        <a href="https://gtmhelix.com/ai-trendwatch/archive.html" class="text-orange-400 hover:underline">Newsletter Archive</a>
-                        <span class="mx-2">•</span>
-                        <a href="https://storage.googleapis.com/gweb-uniblog-publish-prod/documents/Google_Ipsos_Our_Life_with_AI_Jan_2025.pdf" class="text-orange-400 hover:underline">Research Report</a>
-                    </p>
-                    <p class="text-orange-500 font-medium text-xs mt-2">Jan 2025 | Narrative: Informed Optimism</p>
-                </div>
+            <div class="mt-6 pt-4 border-t border-stone-800 text-center">
+                <p class="text-stone-600 text-xs">
+                    © 2025 <a href="https://gtmhelix.com" class="text-orange-400 hover:underline">Helix GTM Consulting</a> |
+                    <a href="https://gtmhelix.com/ai-trendwatch" class="text-orange-400 hover:underline">Offbeat AI Watch</a> |
+                    Analysis by <a href="https://www.linkedin.com/in/shashwatghosh/" class="text-orange-400 hover:underline">Shashwat Ghosh</a>
+                </p>
             </div>
         </div>
     </div>
 
     <script>
         function showTab(tabId) {
-            // Hide all panels
-            document.querySelectorAll('.tab-panel').forEach(panel => {
-                panel.classList.add('hidden');
-            });
-
-            // Show selected panel
+            document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.add('hidden'));
             document.getElementById(tabId).classList.remove('hidden');
-
-            // Update tab buttons
             document.querySelectorAll('.tab-btn').forEach(btn => {
-                if (btn.dataset.tab === tabId) {
-                    btn.className = 'tab-btn active px-4 py-2 rounded-lg font-medium text-sm flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-lg';
-                } else {
-                    btn.className = 'tab-btn px-4 py-2 rounded-lg font-medium text-sm flex items-center gap-2 bg-stone-800/80 text-stone-400 hover:bg-stone-700 border border-stone-700/50';
-                }
+                btn.className = btn.dataset.tab === tabId
+                    ? 'tab-btn active px-3 py-2 rounded-lg font-medium text-xs md:text-sm flex items-center gap-1.5 bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-lg'
+                    : 'tab-btn px-3 py-2 rounded-lg font-medium text-xs md:text-sm flex items-center gap-1.5 bg-stone-800/80 text-stone-400 hover:bg-stone-700 border border-stone-700/50';
             });
         }
     </script>
