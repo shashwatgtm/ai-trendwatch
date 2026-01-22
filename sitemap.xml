@@ -57,12 +57,60 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Special Research Report: India AI Myth Busted -->
+  <!-- Special Research Report: India AI Myth Busted - Hub -->
   <url>
     <loc>https://gtmhelix.com/ai-trendwatch/india-ai-myth-busted.html</loc>
-    <lastmod>2026-01-21</lastmod>
+    <lastmod>2026-01-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- India AI Myth Busted - Informed Optimism -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/india-ai-informed-optimism.html</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- India AI Myth Busted - Sentiment Analysis -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/india-ai-sentiment-analysis.html</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- India AI Myth Busted - Workplace Impact -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/india-ai-workplace-impact.html</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- India AI Myth Busted - Trust & Data -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/india-ai-trust-data.html</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- India AI Myth Busted - Country Comparison -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/india-ai-country-comparison.html</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- India AI Myth Busted - GTM Playbook -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/india-ai-gtm-playbook.html</loc>
+    <lastmod>2026-01-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- Archive Page -->
