@@ -113,6 +113,70 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Special Research Report #2: India's AI Paradox - Hub -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/india-ai-paradox-scale-vs-reach.html</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- India AI Paradox - 4-Source Method -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/india-ai-4-platform-method.html</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- India AI Paradox - Coding Dominance -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/india-ai-coding-dominance.html</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- India AI Paradox - Youth Engine -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/india-ai-youth-engine.html</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- India AI Paradox - Per-Capita Paradox -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/india-ai-per-capita-paradox.html</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- India AI Paradox - Productivity & Trust -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/india-ai-productivity-trust.html</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- India AI Paradox - Concentration Vectors -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/india-ai-concentration-vectors.html</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- India AI Paradox - GTM Dual Strategy -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/india-ai-gtm-dual-strategy.html</loc>
+    <lastmod>2026-02-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- About Page -->
   <url>
     <loc>https://gtmhelix.com/ai-trendwatch/about.html</loc>
