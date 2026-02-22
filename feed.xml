@@ -5,7 +5,7 @@
     <link>https://gtmhelix.com/ai-trendwatch/</link>
     <description>Fortnightly intelligence brief on AI infrastructure, GTM strategy, and regulatory developments for B2B companies. No fluff—just verified signals that matter.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Jan 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Feb 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://gtmhelix.com/ai-trendwatch/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://gtmhelix.com/ai-trendwatch/images/logo.png</url>
@@ -13,7 +13,26 @@
       <link>https://gtmhelix.com/ai-trendwatch/</link>
     </image>
 
-    <!-- Special Research Report: India AI Myth Busted -->
+    <!-- Special Research Report #2: India's AI Paradox: Scale vs Reach -->
+    <item>
+      <title>India's AI Paradox: #2 by Scale, #64-101 by Reach | 4-Platform Cross-Study Analysis 2026</title>
+      <link>https://gtmhelix.com/ai-trendwatch/india-ai-paradox-scale-vs-reach.html</link>
+      <description>Four platforms converge: India is the world's #2 AI market by scale (Anthropic, OpenAI) but #64-101 per capita (Microsoft, Anthropic). Cross-study analysis triangulating Anthropic Economic Index, OpenAI Signals, Google/Ipsos, and Microsoft AI Diffusion Report. Reveals India's dual reality: world-leading scale concentrated in 4 states, 1 occupation cluster, and 1 generation.</description>
+      <pubDate>Sat, 21 Feb 2026 00:00:00 GMT</pubDate>
+      <guid>https://gtmhelix.com/ai-trendwatch/india-ai-paradox-scale-vs-reach.html</guid>
+      <author>Shashwat Ghosh</author>
+      <category>Research Report</category>
+      <category>India AI</category>
+      <category>Anthropic</category>
+      <category>OpenAI</category>
+      <category>Google Ipsos</category>
+      <category>Microsoft</category>
+      <category>Per Capita AI</category>
+      <category>Cross-Platform Analysis</category>
+      <category>GTM Strategy</category>
+    </item>
+
+    <!-- Special Research Report #1: India AI Myth Busted -->
     <item>
       <title>India AI Myth Busted: Informed Optimism - Google/Ipsos 2026 Survey Analysis</title>
       <link>https://gtmhelix.com/ai-trendwatch/india-ai-myth-busted.html</link>
