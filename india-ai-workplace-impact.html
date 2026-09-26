@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <!-- run 7: github.io forwards to gtmhelix.com -->
-<script>(function(){var h=location.hostname;if(h.slice(-10)!=="github.io")return;var p=location.pathname.replace(/^\/ai-trendwatch/,"");if(p==="/template.html"||p==="/index.html")p="/";location.replace("https://gtmhelix.com/ai-trendwatch"+(p||"/")+location.search+location.hash);})();</script>
+<script>(function(){var h=location.hostname;if(!/(^|\.)github\.io$/.test(h))return;var p=location.pathname.replace(/^\/ai-trendwatch/,"");if(p==="/template.html"||p==="/index.html")p="/";location.replace("https://gtmhelix.com/ai-trendwatch"+(p||"/")+location.search+location.hash);})();</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
