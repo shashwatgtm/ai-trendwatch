@@ -17,3 +17,8 @@
 .hx-bg-ox.rounded-xl,.hx-bg-ox.shadow-lg,.hx-bg-ox.p-4,.hx-bg-ox.p-6,.hx-bg-ox.p-8{background:#EAD9D5!important;background-image:none!important;color:#1A0E10!important;border-left:4px solid #641220}
 .hx-bg-ox.rounded-xl *,.hx-bg-ox.shadow-lg *,.hx-bg-ox.p-4 *,.hx-bg-ox.p-6 *,.hx-bg-ox.p-8 *{color:#1A0E10!important}
 .hx-bg-ox.rounded-xl .hx-ico,.hx-bg-ox.shadow-lg .hx-ico,.hx-bg-ox.p-4 .hx-ico,.hx-bg-ox.p-6 .hx-ico,.hx-bg-ox.p-8 .hx-ico{color:#641220!important}
+/* run 8 E10 (verifier F3, F4): source badges keep light text on oxblood and signal; small source links get readable size and a larger tap target */
+.source-badge.src-anthropic,.source-badge.src-openai{color:#FAF8F6!important}
+.text-\[10px\]{font-size:12px!important}
+a.text-\[10px\]{display:inline-block;padding:6px 0;min-height:24px}
+.lead-image{height:auto}

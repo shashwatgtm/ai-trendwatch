@@ -1,6 +1,8 @@
 <!-- Google Reader Revenue Manager - Newsletter Signup (Minimal version for injection) -->
-<script async type="application/javascript"
-    src="https://news.google.com/swg/js/v1/swg-basic.js"></script>
+<script>
+// Run 8: Google's widget is registered for gtmhelix.com only; elsewhere it logs errors, so it loads there only.
+if (/(^|\.)gtmhelix\.com$/.test(location.hostname)) { var g = document.createElement("script"); g.async = true; g.src = "https://news.google.com/swg/js/v1/swg-basic.js"; document.head.appendChild(g); }
+</script>
 <script>
 (self.SWG_BASIC = self.SWG_BASIC || []).push( basicSubscriptions => {
   basicSubscriptions.init({
