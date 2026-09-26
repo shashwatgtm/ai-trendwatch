@@ -11,3 +11,4 @@
 .hover\:hx-bg-track:hover{background-color:#EAD9D5}.hover\:hx-text-signal:hover{color:#C1121F}.hover\:hx-text-ink:hover{color:#1A0E10}
 .hx-bg-ox .hx-text-ink,.hx-bg-ox .hx-text-ox,.hx-bg-ox .hx-text-muted,.hx-bg-ox.hx-text-ink,.hx-bg-signal .hx-text-ink,.hx-bg-signal .hx-text-ox,.hx-bg-signal .hx-text-muted{color:#FAF8F6}
 .hx-bg-ox .source-badge,.hx-bg-signal .source-badge{box-shadow:0 0 0 1.5px #FAF8F6}
+.hx-text-ox .opacity-60{opacity:.85}
