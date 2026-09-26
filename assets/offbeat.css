@@ -1,15 +1,27 @@
-/* Offbeat AI Watch on the Helix GTM design (run 7, O5). Loaded after helix.css on the newsletter home, archive, About
-   and the 6 issues, in place of each page's own dark stylesheet. It restyles the pages' existing classes only: no
-   words, numbers, images, links or forms change. Helix colours: oxblood #641220, signal #C1121F, paper #FAF8F6,
-   ink #1A0E10, clay #EAD9D5. */
-body.ob { background: var(--h7-paper); color: var(--h7-ink); font-family: var(--h7-display); margin: 0; }
-.ob main a { color: var(--h7-ox); }
-.ob main a:hover { color: var(--h7-signal); }
-.ob-page { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+/* Offbeat AI Watch on the Helix GTM design (run 7 O5, rewritten in run 8 E4). Loaded after helix.css on every page:
+   home, archive, About, privacy, terms, the 6 issues and the 15 India AI reports. It restyles the pages' existing
+   classes only: no words, numbers, chart values, images or links change here. Helix colours only: oxblood #641220,
+   signal #C1121F, paper #FAF8F6, ink #1A0E10, clay #EAD9D5, white, and tints of them. No dark page backgrounds. */
+html { color: var(--h7-ink); }
+body.ob, body.ob-report { background: var(--h7-paper); color: var(--h7-ink); font-family: var(--h7-display); margin: 0; }
+.ob main a, .ob .container a, .ob .hero a, .ob .archive a { color: var(--h7-ox); }
+.ob main a:hover, .ob .container a:hover { color: var(--h7-signal); }
+
+/* Shared header: the site name and "by Helix GTM Consulting" */
+.ob-brand { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 12px; min-width: 0; }
+.ob-by { font-family: var(--h7-mono); font-size: 11.5px; letter-spacing: .04em; color: var(--h7-ink-70) !important; text-decoration: underline;
+  text-decoration-color: var(--h7-signal); text-underline-offset: 3px; white-space: nowrap; }
+.ob-by:hover { color: var(--h7-ox) !important; }
+
+/* Line icons (they replace the emoji): outline drawn in the current colour, set here to Helix colours */
+.hx-ico { width: 1.15em; height: 1.15em; display: inline-block; vertical-align: -.2em; flex: none; color: var(--h7-ox); }
+.feature-icon .hx-ico { width: 34px; height: 34px; color: var(--h7-signal); }
+.issue-card-image > span > .hx-ico { width: 56px; height: 56px; color: var(--h7-ox); }
+.hx-bg-ox .hx-ico, .hx-bg-signal .hx-ico, .section-header .hx-ico, .section-header-purple .hx-ico { color: var(--h7-paper); }
 
 /* Home: hero, features, latest issue and report */
 .ob .hero { max-width: 1120px; margin: 0 auto; padding: 56px 24px 40px; }
-.ob .hero h1 { font-size: clamp(44px, 8vw, 104px); line-height: .95; font-weight: 800; margin: 0 0 20px; color: var(--h7-ink); }
+.ob .hero h1 { font-size: clamp(40px, 7vw, 88px); line-height: .98; font-weight: 800; margin: 0 0 20px; color: var(--h7-ink); max-width: 16ch; }
 .ob .hero h1 span, .ob h2 span, .ob .page-header h1 span { color: var(--h7-signal); }
 .ob .hero .tagline { font-size: clamp(19px, 2.2vw, 24px); line-height: 1.4; max-width: 760px; margin: 0 0 12px; }
 .ob .hero .subtitle, .ob .form-note { color: var(--h7-ink-70); max-width: 760px; }
@@ -21,16 +33,17 @@ body.ob { background: var(--h7-paper); color: var(--h7-ink); font-family: var(--
   border: 0; border-radius: 0; cursor: pointer; }
 .ob .subscribe-form button:hover { background: var(--h7-signal); }
 .ob .features, .ob .latest-issue, .ob .archive, .ob .page-header { max-width: 1120px; margin: 0 auto; padding: 40px 24px; border-top: 1px solid var(--h7-ink-12); }
-.ob .features h2, .ob .latest-issue h2 { font-size: clamp(30px, 4vw, 48px); line-height: 1.05; margin: 0 0 24px; }
+.ob .features h2, .ob .latest-issue h2, .ob .archive h2 { font-size: clamp(28px, 4vw, 48px); line-height: 1.05; margin: 0 0 24px; display: flex; align-items: center; gap: 12px; }
 .ob .feature-grid, .ob .archive-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
-.ob .feature-item { background: #fff; border: 1px solid var(--h7-ink-12); padding: 24px; }
-.ob .feature-icon { font-size: 28px; margin-bottom: 8px; }
+.ob .feature-item { background: #fff; border: 1px solid var(--h7-ink-12); border-top: 3px solid var(--h7-ox); padding: 24px; }
+.ob .feature-icon { margin-bottom: 8px; line-height: 1; }
 .ob .feature-item h3 { margin: 0 0 8px; font-size: 20px; }
 .ob .feature-item p { margin: 0; color: var(--h7-ink-70); }
 .ob .latest-issue-container { max-width: none; }
 .ob .issue-card { background: #fff; border: 1px solid var(--h7-ink-12); display: grid; grid-template-columns: minmax(0, 1fr); overflow: hidden; }
 @media (min-width: 768px) { .ob .latest-issue .issue-card { grid-template-columns: 5fr 7fr; } }
-.ob .issue-card-image { position: relative; min-height: 200px; background-size: cover; background-position: center; background-color: var(--h7-clay); }
+.ob .issue-card-image { position: relative; min-height: 200px; background-size: cover; background-position: center; background-color: var(--h7-clay);
+  display: grid; place-items: center; }
 .ob .issue-number { position: absolute; left: 12px; top: 12px; font: 600 12px var(--h7-mono); letter-spacing: .08em; text-transform: uppercase;
   color: var(--h7-paper); background: var(--h7-ox); padding: 4px 8px; }
 .ob .issue-card-content { padding: 24px; }
@@ -47,39 +60,71 @@ body.ob { background: var(--h7-paper); color: var(--h7-ink); font-family: var(--
 .ob .page-header h1 { font-size: clamp(40px, 7vw, 88px); line-height: .98; margin: 0 0 12px; }
 .ob .page-header p { color: var(--h7-ink-70); max-width: 760px; font-size: 19px; }
 
-/* Issues: the email-style layout as a readable article */
-.ob .container { max-width: 760px; margin: 0 auto; padding: 32px 24px 48px; background: transparent; }
+/* Issues: one article with the story headline as its H1 */
+.ob .container { max-width: 820px; margin: 0 auto; padding: 32px 24px 48px; background: transparent; }
 .ob .header { border-bottom: 3px solid var(--h7-ox); padding: 8px 0 20px; margin-bottom: 28px; }
 .ob .header-top, .ob .header-meta { font-family: var(--h7-mono); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--h7-ink-70); }
-.ob .header-title { font-size: clamp(36px, 6vw, 64px); line-height: 1; font-weight: 800; color: var(--h7-ink); margin: 8px 0; }
+.ob .header-meta { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+.ob .header-title { font-size: clamp(30px, 5vw, 52px); line-height: 1.05; font-weight: 800; color: var(--h7-ink); margin: 10px 0 12px; letter-spacing: -.03em; }
 .ob .header-meta-label { color: var(--h7-signal); }
-.ob .section-header, .ob .section-header-cyan, .ob .section-header-purple, .ob .section-label {
+.ob .section-header, .ob .section-header-cyan, .ob .section-header-purple, .ob .section-label, .ob .category-header {
   font: 600 13px var(--h7-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--h7-paper); background: var(--h7-ox);
   display: inline-block; padding: 5px 10px; margin: 32px 0 14px; border: 0; }
-.ob .section-header-cyan { background: var(--h7-ink); }
+.ob .section-label { margin-top: 0; }
+.ob .section-header-cyan { background: var(--h7-clay); color: var(--h7-ink); }
 .ob .section-header-purple { background: var(--h7-signal); }
+.ob .category-header { background: var(--h7-clay); color: var(--h7-ox); margin: 0 0 10px; }
+.ob .lead-story-wrapper { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
 .ob .lead-story, .ob .editor-note-box, .ob .author-bio { background: #fff; border: 1px solid var(--h7-ink-12); border-left: 4px solid var(--h7-ox); padding: 24px; margin: 0 0 20px; color: var(--h7-ink); }
-.ob .story-headline, .ob .story-title, .ob .trend-title, .ob .column-title, .ob .author-bio h3 { color: var(--h7-ink); line-height: 1.2; }
-.ob .story-headline { font-size: clamp(24px, 3.4vw, 34px); margin: 0 0 12px; }
-.ob .story-title, .ob .trend-title, .ob .column-title { font-size: 20px; margin: 0 0 8px; }
-.ob .story-text, .ob .story-description, .ob .trend-description, .ob .column-text, .ob .author-bio p, .ob .author-bio li { color: var(--h7-ink); font-size: 17px; line-height: 1.6; }
-.ob .story-grid, .ob .trends-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
-.ob .story-item, .ob .trend-item, .ob .story-item-full, .ob .trend-item-full { background: #fff; border: 1px solid var(--h7-ink-12); padding: 20px; }
+.ob .story-headline, .ob .story-title, .ob .trend-title, .ob .column-title, .ob .author-bio h3, .ob .mini-title, .ob .tech-headline, .ob .product-name { color: var(--h7-ink); line-height: 1.2; }
+.ob .story-headline { font-size: clamp(20px, 2.6vw, 26px); margin: 0 0 12px; }
+.ob .story-title, .ob .trend-title, .ob .column-title, .ob .mini-title, .ob .tech-headline, .ob .product-name { font-size: 20px; margin: 0 0 8px; }
+.ob .trend-title { display: flex; align-items: baseline; gap: 8px; }
+.ob .column-title { font: 600 13px var(--h7-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--h7-ox); }
+.ob .story-text, .ob .story-description, .ob .trend-description, .ob .column-text, .ob .author-bio p, .ob .author-bio li,
+.ob .mini-text, .ob .tech-description, .ob .product-description { color: var(--h7-ink); font-size: 17px; line-height: 1.6; }
+.ob .story-grid, .ob .trends-grid, .ob .tech-grid, .ob .product-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.ob .three-column { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 8px 0 12px; }
+.ob .three-column > div, .ob .story-item, .ob .trend-item, .ob .story-item-full, .ob .trend-item-full, .ob .tech-item, .ob .product-item {
+  background: #fff; border: 1px solid var(--h7-ink-12); padding: 20px; }
+.ob .story-item-full, .ob .trend-item-full { grid-column: 1 / -1; }
+.ob .tech-company { font: 600 13px var(--h7-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--h7-ox); display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
 .ob .lead-image, .ob .lead-image img, .ob .container img { max-width: 100%; height: auto; display: block; }
-.ob .image-caption { font: 400 13px var(--h7-mono); color: var(--h7-ink-70); margin-top: 6px; }
+.ob .image-caption { font: 400 13px var(--h7-mono); color: var(--h7-ink-70); margin: 6px 0 12px; }
 .ob .source-link { font: 600 13px var(--h7-mono); color: var(--h7-ox); text-transform: uppercase; letter-spacing: .05em; }
-.ob .editor-name { font-weight: 700; }
+.ob .editor-name { font-weight: 700; margin-top: 12px; }
 .ob .editor-title { color: var(--h7-ink-70); font-family: var(--h7-mono); font-size: 13px; }
 .ob .author-bio ul { padding-left: 20px; }
 .ob .author-bio a { color: var(--h7-ox); }
-.ob .footer { border-top: 1px solid var(--h7-ink-12); margin-top: 32px; padding: 24px 0; text-align: left; background: transparent; color: var(--h7-ink); }
-.ob .footer-title { font-weight: 800; letter-spacing: .08em; }
-.ob .footer-text { color: var(--h7-ink-70); }
-.ob .subscribe-btn { display: inline-block; margin-top: 12px; padding: 12px 22px; font: 600 15px var(--h7-display); color: var(--h7-paper) !important;
-  background: var(--h7-ox); text-decoration: none; }
+.ob .ob-sub-cta { margin: 8px 0 0; }
+.ob .subscribe-btn { display: inline-block; padding: 13px 22px; font: 600 13px var(--h7-mono); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--h7-paper) !important; background: var(--h7-ox); text-decoration: none; }
 .ob .subscribe-btn:hover { background: var(--h7-signal); }
 .ob table { max-width: 100%; }
 
-/* Reports: shared header, footer and type only; the report body keeps its own layout and charts */
-body.ob-report { font-family: var(--h7-display); background: #151617 !important; color: #F2F2F2; }  /* the report's own body colours, kept */
-.ob-report .hx-header, .ob-report .hx-footer { background: var(--h7-paper); color: var(--h7-ink); font-size: 17px; line-height: 1.55; }
+/* Privacy and terms */
+.ob-legal .container { max-width: 800px; margin: 0 auto; padding: 48px 24px 24px; display: block; }
+.ob-legal .page-title { font-size: clamp(38px, 6vw, 64px); line-height: 1; font-weight: 800; letter-spacing: -.03em; color: var(--h7-ink); margin: 0 0 10px; }
+.ob-legal .page-title span { color: var(--h7-signal); }
+.ob-legal .effective-date { font-family: var(--h7-mono); font-size: 13px; color: var(--h7-ink-70); margin: 0 0 32px; }
+.ob-legal h2 { color: var(--h7-ox); font-size: 24px; line-height: 1.2; margin: 36px 0 12px; }
+.ob-legal h3 { color: var(--h7-ink); font-size: 19px; margin: 22px 0 8px; }
+.ob-legal p, .ob-legal li { color: var(--h7-ink); line-height: 1.65; }
+.ob-legal ul { padding-left: 22px; }
+.ob-legal li { margin-bottom: 6px; }
+.ob-legal .contact-info { background: #fff; border: 1px solid var(--h7-ink-12); border-left: 4px solid var(--h7-ox); padding: 20px 22px; margin-top: 16px; }
+.ob-legal .contact-info p { margin: 0 0 8px; }
+.ob-legal .important-notice { background: var(--h7-clay); border-left: 4px solid var(--h7-signal); padding: 4px 22px 12px; margin: 12px 0; }
+.ob-legal .back-link { display: inline-block; margin-top: 36px; padding: 13px 20px; background: var(--h7-ox); color: var(--h7-paper) !important;
+  font: 600 13px var(--h7-mono); letter-spacing: .08em; text-transform: uppercase; text-decoration: none; }
+.ob-legal .back-link:hover { background: var(--h7-signal); }
+
+/* Reports: light Helix page (the run 7 dark override is gone). Colour classes are in css/reports.css. */
+body.ob-report { font-size: 16px; line-height: 1.55; }
+.ob-report .hx-header, .ob-report .hx-footer { font-size: 17px; line-height: 1.55; }
+.ob-report #root a.hx-text-ox:not(.rounded-lg), .ob-report #root a.hx-text-muted:not(.rounded-lg) { text-decoration: underline; text-decoration-color: rgba(26, 14, 16, .3); text-underline-offset: 3px; }
+@media (max-width: 560px) {
+  .ob .container, .ob-legal .container { padding-left: 16px; padding-right: 16px; }
+  .ob .hero, .ob .features, .ob .latest-issue, .ob .archive, .ob .page-header { padding-left: 16px; padding-right: 16px; }
+  .ob .lead-story, .ob .editor-note-box, .ob .author-bio, .ob .story-item, .ob .trend-item, .ob .tech-item, .ob .product-item, .ob .three-column > div { padding: 16px; }
+}

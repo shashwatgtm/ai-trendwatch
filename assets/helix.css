@@ -212,3 +212,97 @@ footer.hx-footer .hx7-built-links a { display: inline; margin: 0; color: var(--h
 .hx7-built-photo, .hx7-strip-photo, .hx7-cred-photo { flex: none; display: block; }
 .hx7-built-photo { width: 72px; height: 72px; }
 .hx7-strip-photo { width: 44px; height: 44px; }
+
+/* ---------- independent verifier fixes (run 7, 14:50 IST) ---------- */
+/* Tables: words wrap between words, never inside one; the tool name column keeps a readable width (the table box scrolls on its own if needed). */
+.hx-table td, .hx-table th { overflow-wrap: break-word; word-break: normal; }
+.hx-table td:first-child, .hx-table th:first-child { min-width: 9rem; }
+/* GTM Alpha: centred section headings are centred as boxes too; stat labels never split a word. */
+.section-header .section-title { margin-left: auto; margin-right: auto; }
+.stat-label, .stat-number { overflow-wrap: normal; word-break: normal; }
+@media (max-width: 480px) {
+  .stats-grid { gap: 8px !important; }
+  .stat-item { padding: 16px 6px !important; }
+  .stat-label { font-size: 10px !important; letter-spacing: 0 !important; }
+}
+/* Verifier re-check (15:04 IST): every table (not only .hx-table) keeps whole words and scrolls in its own box on phones; the wordmark never splits a word. */
+main table td, main table th { overflow-wrap: break-word; word-break: normal; }
+@media (max-width: 600px) { main table { display: block; max-width: 100%; overflow-x: auto; } }
+.hx-wordmark { overflow-wrap: normal; word-break: normal; }
+/* Re-check 2 (15:15 IST): in auto-width tables Chrome treats break-word as a break point, so cells use normal wrapping
+   (the table box scrolls instead) and only links may break; badges never split. */
+main table td, main table th, .hx-table td, .hx-table th { overflow-wrap: normal; }
+main table td a, .hx-table td a { overflow-wrap: anywhere; }
+.free-badge { white-space: nowrap; }
+
+/* ---------- run 8: plain EPIC scorecard (hero) ---------- */
+.hx8-sc { margin: 0; background: #fff; border: 1.5px solid var(--h7-ink-12); border-top: 4px solid var(--h7-ox); padding: 20px 22px; max-width: 560px; }
+.hx8-sc-k { font-family: var(--h7-mono); font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--h7-ox); margin: 0 0 8px; }
+.hx8-sc-in { font-family: var(--h7-display); font-size: 18px; line-height: 1.35; color: var(--h7-ink); margin: 0 0 16px; }
+.hx8-sc-rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.hx8-sc-rows li { display: grid; grid-template-columns: minmax(8.5rem, 11rem) 1fr auto; align-items: center; gap: 12px; font-size: 15px; }
+.hx8-sc-l { color: var(--h7-ink); font-weight: 600; }
+.hx8-sc-bar { height: 14px; background: var(--h7-clay); position: relative; overflow: hidden; }
+.hx8-sc-bar i { position: absolute; inset: 0 auto 0 0; background: var(--h7-ink-70); animation: hx8-grow 1.1s cubic-bezier(.2,.7,.2,1) both; }
+.hx8-sc-rows li.is-lead .hx8-sc-bar i { background: var(--h7-signal); }
+.hx8-sc-rows li b { font-family: var(--h7-mono); font-size: 15px; color: var(--h7-ink); white-space: nowrap; }
+.hx8-sc-rows li b small { font-size: 12px; font-weight: 400; color: var(--h7-ink-70); }
+.hx8-sc-v { margin: 18px 0 8px; font-family: var(--h7-display); font-weight: 800; font-size: 22px; color: var(--h7-ox); }
+.hx8-sc figcaption { font-size: 13.5px; line-height: 1.5; color: var(--h7-ink-70); }
+.hx8-sc-cta { display: inline-block; margin-top: 12px; font-weight: 700; color: var(--h7-ink); text-decoration: underline; text-decoration-color: var(--h7-signal); text-decoration-thickness: 3px; text-underline-offset: 6px; }
+@keyframes hx8-grow { from { width: 0; } }
+@media (max-width: 420px) { .hx8-sc { padding: 16px 14px; } .hx8-sc-rows li { grid-template-columns: 1fr auto; } .hx8-sc-bar { grid-column: 1 / -1; grid-row: 2; } }
+@media (prefers-reduced-motion: reduce) { .hx8-sc-bar i { animation: none; } }
+
+/* ---------- run 8: story section (result tiles, recognition), proof line, collapsed developer block ---------- */
+.hx8-story { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; }
+@media (min-width: 900px) { .hx8-story { grid-template-columns: 200px minmax(0, 1fr); align-items: start; } }
+.hx8-story .hx7-cred-photo img { width: 200px; height: 200px; object-fit: cover; }
+.hx8-narr { font-size: 19px; line-height: 1.6; max-width: 62ch; color: var(--h7-ink); margin: 0 0 8px; }
+.hx8-role { font-family: var(--h7-mono); font-size: 13px; color: var(--h7-ox); margin: 0 0 18px; }
+.hx8-tiles { list-style: none; margin: 24px 0 8px; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; }
+.hx8-tiles li { background: #fff; border: 1.5px solid var(--h7-ink-12); border-top: 3px solid var(--h7-ox); padding: 16px 16px 14px; }
+.hx8-tile-co { display: block; font-family: var(--h7-mono); font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--h7-ox); }
+.hx8-tiles b { display: block; font-family: var(--h7-display); font-size: 34px; font-weight: 800; line-height: 1.1; color: var(--h7-ink); margin-top: 6px; }
+.hx8-tile-l { display: block; font-size: 14px; color: var(--h7-ink-70); margin-bottom: 8px; }
+.hx8-tiles p { margin: 0; font-size: 14px; line-height: 1.45; color: var(--h7-ink); }
+.hx8-awards { list-style: none; margin: 18px 0 8px; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.hx8-awards li { background: var(--h7-clay); color: var(--h7-ink); font-size: 13.5px; padding: 6px 10px; }
+.hx8-proof { margin-top: 24px; padding: 14px 16px; background: var(--h7-clay); border-left: 4px solid var(--h7-signal); font-size: 15px; line-height: 1.5; color: var(--h7-ink); }
+.hx8-motions { list-style: none; margin: 20px 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+.hx8-motions li { background: #fff; border: 1.5px solid var(--h7-ink-12); border-top: 4px solid var(--h7-ox); padding: 18px; }
+.hx8-motions li b.hx8-letter { display: inline-block; width: 34px; height: 34px; line-height: 34px; text-align: center; background: var(--h7-signal); color: var(--h7-paper); font-family: var(--h7-display); font-size: 20px; margin-bottom: 8px; }
+.hx8-motions h3 { margin: 4px 0 6px; }
+.hx8-motions p { margin: 0 0 8px; }
+.hx8-dev { margin-top: 32px; border: 1.5px solid var(--h7-ink-12); background: #fff; }
+.hx8-dev > summary { cursor: pointer; padding: 12px 16px; font-family: var(--h7-mono); font-size: 13px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--h7-ox); }
+.hx8-dev > div { padding: 0 16px 16px; }
+
+/* ---------- run 8 (E9 colour rule: no dark backgrounds): clay footer and table heads; the approved layout is unchanged ---------- */
+footer.hx-footer { background: var(--h7-clay) !important; color: var(--h7-ink) !important; border-top: 4px solid var(--h7-ox) !important; }
+footer.hx-footer p, footer.hx-footer a { color: var(--h7-ink) !important; }
+footer.hx-footer a:hover { color: var(--h7-ox) !important; }
+footer.hx-footer .hx-foot-h, footer.hx-footer h4 { color: var(--h7-ox) !important; }
+footer.hx-footer .hx-wordmark { color: var(--h7-ink) !important; }
+footer.hx-footer .hx-footer-bottom { border-top-color: var(--h7-ink-12) !important; color: var(--h7-ink) !important; }
+.hx7-built { border-bottom-color: var(--h7-ink-12); }
+.hx7-built-h { color: var(--h7-ink) !important; }
+footer.hx-footer .hx7-built-links a { color: var(--h7-ink) !important; }
+.hx7-giant { color: rgba(26, 14, 16, .14) !important; }
+.hx-table th { background: var(--h7-clay) !important; color: var(--h7-ink) !important; border-bottom: 2px solid var(--h7-ink) !important; }
+.h7-demo svg { background: var(--h7-paper); }
+
+/* ---------- run 8: gtmhelix.com hero headline fits its column (no word breaks) ---------- */
+.hx-hero.h7-home.hx8-home h1 { font-size: clamp(40px, 4.6vw, 76px) !important; line-height: 1 !important; overflow-wrap: normal !important; word-break: normal !important; hyphens: manual !important; max-width: 14ch; }
+.hx8-home .h7-hero-grid { align-items: center; }
+
+/* run 8: scorecard bar widths as classes (strict CSP: no inline style attributes) */
+.hx8-v0 { width: 0%; } .hx8-v1 { width: 10%; } .hx8-v2 { width: 20%; } .hx8-v3 { width: 30%; } .hx8-v4 { width: 40%; } .hx8-v5 { width: 50%; } .hx8-v6 { width: 60%; } .hx8-v7 { width: 70%; } .hx8-v8 { width: 80%; } .hx8-v9 { width: 90%; } .hx8-v10 { width: 100%; }
+
+/* ---------- run 8 (E9): code blocks, rules and form fields in Helix colours (no dark areas, no default greys) ---------- */
+pre, .hx-code-block, .hx-output pre, .hx-result-body pre { background: #fff !important; color: var(--h7-ink) !important; border: 1.5px solid var(--h7-ink-12) !important; border-left: 4px solid var(--h7-ox) !important; }
+pre code { background: transparent !important; color: inherit !important; }
+hr { border: 0 !important; border-top: 1.5px solid var(--h7-ink-12) !important; }
+.hx-form textarea, .hx-form input[type="text"], .hx-form input[type="email"], .hx-field textarea { border: 1.5px solid var(--h7-ink-70) !important; background: #fff !important; color: var(--h7-ink) !important; font: inherit; width: 100%; padding: 10px 12px; box-sizing: border-box; }
+.hx7-results { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+@media (max-width: 700px) { .hx7-results { grid-template-columns: 1fr !important; } }
