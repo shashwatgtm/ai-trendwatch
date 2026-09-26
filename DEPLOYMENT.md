@@ -233,7 +233,7 @@ If GitHub Actions fails, you can manually deploy:
 ## Contact
 
 **Curator:** Shashwat Ghosh
-**Role:** Cofounder & Fractional CMO, Helix Consulting
+**Role:** Co-Founder and Fractional CMO, Helix GTM Consulting
 **GitHub:** [@shashwatgtm](https://github.com/shashwatgtm)
 
 ---

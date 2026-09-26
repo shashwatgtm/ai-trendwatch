@@ -15,7 +15,7 @@
 ## Author Credentials (CRITICAL)
 
 ### Official Designation
-**Shashwat Ghosh - Cofounder & Fractional CMO**
+**Shashwat Ghosh - Co-Founder and Fractional CMO**
 
 **DO NOT USE:**
 - ~~GTM Alpha Consultant~~
@@ -29,11 +29,11 @@
 ### Knowledge Graph Signals (Schema)
 ```json
 {
-  "jobTitle": "Cofounder & Fractional CMO",
+  "jobTitle": "Co-Founder and Fractional CMO",
   "worksFor": {
     "@type": "Organization",
     "name": "Helix GTM Consulting",
-    "foundingDate": "2016"
+    "foundingDate": "2022"
   },
   "knowsAbout": [
     "AI Go-To-Market Strategy",
@@ -221,13 +221,13 @@ https://github.com/shashwatgtm/ai-trendwatch/actions
 
 ### NewsArticle Schema
 - [ ] Headline, description, dates
-- [ ] Author with proper jobTitle: "Cofounder & Fractional CMO"
+- [ ] Author with proper jobTitle: "Co-Founder and Fractional CMO"
 - [ ] Publisher with logo
 - [ ] Proper knowsAbout fields (NOT optimization techniques)
 
 ### Author Schema Updates (All Issues)
 When updating old issues, ensure:
-- [ ] jobTitle: "Cofounder & Fractional CMO"
+- [ ] jobTitle: "Co-Founder and Fractional CMO"
 - [ ] Exit stories use specific company names
 - [ ] knowsAbout includes GTM/B2B expertise areas
 - [ ] Awards listed properly
@@ -365,13 +365,13 @@ shashwatgtm.github.io/ai-trendwatch/ → gtmhelix.com/ai-trendwatch/
 
 ### During Writing
 - [ ] Trends include reader insight
-- [ ] Author designation: "Cofounder & Fractional CMO"
+- [ ] Author designation: "Co-Founder and Fractional CMO"
 - [ ] Exit stories use specific company names
 - [ ] EEAT signals in content (not just schema)
 
 ### Schema Check
 - [ ] knowsAbout = GTM/B2B expertise (NOT optimization techniques)
-- [ ] jobTitle = "Cofounder & Fractional CMO"
+- [ ] jobTitle = "Co-Founder and Fractional CMO"
 - [ ] Exit stories = specific companies, not dollar amounts
 - [ ] Footer includes optimization note
 
@@ -380,7 +380,7 @@ shashwatgtm.github.io/ai-trendwatch/ → gtmhelix.com/ai-trendwatch/
 ## Contact
 
 **Curator:** Shashwat Ghosh
-**Role:** Cofounder & Fractional CMO, Helix GTM Consulting
+**Role:** Co-Founder and Fractional CMO, Helix GTM Consulting
 **LinkedIn:** [linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo](https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/)
 
 ---

@@ -44,7 +44,7 @@ Visit [gtmhelix.com/ai-trendwatch](https://gtmhelix.com/ai-trendwatch/) to subsc
 ## 👤 About
 
 Curated by **Shashwat Ghosh**
-Cofounder & Fractional CMO, Helix Consulting
+Co-Founder and Fractional CMO, Helix GTM Consulting
 AI Go-To-Market Strategist
 
 **Connect:**
