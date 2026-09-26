@@ -238,371 +238,31 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            background-color: #151617;
-            color: #FFFFFF;
-            line-height: 1.6;
-        }
-
-        /* Header */
-        header {
-            background-color: #0B0B10;
-            padding: 20px;
-            border-bottom: 1px solid #1A1A24;
-        }
-
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #FFFFFF;
-            text-decoration: none;
-        }
-
-        .logo span {
-            color: #FAA1A1;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 30px;
-        }
-
-        nav ul li a {
-            color: #F2F2F2;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #FAA1A1;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #151617 0%, #0B0B10 100%);
-            padding: 100px 20px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-
-        .hero h1 span {
-            color: #FAA1A1;
-        }
-
-        .hero .tagline {
-            font-size: 1.4rem;
-            color: #F2F2F2;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto 40px;
-        }
-
-        .hero .subtitle {
-            font-size: 1rem;
-            color: #F2F2F2;
-            opacity: 0.7;
-            margin-bottom: 40px;
-        }
-
-        /* Subscribe Form */
-        .subscribe-form {
-            max-width: 500px;
-            margin: 0 auto;
-            display: flex;
-            gap: 10px;
-        }
-
-        .subscribe-form input {
-            flex: 1;
-            padding: 15px 20px;
-            border: 1px solid #1A1A24;
-            border-radius: 8px;
-            background-color: #1A1A24;
-            color: #FFFFFF;
-            font-size: 1rem;
-        }
-
-        .subscribe-form input::placeholder {
-            color: #888;
-        }
-
-        .subscribe-form button {
-            padding: 15px 30px;
-            background-color: #FAA1A1;
-            color: #151617;
-            border: none;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .subscribe-form button:hover {
-            background-color: #ff8a8a;
-        }
-
-        .form-note {
-            font-size: 0.85rem;
-            color: #888;
-            margin-top: 15px;
-        }
-
-        /* Features Section */
-        .features {
-            padding: 80px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        .features h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 50px;
-        }
-
-        .features h2 span {
-            color: #FAA1A1;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-        }
-
-        .feature-item {
-            text-align: center;
-            padding: 30px;
-            background-color: #1A1A24;
-            border-radius: 12px;
-            transition: transform 0.3s ease;
-        }
-
-        .feature-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .feature-icon {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        .feature-item h3 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        .feature-item p {
-            font-size: 0.95rem;
-            color: #F2F2F2;
-            opacity: 0.8;
-        }
-
-        /* Latest Issue Section */
-        .latest-issue {
-            padding: 80px 20px;
-            background-color: #0B0B10;
-        }
-
-        .latest-issue-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .latest-issue h2 {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 40px;
-        }
-
-        .latest-issue h2 span {
-            color: #FAA1A1;
-        }
-
-        .issue-card {
-            background-color: #1A1A24;
-            border-radius: 12px;
-            overflow: hidden;
-            border: 1px solid transparent;
-            transition: border-color 0.3s ease;
-        }
-
-        .issue-card:hover {
-            border-color: #FAA1A1;
-        }
-
-        .issue-card-image {
-            height: 250px;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-        }
-
-        .issue-number {
-            position: absolute;
-            top: 15px;
-            left: 15px;
-            background-color: #FAA1A1;
-            color: #151617;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-
-        .issue-card-content {
-            padding: 30px;
-        }
-
-        .issue-date {
-            color: #FAA1A1;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .issue-card-content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            line-height: 1.4;
-        }
-
-        .issue-card-content h3 a {
-            color: #FFFFFF;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .issue-card-content h3 a:hover {
-            color: #FAA1A1;
-        }
-
-        .issue-card-content p {
-            color: #F2F2F2;
-            font-size: 1rem;
-            opacity: 0.8;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .read-more {
-            color: #FAA1A1;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-
-        .read-more:hover {
-            gap: 10px;
-        }
-
-        .read-more::after {
-            content: '→';
-        }
-
-        .view-all {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .view-all a {
-            color: #F2F2F2;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        .view-all a:hover {
-            color: #FAA1A1;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #0B0B10;
-            padding: 40px 20px;
-            text-align: center;
-            border-top: 1px solid #1A1A24;
-        }
-
-        footer p {
-            color: #F2F2F2;
-            font-size: 0.9rem;
-            opacity: 0.6;
-        }
-
-        footer a {
-            color: #FAA1A1;
-            text-decoration: none;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            nav ul {
-                gap: 20px;
-            }
-
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .subscribe-form {
-                flex-direction: column;
-            }
-
-            .feature-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="assets/brand.css">
+<link rel="stylesheet" href="assets/app.css">
+<link rel="stylesheet" href="assets/helix.css">
+<link rel="stylesheet" href="assets/offbeat.css">
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <a href="https://gtmhelix.com/ai-trendwatch/" class="logo">Offbeat <span>AI</span> Watch</a>
-            <nav>
-                <ul>
-                    <li><a href="https://gtmhelix.com/ai-trendwatch/">Home</a></li>
-                    <li><a href="https://gtmhelix.com/ai-trendwatch/archive.html">Archive</a></li>
-                    <li><a href="https://gtmhelix.com/ai-trendwatch/about.html">About</a></li>
-                    <li><a href="https://gtmhelix.com/ai-trendwatch/feed.xml">RSS</a></li>
-                </ul>
+<body class="ob">
+<!-- ob:chrome -->
+<a class="hx-skip" href="#main">Skip to content</a>
+<header class="hx-header">
+        <div class="hx-wrap hx-header-row">
+            <a class="hx-lockup" href="https://gtmhelix.com/ai-trendwatch/"><span class="hx-alpha" aria-hidden="true">h</span><span class="hx-wordmark">Offbeat AI Watch</span></a>
+            <nav class="hx-nav" aria-label="Offbeat AI Watch">
+                <a href="https://gtmhelix.com/ai-trendwatch/" class="is-active" aria-current="page">Home</a>
+                <a href="https://gtmhelix.com/ai-trendwatch/archive.html">Archive</a>
+                <a href="https://gtmhelix.com/ai-trendwatch/about.html">About</a>
+                <a href="https://gtmhelix.com/ai-trendwatch/feed.xml">RSS</a>
+                <a href="https://tools.gtmhelix.com/">All tools</a>
+                <a href="https://gtmhelix.com/ai-trendwatch/archive.html" class="hx-cta">All issues</a>
             </nav>
         </div>
     </header>
+<!-- /ob:chrome -->
+<span id="main" tabindex="-1"></span>
+    
 
     <!-- Hero Section -->
     <section class="hero">
@@ -645,7 +305,7 @@
         <div class="latest-issue-container">
             <h2>Latest <span>Issue</span></h2>
             <article class="issue-card">
-                <div class="issue-card-image" style="background-image: url('images/google-core-update-eeat-1280x680.jpg');">
+                <div class="issue-card-image" style="background-image: url('images/google-core-update-eeat-1280x680.jpg')">
                     <span class="issue-number">Issue #6</span>
                 </div>
                 <div class="issue-card-content">
@@ -662,11 +322,11 @@
     </section>
 
     <!-- Latest Report Section -->
-    <section class="latest-issue" style="background-color: #151617;">
+    <section class="latest-issue">
         <div class="latest-issue-container">
             <h2>Latest <span>Report</span></h2>
             <article class="issue-card">
-                <div class="issue-card-image" style="background-image: url('images/india-ai-paradox-social.jpg');">
+                <div class="issue-card-image" style="background-image: url('images/india-ai-paradox-social.jpg')">
                     <span class="issue-number">Research Report #2</span>
                 </div>
                 <div class="issue-card-content">
@@ -680,9 +340,54 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Offbeat AI Watch by <a href="https://gtmhelix.com">Helix GTM Consulting</a></p>
-        <p style="margin-top: 10px; font-size: 0.8rem;"><a href="https://gtmhelix.com/ai-trendwatch/privacy-policy.html">Privacy Policy</a> · <a href="https://gtmhelix.com/ai-trendwatch/terms-of-service.html">Terms of Service</a></p>
+    <!-- ob:chrome -->
+<footer class="hx-footer">
+        <div class="hx-wrap">
+            <div class="hx7-built"><picture class="hx7-built-photo"><source srcset="assets/shashwat-ghosh-160.webp" type="image/webp"><img src="assets/shashwat-ghosh-160.jpg" width="160" height="160" alt="Shashwat Ghosh" decoding="async"></picture><div><p class="hx7-built-h">Built by Shashwat Ghosh</p><p>Co-Founder and Fractional CMO, Helix GTM Consulting. 24+ years in B2B, 10+ years fractional. Creator of the EPIC, IMPACT and CRAFT frameworks.</p><p class="hx7-built-links"><a href="https://www.gtmexpert.com/">gtmexpert.com</a><a href="https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/">LinkedIn</a><a href="https://tools.gtmhelix.com/about/">About Shashwat</a></p></div></div>
+            <div class="hx-footer-grid">
+                <div>
+                    <a class="hx-lockup" href="https://gtmhelix.com/ai-trendwatch/"><span class="hx-alpha" aria-hidden="true">h</span><span class="hx-wordmark">Offbeat AI Watch</span></a>
+                    <p>A fortnightly AI intelligence brief for B2B leaders, by Shashwat Ghosh of Helix GTM Consulting.</p>
+                    <a href="https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/">LinkedIn</a>
+                    <a href="https://x.com/Shashwat_Ghosh">X (Twitter)</a>
+                </div>
+                <div>
+                    <p class="hx-foot-h">Offbeat AI Watch</p>
+                    <a href="https://gtmhelix.com/ai-trendwatch/">Home</a>
+                    <a href="https://gtmhelix.com/ai-trendwatch/archive.html">Archive</a>
+                    <a href="https://gtmhelix.com/ai-trendwatch/about.html">About</a>
+                    <a href="https://gtmhelix.com/ai-trendwatch/feed.xml">RSS</a>
+                </div>
+                <div>
+                    <p class="hx-foot-h">Connectors</p>
+                    <a href="https://gtmalpha.gtmhelix.com/integration">GTM Alpha</a>
+                    <a href="https://craft-gtm.gtmhelix.com/">CRAFT GTM</a>
+                    <a href="https://craft-content.gtmhelix.com/">CRAFT Content</a>
+                    <a href="https://impact.gtmhelix.com/">IMPACT</a>
+                    <a href="https://icp-intelligence.gtmhelix.com/">ICP Intelligence</a>
+                    <a href="https://revenue-enablement.gtmhelix.com/">Revenue Enablement</a>
+                    <a href="https://tools.gtmhelix.com/">All tools and plugins</a>
+                </div>
+                <div>
+                    <p class="hx-foot-h">Writing</p>
+                    <a href="https://gtmhelix.com/blog/">Blog</a>
+                    <a href="https://gtmexpert.substack.com/">GTM Whisperer newsletter</a>
+                    <a href="https://gtmhelix.com/ai-trendwatch/">Offbeat AI Watch</a>
+                </div>
+                <div>
+                    <p class="hx-foot-h">Contact</p>
+
+                    <a href="mailto:shashwat@gtmhelix.com">Email Support</a>
+                    <a href="https://www.gtmexpert.com/">GTMExpert.com</a>
+                </div>
+            </div>
+            <p class="hx7-giant" aria-hidden="true">Helix GTM</p>
+            <div class="hx-footer-bottom">
+                <span>&copy; 2026 Helix GTM Consulting. Offbeat AI Watch by Shashwat Ghosh.</span>
+                <span><a href="https://gtmhelix.com/ai-trendwatch/privacy-policy.html">Privacy Policy</a> &middot; <a href="https://gtmhelix.com/ai-trendwatch/terms-of-service.html">Terms of Service</a></span>
+            </div>
+        </div>
     </footer>
+<!-- /ob:chrome -->
 </body>
 </html>

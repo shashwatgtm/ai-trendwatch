@@ -1,0 +1,85 @@
+/* Offbeat AI Watch on the Helix GTM design (run 7, O5). Loaded after helix.css on the newsletter home, archive, About
+   and the 6 issues, in place of each page's own dark stylesheet. It restyles the pages' existing classes only: no
+   words, numbers, images, links or forms change. Helix colours: oxblood #641220, signal #C1121F, paper #FAF8F6,
+   ink #1A0E10, clay #EAD9D5. */
+body.ob { background: var(--h7-paper); color: var(--h7-ink); font-family: var(--h7-display); margin: 0; }
+.ob main a { color: var(--h7-ox); }
+.ob main a:hover { color: var(--h7-signal); }
+.ob-page { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
+
+/* Home: hero, features, latest issue and report */
+.ob .hero { max-width: 1120px; margin: 0 auto; padding: 56px 24px 40px; }
+.ob .hero h1 { font-size: clamp(44px, 8vw, 104px); line-height: .95; font-weight: 800; margin: 0 0 20px; color: var(--h7-ink); }
+.ob .hero h1 span, .ob h2 span, .ob .page-header h1 span { color: var(--h7-signal); }
+.ob .hero .tagline { font-size: clamp(19px, 2.2vw, 24px); line-height: 1.4; max-width: 760px; margin: 0 0 12px; }
+.ob .hero .subtitle, .ob .form-note { color: var(--h7-ink-70); max-width: 760px; }
+.ob .form-note { font-family: var(--h7-mono); font-size: 13px; }
+.ob .subscribe-form { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 8px; max-width: 560px; }
+.ob .subscribe-form input[type=email] { flex: 1 1 240px; min-height: 48px; padding: 0 16px; font: inherit; font-size: 16px; color: var(--h7-ink);
+  background: #fff; border: 1.5px solid var(--h7-ink); border-radius: 0; }
+.ob .subscribe-form button { min-height: 48px; padding: 0 24px; font: 600 15px var(--h7-display); color: var(--h7-paper); background: var(--h7-ox);
+  border: 0; border-radius: 0; cursor: pointer; }
+.ob .subscribe-form button:hover { background: var(--h7-signal); }
+.ob .features, .ob .latest-issue, .ob .archive, .ob .page-header { max-width: 1120px; margin: 0 auto; padding: 40px 24px; border-top: 1px solid var(--h7-ink-12); }
+.ob .features h2, .ob .latest-issue h2 { font-size: clamp(30px, 4vw, 48px); line-height: 1.05; margin: 0 0 24px; }
+.ob .feature-grid, .ob .archive-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.ob .feature-item { background: #fff; border: 1px solid var(--h7-ink-12); padding: 24px; }
+.ob .feature-icon { font-size: 28px; margin-bottom: 8px; }
+.ob .feature-item h3 { margin: 0 0 8px; font-size: 20px; }
+.ob .feature-item p { margin: 0; color: var(--h7-ink-70); }
+.ob .latest-issue-container { max-width: none; }
+.ob .issue-card { background: #fff; border: 1px solid var(--h7-ink-12); display: grid; grid-template-columns: minmax(0, 1fr); overflow: hidden; }
+@media (min-width: 768px) { .ob .latest-issue .issue-card { grid-template-columns: 5fr 7fr; } }
+.ob .issue-card-image { position: relative; min-height: 200px; background-size: cover; background-position: center; background-color: var(--h7-clay); }
+.ob .issue-number { position: absolute; left: 12px; top: 12px; font: 600 12px var(--h7-mono); letter-spacing: .08em; text-transform: uppercase;
+  color: var(--h7-paper); background: var(--h7-ox); padding: 4px 8px; }
+.ob .issue-card-content { padding: 24px; }
+.ob .issue-date { font: 500 13px var(--h7-mono); color: var(--h7-ink-70); margin: 0 0 8px; text-transform: uppercase; letter-spacing: .06em; }
+.ob .issue-card-content h3 { font-size: 22px; line-height: 1.2; margin: 0 0 10px; }
+.ob .issue-card-content h3 a { color: var(--h7-ink); text-decoration: none; }
+.ob .issue-card-content h3 a:hover { color: var(--h7-signal); }
+.ob .issue-card-content p { color: var(--h7-ink-70); }
+.ob .read-more, .ob .view-all a { font: 600 14px var(--h7-mono); color: var(--h7-ox); text-transform: uppercase; letter-spacing: .06em; }
+.ob .read-more::after { content: " \2192"; }
+.ob .view-all { margin-top: 20px; }
+.ob .issue-card:hover { border-color: var(--h7-ox); }
+.ob .page-header { border-top: 0; padding-top: 56px; }
+.ob .page-header h1 { font-size: clamp(40px, 7vw, 88px); line-height: .98; margin: 0 0 12px; }
+.ob .page-header p { color: var(--h7-ink-70); max-width: 760px; font-size: 19px; }
+
+/* Issues: the email-style layout as a readable article */
+.ob .container { max-width: 760px; margin: 0 auto; padding: 32px 24px 48px; background: transparent; }
+.ob .header { border-bottom: 3px solid var(--h7-ox); padding: 8px 0 20px; margin-bottom: 28px; }
+.ob .header-top, .ob .header-meta { font-family: var(--h7-mono); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--h7-ink-70); }
+.ob .header-title { font-size: clamp(36px, 6vw, 64px); line-height: 1; font-weight: 800; color: var(--h7-ink); margin: 8px 0; }
+.ob .header-meta-label { color: var(--h7-signal); }
+.ob .section-header, .ob .section-header-cyan, .ob .section-header-purple, .ob .section-label {
+  font: 600 13px var(--h7-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--h7-paper); background: var(--h7-ox);
+  display: inline-block; padding: 5px 10px; margin: 32px 0 14px; border: 0; }
+.ob .section-header-cyan { background: var(--h7-ink); }
+.ob .section-header-purple { background: var(--h7-signal); }
+.ob .lead-story, .ob .editor-note-box, .ob .author-bio { background: #fff; border: 1px solid var(--h7-ink-12); border-left: 4px solid var(--h7-ox); padding: 24px; margin: 0 0 20px; color: var(--h7-ink); }
+.ob .story-headline, .ob .story-title, .ob .trend-title, .ob .column-title, .ob .author-bio h3 { color: var(--h7-ink); line-height: 1.2; }
+.ob .story-headline { font-size: clamp(24px, 3.4vw, 34px); margin: 0 0 12px; }
+.ob .story-title, .ob .trend-title, .ob .column-title { font-size: 20px; margin: 0 0 8px; }
+.ob .story-text, .ob .story-description, .ob .trend-description, .ob .column-text, .ob .author-bio p, .ob .author-bio li { color: var(--h7-ink); font-size: 17px; line-height: 1.6; }
+.ob .story-grid, .ob .trends-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+.ob .story-item, .ob .trend-item, .ob .story-item-full, .ob .trend-item-full { background: #fff; border: 1px solid var(--h7-ink-12); padding: 20px; }
+.ob .lead-image, .ob .lead-image img, .ob .container img { max-width: 100%; height: auto; display: block; }
+.ob .image-caption { font: 400 13px var(--h7-mono); color: var(--h7-ink-70); margin-top: 6px; }
+.ob .source-link { font: 600 13px var(--h7-mono); color: var(--h7-ox); text-transform: uppercase; letter-spacing: .05em; }
+.ob .editor-name { font-weight: 700; }
+.ob .editor-title { color: var(--h7-ink-70); font-family: var(--h7-mono); font-size: 13px; }
+.ob .author-bio ul { padding-left: 20px; }
+.ob .author-bio a { color: var(--h7-ox); }
+.ob .footer { border-top: 1px solid var(--h7-ink-12); margin-top: 32px; padding: 24px 0; text-align: left; background: transparent; color: var(--h7-ink); }
+.ob .footer-title { font-weight: 800; letter-spacing: .08em; }
+.ob .footer-text { color: var(--h7-ink-70); }
+.ob .subscribe-btn { display: inline-block; margin-top: 12px; padding: 12px 22px; font: 600 15px var(--h7-display); color: var(--h7-paper) !important;
+  background: var(--h7-ox); text-decoration: none; }
+.ob .subscribe-btn:hover { background: var(--h7-signal); }
+.ob table { max-width: 100%; }
+
+/* Reports: shared header, footer and type only; the report body keeps its own layout and charts */
+body.ob-report { font-family: var(--h7-display); background: #151617 !important; color: #F2F2F2; }  /* the report's own body colours, kept */
+.ob-report .hx-header, .ob-report .hx-footer { background: var(--h7-paper); color: var(--h7-ink); font-size: 17px; line-height: 1.55; }
