@@ -364,3 +364,5 @@ hr { border: 0 !important; border-top: 1.5px solid var(--h7-ink-12) !important; 
 .page-content .code-header, .page-content .file-location { background: var(--h7-clay) !important; color: var(--h7-ink) !important; border-color: var(--h7-ink-12) !important; }
 .code-block, .code-block .key, .code-block .string, .code-block .bracket, .code-block span { background: #fff !important; color: var(--h7-ink) !important; }
 .code-block { border: 1.5px solid var(--h7-ink-12) !important; border-left: 4px solid var(--h7-ox) !important; }
+hr { color: var(--h7-ink-12) !important; }
+select, textarea, input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]):not([type="submit"]) { border-color: var(--h7-ink-70); }
