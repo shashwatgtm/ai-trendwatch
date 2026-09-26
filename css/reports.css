@@ -12,3 +12,8 @@
 .hx-bg-ox .hx-text-ink,.hx-bg-ox .hx-text-ox,.hx-bg-ox .hx-text-muted,.hx-bg-ox.hx-text-ink,.hx-bg-signal .hx-text-ink,.hx-bg-signal .hx-text-ox,.hx-bg-signal .hx-text-muted{color:#FAF8F6}
 .hx-bg-ox .source-badge,.hx-bg-signal .source-badge{box-shadow:0 0 0 1.5px #FAF8F6}
 .hx-text-ox .opacity-60{opacity:.85}
+
+/* run 8 E9 (no dark areas): large oxblood callout boxes become clay with an oxblood edge; chart bars keep their colours */
+.hx-bg-ox.rounded-xl,.hx-bg-ox.shadow-lg,.hx-bg-ox.p-4,.hx-bg-ox.p-6,.hx-bg-ox.p-8{background:#EAD9D5!important;background-image:none!important;color:#1A0E10!important;border-left:4px solid #641220}
+.hx-bg-ox.rounded-xl *,.hx-bg-ox.shadow-lg *,.hx-bg-ox.p-4 *,.hx-bg-ox.p-6 *,.hx-bg-ox.p-8 *{color:#1A0E10!important}
+.hx-bg-ox.rounded-xl .hx-ico,.hx-bg-ox.shadow-lg .hx-ico,.hx-bg-ox.p-4 .hx-ico,.hx-bg-ox.p-6 .hx-ico,.hx-bg-ox.p-8 .hx-ico{color:#641220!important}

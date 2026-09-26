@@ -470,7 +470,8 @@
 <!-- Google Reader Revenue Manager - Newsletter Signup (Loaded Dynamically) -->
     <div id="newsletter-signup-container"></div>
     <script>
-    fetch('/ai-trendwatch/newsletter-signup.html')
+    // Run 8: Google's sign-up widget is registered for gtmhelix.com only; elsewhere it logs errors, so it loads there only.
+    if (/(^|\.)gtmhelix\.com$/.test(location.hostname)) fetch('/ai-trendwatch/newsletter-signup.html')
       .then(response => response.text())
       .then(html => {
         const container = document.getElementById('newsletter-signup-container');
