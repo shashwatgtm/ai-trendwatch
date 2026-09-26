@@ -1,0 +1,46 @@
+# Offbeat AI Watch
+
+> Fortnightly AI intelligence brief for B2B leaders and GTM professionals. Signal over noise on enterprise AI, agentic workflows, infrastructure trends, and regulatory developments. By Shashwat Ghosh, Fractional CMO.
+
+Offbeat AI Watch is written by Shashwat Ghosh, Co-Founder and Fractional CMO of Helix GTM Consulting. Every issue and report is at https://gtmhelix.com/ai-trendwatch/ (the addresses on shashwatgtm.github.io forward here).
+
+## Start here
+
+- [Newsletter home](https://gtmhelix.com/ai-trendwatch/): the latest issue and sign-up
+- [Archive](https://gtmhelix.com/ai-trendwatch/archive.html): every issue and report
+- [About the author](https://gtmhelix.com/ai-trendwatch/about.html)
+- [RSS feed](https://gtmhelix.com/ai-trendwatch/feed.xml)
+- [Sitemap index](https://gtmhelix.com/ai-trendwatch/sitemap-index.xml)
+
+## Issues
+
+- [Google's AI Content Reckoning: December 2025 Core Update Changes Everything](https://gtmhelix.com/ai-trendwatch/issues/2026-01-07.html): Google's December 2025 core update targets AI-generated content quality with 87% negative impact on bulk AI. Plus Meta acquires Manus for $2B, Nvidia-Groq $20B deal, ServiceNow-Armis $7.75B, China clears 700+ AI models, India launches SOAR initiative. Analysis by Shashwat Ghosh, Cofounder & Fractional CMO.
+- [Tech Giants Unite: Agentic AI Foundation Launches](https://gtmhelix.com/ai-trendwatch/issues/2025-12-17.html): OpenAI, Anthropic, Google, Microsoft launch Agentic AI Foundation with MCP protocol. Plus Disney-OpenAI $1B Sora deal, Anthropic 40% enterprise LLM market share, IBM CEO no AI bubble, Microsoft Copilot 200K licenses.
+- [First AI-Orchestrated Cyber Espionage Campaign Disclosed](https://gtmhelix.com/ai-trendwatch/issues/2025-12-03.html): Anthropic reveals first large-scale AI cyberattack with 80-90% automation across 30 global organizations. Plus Microsoft Fara-7B on-device agents, Google HOPE continual learning, and 5 enterprise AI trends.
+- [OpenAI DevDay Spotlights Enterprise-Ready Agents](https://gtmhelix.com/ai-trendwatch/issues/2025-11-03.html): OpenAI DevDay unveils AgentKit for enterprise AI. Plus Ada AI Data Analyst, Peakflo AI Voice Agents, Salesforce Agentforce 360, Microsoft Dragon Copilot healthcare AI, and key industry updates.
+- [Microsoft Deploys 4,600 Blackwell Ultra GPUs](https://gtmhelix.com/ai-trendwatch/issues/2025-10-13.html): Microsoft Azure deploys 4,600+ NVIDIA GB300 NVL72 GPUs in first large-scale AI factory. Plus OpenAI custom silicon with Broadcom targeting 10 GW, AMD equity warrants, Sora 2 viral launch, Google Gemini Enterprise, and UK/EU AI regulation tightening.
+- [Fusion Energy Gets AI Shield in Milliseconds | Oct 5, 2025](https://gtmhelix.com/ai-trendwatch/issues/2025-10-05.html): Inaugural issue: Commonwealth Fusion Systems unveils HEAT-ML for fusion reactor optimization. Plus: AI weather models, healthcare predictions, DeepSeek economics, and Big Tech moves from Amazon, Apple, Google, Microsoft, Meta, Samsung.
+
+## India AI research reports
+
+- [4-Source Triangulation Method: Anthropic, OpenAI, Google/Ipsos, Microsoft | India AI Cross-Study 2026](https://gtmhelix.com/ai-trendwatch/india-ai-4-platform-method.html): Methodology deep-dive: How we triangulated Anthropic Economic Index, OpenAI Signals, Google/Ipsos survey, and Microsoft AI Diffusion Report to analyse India's AI adoption. Sample sizes, caveats, and what each source measures.
+- [India's AI Coding Dominance: 45.2% Software Tasks, Codex 3x Global | 4-Platform Cross-Study 2026](https://gtmhelix.com/ai-trendwatch/india-ai-coding-dominance.html): India leads the world in AI coding usage: 45.2% of Claude tasks are software-related (#1 globally), OpenAI Codex at 3x global median, data analysis at 4x. Cross-platform analysis by Shashwat Ghosh.
+- [India AI Concentration: 4 States, 1 Occupation, 1 Generation | Geographic & Demographic Analysis 2026](https://gtmhelix.com/ai-trendwatch/india-ai-concentration-vectors.html): India's AI adoption is concentrated along 3 vectors: 4 states (Maharashtra, TN, Karnataka, Delhi = 50%+), 1 occupation cluster (45.2% software), and 1 generation (80% under-30). Cross-platform analysis by Shashwat Ghosh.
+- [India AI Country Comparison: India Leads USA, UK, Germany, Japan | Google/Ipsos 2026 Survey](https://gtmhelix.com/ai-trendwatch/india-ai-country-comparison.html): India leads 8 major economies in AI metrics: 86% usage beats Singapore, 31% excitement beats South Korea, 69% job optimism beats USA by 44 points. Google/Ipsos 2026 survey analysis.
+- [India AI GTM: Dual Strategy for AI-Active 20% vs Next 80% | Strategic Framework 2026](https://gtmhelix.com/ai-trendwatch/india-ai-gtm-dual-strategy.html): GTM strategy framework for India's AI market: different approaches for the AI-active 20% (retention, upsell, agentic features) vs the next 80% (awareness, vernacular, simplified UX). Cross-platform insights by Shashwat Ghosh.
+- [India AI GTM Playbook: Strategy for AI Companies in India | Google/Ipsos 2026 Survey](https://gtmhelix.com/ai-trendwatch/india-ai-gtm-playbook.html): GTM strategy for India based on Google/Ipsos 2026 data: Skip education (86% use AI), lead advanced (39% know AI deeply), shorten cycles (72% share data). India is your leading indicator.
+- [India AI Informed Optimism: 3x Knowledge + 6% More Optimistic | Google/Ipsos 2026 Survey Analysis](https://gtmhelix.com/ai-trendwatch/india-ai-informed-optimism.html): India's AI optimism is grounded in knowledge: 39% deep AI understanding vs 14% global. Analysis of Google/Ipsos 2026 survey data showing why Indian confidence comes from understanding, not ignorance.
+- [India Won the Global AI Race: 86% Adoption, 39% Knowledge, 69% Optimism | Google/Ipsos 2026 Survey Analysis](https://gtmhelix.com/ai-trendwatch/india-ai-myth-busted.html): India leads every AI metric globally: 86% usage (vs 66% world), 39% deep knowledge (vs 14% world), 69% net positive sentiment (vs 53% world). Google/Ipsos 21,000-person survey analysed by Shashwat Ghosh, AI GTM strategist with 24+ years B2B experience.
+- [India's AI Paradox: #2 by Scale, #64-101 by Reach | 4-Platform Cross-Study Analysis 2026](https://gtmhelix.com/ai-trendwatch/india-ai-paradox-scale-vs-reach.html): India is the world's #2 AI market by scale (Anthropic, OpenAI) but #64-101 per capita (Microsoft, Anthropic). 4-platform cross-study by Shashwat Ghosh triangulating Anthropic, OpenAI, Google/Ipsos, and Microsoft data.
+- [India's Per-Capita AI Paradox: #2 by Scale, #101 Anthropic, #64 Microsoft | Cross-Study 2026](https://gtmhelix.com/ai-trendwatch/india-ai-per-capita-paradox.html): India ranks #101 of 116 countries on Anthropic's per-capita Claude index and #64 on Microsoft's AI Diffusion Report. Two independent sources confirm the scale-vs-reach gap in India's AI adoption.
+- [India AI Productivity & Trust: 15x Speedup, 45% Trust AI Accuracy | 3-Platform Convergence 2026](https://gtmhelix.com/ai-trendwatch/india-ai-productivity-trust.html): Indian AI users achieve 15x productivity speedup (vs 12x global), delegate more autonomy (3.60/5 vs 3.38), and 45% trust AI accuracy 'a great deal' (vs 16% global). Three-platform convergence analysis.
+- [India AI Sentiment: 69% Net Positive vs 53% Global | Google/Ipsos 2026 Survey Analysis](https://gtmhelix.com/ai-trendwatch/india-ai-sentiment-analysis.html): India shows 69% net positive AI sentiment vs 53% global average. 31% pure excitement in India vs 16% worldwide. Analysis of Google/Ipsos 2026 survey by Shashwat Ghosh.
+- [India AI Trust: 72% Data Sharing Willingness vs 53% Global | Google/Ipsos 2026 Survey](https://gtmhelix.com/ai-trendwatch/india-ai-trust-data.html): 72% of Indians willing to share data for AI improvement vs 53% globally. 58% high trust in AI vs 25% worldwide. Analysis of Google/Ipsos 2026 trust data by Shashwat Ghosh.
+- [India AI Workplace Impact: 69% See Job Changes as Positive | Google/Ipsos 2026 Survey](https://gtmhelix.com/ai-trendwatch/india-ai-workplace-impact.html): 69% of Indians view AI-driven job changes as positive vs 49% globally. 82% believe AI will benefit workers. Analysis of Google/Ipsos 2026 survey workplace data by Shashwat Ghosh.
+- [India's AI Youth Engine: 50% of ChatGPT Usage from Ages 18-24 | OpenAI Demographics 2026](https://gtmhelix.com/ai-trendwatch/india-ai-youth-engine.html): OpenAI reveals 50% of India's ChatGPT messages come from ages 18-24 and 80% from under-30. India's AI adoption is fundamentally generational, today's ChatGPT-native interns are tomorrow's AI-first CTOs.
+
+## Also by Shashwat Ghosh
+
+- [Helix GTM Consulting](https://gtmhelix.com/)
+- [Free GTM tools and Claude plugins](https://tools.gtmhelix.com/)
+- [GTM Whisperer newsletter](https://gtmexpert.substack.com/)
