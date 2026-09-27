@@ -128,3 +128,9 @@ body.ob-report { font-size: 16px; line-height: 1.55; }
   .ob .hero, .ob .features, .ob .latest-issue, .ob .archive, .ob .page-header { padding-left: 16px; padding-right: 16px; }
   .ob .lead-story, .ob .editor-note-box, .ob .author-bio, .ob .story-item, .ob .trend-item, .ob .tech-item, .ob .product-item, .ob .three-column > div { padding: 16px; }
 }
+
+/* ================= run 9 (decisions.md section 16) ================= */
+/* U3: the report H1s use the shared inner-page size from helix.css (--fs-h1), like every other inner page */
+.ob-report h1 { font-size: var(--fs-h1) !important; line-height: 1.08 !important; letter-spacing: -.02em !important; }
+/* G4: the season line under the home tagline */
+.ob .hero .season { font: 600 15px/1.4 var(--h7-mono); letter-spacing: .04em; color: var(--h7-ox); margin: 0 0 12px; }

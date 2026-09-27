@@ -22,3 +22,9 @@
 .text-\[10px\]{font-size:12px!important}
 a.text-\[10px\]{display:inline-block;padding:6px 0;min-height:24px}
 .lead-image{height:auto}
+/* run 9 D8: source badges 12 px on a plain white background; each keeps its label, and its colour and border style tell the four sources apart */
+.source-badge{font-size:12px!important;background:#fff!important;box-shadow:none!important;line-height:1.35}
+.source-badge.src-anthropic{color:#641220!important;border:1.5px solid #641220}
+.source-badge.src-openai{color:#C1121F!important;border:1.5px solid #C1121F}
+.source-badge.src-ipsos{color:#1A0E10!important;border:1.5px dotted #1A0E10}
+.source-badge.src-microsoft{color:#1A0E10!important;border:1.5px dashed #641220}
