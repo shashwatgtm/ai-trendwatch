@@ -1,15 +1,89 @@
-<!-- Google Reader Revenue Manager - Newsletter Signup (Minimal version for injection) -->
-<script>
-// Run 8: Google's widget is registered for gtmhelix.com only; elsewhere it logs errors, so it loads there only.
-if (/(^|\.)gtmhelix\.com$/.test(location.hostname)) { var g = document.createElement("script"); g.async = true; g.src = "https://news.google.com/swg/js/v1/swg-basic.js"; document.head.appendChild(g); }
-</script>
-<script>
-(self.SWG_BASIC = self.SWG_BASIC || []).push( basicSubscriptions => {
-  basicSubscriptions.init({
-    type: "NewsArticle",
-    isPartOfType: ["Product"],
-    isPartOfProductId: "CAow6-rBDA:openaccess",
-    clientOptions: { theme: "light", lang: "en" },
-  });
-});
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- run 7: github.io forwards to gtmhelix.com -->
+<script>(function(){var h=location.hostname;if(!/(^|\.)github\.io$/.test(h))return;var p=location.pathname.replace(/^\/ai-trendwatch/,"");if(p==="/template.html"||p==="/index.html")p="/";location.replace("https://gtmhelix.com/ai-trendwatch"+(p||"/")+location.search+location.hash);})();</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Sign up - Offbeat AI Watch</title>
+    <meta name="description" content="Sign up for Offbeat AI Watch, the fortnightly AI brief for B2B leaders by Shashwat Ghosh. The new season starts in late October 2026.">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico?v=3e300bfd92">
+<link rel="stylesheet" href="assets/fonts.css?v=d244d38270">
+<link rel="stylesheet" href="assets/brand.css?v=58a48228fa">
+<link rel="stylesheet" href="assets/app.css?v=6cc27b2b2b">
+<link rel="stylesheet" href="assets/helix.css?v=741f6a1051">
+<link rel="stylesheet" href="assets/offbeat.css?v=1db11ad4cb">
+<script src="assets/newsletter-config.js?v=aa22bec36f" defer></script>
+<script src="assets/kit-form.js?v=2ed60b23e9" defer></script>
+</head>
+<body class="ob">
+<!-- ob:chrome -->
+<a class="hx-skip" href="#main">Skip to content</a>
+<header class="hx9-gh"><div class="hx-wrap hx9-row1"><a class="hx9-logo" href="https://gtmhelix.com/"><span class="hx9-mark" aria-hidden="true">h</span><span class="hx9-word">Helix GTM</span></a><nav class="hx9-nav" aria-label="Helix GTM"><a href="https://gtmhelix.com/#start">Start here</a><a href="https://tools.gtmhelix.com/tools/">All tools</a><a href="https://gtmhelix.com/writing/">Writing</a><a href="https://gtmhelix.com/about/">About</a><a class="hx9-cta" href="https://gtmhelix.com/lets-get-started/">Work with Shashwat</a></nav></div><div class="hx9-row2"><div class="hx-wrap hx9-row2-in"><nav class="hx9-crumbs" aria-label="Breadcrumb"><a href="https://gtmhelix.com/">Helix GTM</a><span class="hx9-sep" aria-hidden="true">/</span><a href="https://gtmhelix.com/writing/">Writing</a><span class="hx9-sep" aria-hidden="true">/</span><a href="https://gtmhelix.com/ai-trendwatch/">Offbeat AI Watch</a><span class="hx9-sep" aria-hidden="true">/</span><span aria-current="page">Sign up</span></nav><nav class="hx9-site" aria-label="This site"><a href="https://gtmhelix.com/ai-trendwatch/">Home</a><a href="https://gtmhelix.com/ai-trendwatch/archive.html">Archive</a><a href="https://gtmhelix.com/ai-trendwatch/about.html">About this newsletter</a><a href="https://gtmhelix.com/ai-trendwatch/feed.xml">RSS</a></nav></div></div><details class="hx9-mm"><summary>Menu</summary><div class="hx9-mm-panel"><a href="https://gtmhelix.com/#start">Start here</a><a href="https://tools.gtmhelix.com/tools/">All tools</a><a href="https://gtmhelix.com/writing/">Writing</a><a href="https://gtmhelix.com/about/">About</a><a href="https://gtmhelix.com/ai-trendwatch/">Home</a><a href="https://gtmhelix.com/ai-trendwatch/archive.html">Archive</a><a href="https://gtmhelix.com/ai-trendwatch/about.html">About this newsletter</a><a href="https://gtmhelix.com/ai-trendwatch/feed.xml">RSS</a><a class="hx9-cta" href="https://gtmhelix.com/lets-get-started/">Work with Shashwat</a></div></details></header>
+<!-- /ob:chrome -->
+<main id="main">
+    <section class="hero">
+        <h1>Sign up for Offbeat <span>AI</span> Watch</h1>
+        <p class="tagline">A fortnightly AI intelligence brief for B2B leaders, by Shashwat Ghosh of Helix GTM Consulting.</p>
+        <form class="subscribe-form" action="https://formspree.io/f/mnngzoee" method="POST">
+            <label class="hx-sr-only" for="ob-email">Email address</label>
+            <input type="email" id="ob-email" name="email" placeholder="Enter your email" autocomplete="email" required>
+            <input type="hidden" name="_subject" value="New Offbeat AI Watch Subscriber">
+            <input type="text" name="_gotcha" class="ob-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <button type="submit">Subscribe</button>
+        </form>
+        <p class="form-note">Leave your email and Shashwat adds you to the list for the new season, from late October 2026. To come off it, email shashwat@gtmhelix.com.</p>
+    </section>
+</main>
+<!-- ob:chrome -->
+<footer class="hx-footer">
+        <div class="hx-wrap">
+            <div class="hx7-built"><picture class="hx7-built-photo"><source srcset="assets/shashwat-ghosh-160.webp?v=c5d0d41b0c" type="image/webp"><img src="assets/shashwat-ghosh-160.jpg?v=b453d25fa4" width="160" height="160" alt="Shashwat Ghosh" decoding="async"></picture><div><p class="hx7-built-h">Built by Shashwat Ghosh</p><p>Co-Founder and Fractional CMO, Helix GTM Consulting. 24+ years in B2B, 10+ years fractional. Creator of the EPIC, IMPACT and CRAFT frameworks.</p><p class="hx7-built-links"><a href="https://www.gtmexpert.com/">gtmexpert.com</a><a href="https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/">LinkedIn</a><a href="https://gtmhelix.com/about/">About Shashwat</a></p></div></div>
+            <div class="hx-footer-grid">
+                <div>
+                    <a class="hx-lockup" href="https://gtmhelix.com/ai-trendwatch/"><span class="hx-alpha" aria-hidden="true">h</span><span class="hx-wordmark">Offbeat AI Watch</span></a>
+                    <p>A fortnightly AI intelligence brief for B2B leaders, by Shashwat Ghosh of Helix GTM Consulting.</p>
+                    <a href="https://www.linkedin.com/in/shashwatghosh-ai-b2b-gtm-fractionalcmo/">LinkedIn</a>
+                    <a href="https://x.com/Shashwat_Ghosh">X (Twitter)</a>
+                </div>
+                <div>
+                    <p class="hx-foot-h">Offbeat AI Watch</p>
+                    <a href="https://gtmhelix.com/ai-trendwatch/">Home</a>
+                    <a href="https://gtmhelix.com/ai-trendwatch/archive.html">Archive</a>
+                    <a href="https://gtmhelix.com/ai-trendwatch/about.html">About</a>
+                    <a href="https://gtmhelix.com/ai-trendwatch/feed.xml">RSS</a>
+                </div>
+                <div>
+                    <p class="hx-foot-h">Connectors</p>
+                    <a href="https://gtmalpha.gtmhelix.com/">GTM Alpha</a>
+                    <a href="https://craft-gtm.gtmhelix.com/">CRAFT GTM</a>
+                    <a href="https://craft-content.gtmhelix.com/">CRAFT Content</a>
+                    <a href="https://impact.gtmhelix.com/">IMPACT</a>
+                    <a href="https://icp-intelligence.gtmhelix.com/">ICP Intelligence</a>
+                    <a href="https://revenue-enablement.gtmhelix.com/">Revenue Enablement</a>
+                    <a href="https://tools.gtmhelix.com/">All tools and plugins</a>
+                </div>
+                <div id="writing">
+                    <p class="hx-foot-h">Writing</p>
+                    <a href="https://gtmexpert.substack.com/">GTM Whisperer newsletter</a>
+                    <a href="https://gtmhelix.com/ai-trendwatch/">Offbeat AI Watch</a>
+                </div>
+                <div>
+                    <p class="hx-foot-h">Contact</p>
+
+                    <a href="https://gtmhelix.com/lets-get-started/">Work with Shashwat</a>
+                    <a href="mailto:shashwat@gtmhelix.com">Email Shashwat</a>
+                    <a href="https://www.gtmexpert.com/">GTMExpert.com</a>
+                </div>
+            </div>
+            <p class="hx7-giant" aria-hidden="true">Helix GTM</p>
+            <div class="hx-footer-bottom">
+                <span>&copy; 2026 Helix GTM Consulting.</span>
+                <span><a href="https://gtmhelix.com/privacy/">Privacy Policy</a> &middot; <a href="https://gtmhelix.com/ai-trendwatch/terms-of-service.html">Terms of Service</a></span>
+            </div>
+        </div>
+    </footer>
+<!-- /ob:chrome -->
+</body>
+</html>

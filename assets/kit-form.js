@@ -16,7 +16,8 @@
   f.setAttribute("data-version", "5");
   if (/^[0-9a-f]+$/i.test(uid)) f.setAttribute("data-uid", uid);
   f.innerHTML = '<ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>' +
-    '<input class="formkit-input" type="email" name="email_address" aria-label="Email address" placeholder="Enter your email" required>' +
+    '<label class="hx-sr-only" for="ob-email">Email address</label>' +
+    '<input class="formkit-input" type="email" id="ob-email" name="email_address" placeholder="Enter your email" autocomplete="email" required>' +
     '<button type="submit" class="formkit-submit" data-element="submit"><span>Subscribe</span></button>';
   old.parentNode.replaceChild(f, old);
   if (f.getAttribute("data-uid")) {
