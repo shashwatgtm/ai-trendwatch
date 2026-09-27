@@ -23,7 +23,7 @@ Visit [gtmhelix.com/ai-trendwatch](https://gtmhelix.com/ai-trendwatch/) to subsc
 
 **Issue #6 - January 7, 2026**
 
-- 🔍 **Lead Story**: Google's AI Content Reckoning—December 2025 Core Update Changes Everything
+- 🔍 **Lead Story**: Google's AI Content Reckoning: December 2025 Core Update Changes Everything
 - 🤖 **Meta-Manus $2B**: Meta acquires AI agent startup with $100M ARR
 - 💰 **Nvidia-Groq $20B**: Largest AI infrastructure deal, signals inference market shift
 - 🔒 **ServiceNow-Armis $7.75B**: Enterprise security consolidation accelerates
@@ -34,8 +34,8 @@ Visit [gtmhelix.com/ai-trendwatch](https://gtmhelix.com/ai-trendwatch/) to subsc
 
 ## 📚 Archive
 
-- [January 7, 2026](issues/2026-01-07.html) - Issue #6: Google's AI Content Reckoning—December 2025 Core Update
-- [December 17, 2025](issues/2025-12-17.html) - Issue #5: Tech Giants Unite—Agentic AI Foundation Launches
+- [January 7, 2026](issues/2026-01-07.html) - Issue #6: Google's AI Content Reckoning: December 2025 Core Update
+- [December 17, 2025](issues/2025-12-17.html) - Issue #5: Tech Giants Unite: Agentic AI Foundation Launches
 - [December 3, 2025](issues/2025-12-03.html) - Issue #4: First AI-Orchestrated Cyber Espionage Campaign Disclosed
 - [November 3, 2025](issues/2025-11-03.html) - Issue #3: OpenAI DevDay Spotlights Enterprise-Ready Agents
 - [October 13, 2025](issues/2025-10-13.html) - Issue #2: Microsoft's GB300 AI Factory
