@@ -136,3 +136,20 @@ body.ob-report { font-size: 16px; line-height: 1.55; }
 .ob .hero .season { font: 600 15px/1.4 var(--h7-mono); letter-spacing: .04em; color: var(--h7-ox); margin: 0 0 12px; }
 /* D8: no text under 12 px (the shared footer's bottom row and the About eyebrow are 11.5 px in brand.css) */
 .hx-footer-bottom, .hx-footer-bottom a, .ob .hx-eyebrow { font-size: 12px !important; }
+
+/* ================= run 9 A2.13 (decisions-addendum2.md) ================= */
+/* The 15 report pages use the shared type scale from helix.css and the header's container width. CSS only: no word,
+   number, chart bar (inline width or height) or source changes. */
+/* Container: the same box as the header's .hx-wrap (brand.css: max-width 1200px, 24px side padding, border-box) */
+.ob-report #root { padding-left: 0; padding-right: 0; }
+.ob-report #root > .max-w-7xl { max-width: 1200px; padding-left: 24px; padding-right: 24px; }
+/* Type: report H2s at --fs-h2, H3s at --fs-h3 (so no heading is smaller than the body), body paragraphs and list text at
+   --fs-body. The 12 px chart and source labels (text-[10px]) and the large emphasis lines (text-xl) keep their sizes. */
+.ob-report #root h2 { font-size: var(--fs-h2) !important; line-height: 1.12 !important; }
+.ob-report #root h3 { font-size: var(--fs-h3) !important; line-height: 1.25 !important; }
+.ob-report #root p.text-sm, .ob-report #root p.text-xs, .ob-report #root li { font-size: var(--fs-body) !important; line-height: 1.55 !important; }
+/* Section tabs on phones: below 640 px the labels were hidden (7 or 8 icons only). Show them, wrapped into rows. */
+@media (max-width: 639.98px) {
+  .ob-report #root > .max-w-7xl > .flex-wrap.mb-5 .sm\:inline { display: inline; }
+  .ob-report #root > .max-w-7xl > .flex-wrap.mb-5 > * { font-size: 14px; line-height: 1.25; max-width: 100%; }
+}
