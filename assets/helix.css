@@ -476,7 +476,7 @@ footer.hx-footer .hx-footer-bottom, footer.hx-footer .hx-footer-bottom *, .hx7-l
    scrolls away with the page, Menu sits in row 1 at the top right, and row 2 is hidden when it has no breadcrumb. */
 .hx9-gh, .hx9-gh *, .hx9-gh *::before, .hx9-gh *::after { box-sizing: border-box; }
 .hx9-gh .hx-wrap { max-width: 1248px; margin-left: auto; margin-right: auto; padding-left: 24px; padding-right: 24px; }
-.hx9-gh .hx9-row2-in { min-height: 54px; }
+.hx9-gh .hx9-row2-in { min-height: 54px; flex-wrap: nowrap; }  /* one line: a long breadcrumb shortens with an ellipsis instead */
 .hx9-gh .hx9-crumbs { flex-wrap: nowrap; min-width: 0; flex: 1 1 auto; overflow: hidden; }
 .hx9-gh .hx9-crumbs > * { flex: none; white-space: nowrap; }
 .hx9-gh .hx9-crumbs > [aria-current] { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
