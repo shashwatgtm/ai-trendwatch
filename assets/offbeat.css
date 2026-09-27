@@ -154,3 +154,9 @@ body.ob-report { font-size: 16px; line-height: 1.55; }
   .ob-report #root > .max-w-7xl > .flex-wrap.mb-5 .sm\:inline { display: inline; }
   .ob-report #root > .max-w-7xl > .flex-wrap.mb-5 > * { font-size: 14px; line-height: 1.25; max-width: 100%; }
 }
+
+/* ================= run 10 (work/run10/brief-offbeat.md) ================= */
+/* R10-05: the 404 page (same page header as the archive; the button uses the issue pages' Subscribe style) */
+.ob-404 .page-header { min-height: 40vh; }
+.ob-404 .ob-404-links { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin-top: 24px; }
+.ob-404 .ob-404-home { font: 600 14px var(--h7-mono); text-transform: uppercase; letter-spacing: .06em; color: var(--h7-ox); }
