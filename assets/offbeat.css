@@ -164,3 +164,6 @@ body.ob-report { font-size: 16px; line-height: 1.55; }
 .ob .ob-hp { display: none !important; }
 /* R10-20: the standard author block's links */
 .ob .author-bio .ob-author-links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+/* R10-21: card images are <img> (640 px WebP, lazy) covering the card's image area, as the CSS background did */
+.ob .issue-card-image > .issue-card-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ob .issue-card-image > .issue-number { z-index: 1; }
