@@ -162,3 +162,5 @@ body.ob-report { font-size: 16px; line-height: 1.55; }
 .ob-404 .ob-404-home { font: 600 14px var(--h7-mono); text-transform: uppercase; letter-spacing: .06em; color: var(--h7-ox); }
 /* R10-06: the Formspree spam trap (_gotcha) is hidden from people and screen readers */
 .ob .ob-hp { display: none !important; }
+/* R10-20: the standard author block's links */
+.ob .author-bio .ob-author-links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
