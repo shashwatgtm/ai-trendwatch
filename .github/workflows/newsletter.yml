@@ -1,0 +1,166 @@
+# Offbeat AI Watch newsletter: email each new or changed issue through Kit.
+#
+# Switched off until the owner acts: with no KIT_API_KEY secret, both jobs are
+# skipped with one log line. Job 2 runs in the "newsletter-send" environment,
+# so it waits for the owner's approval before anything reaches Kit.
+#
+# Settings (repository secret and variables, all optional except the key):
+#   secret   KIT_API_KEY         Kit V4 API key. Used only as a request header.
+#   variable KIT_SEGMENT_ID      Kit segment to send to (empty = all subscribers)
+#   variable KIT_PUBLIC          "true" (default) or "false"
+#   variable SEND_DELAY_MINUTES  minutes between approval and sending (default 30)
+#
+# Test without any network call: Actions, "Newsletter: email new issue",
+# Run workflow, leave "dry_run" ticked. Or locally:
+#   python scripts/newsletter_build_email.py --latest --out build/newsletter --dry-run
+#   python scripts/newsletter_kit_broadcast.py --email build/newsletter/email.json --dry-run
+
+name: "Newsletter: email new issue"
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "issues/**"
+  workflow_dispatch:
+    inputs:
+      issue_path:
+        description: "Issue file, for example issues/2026-01-07.html (empty = the newest issue)"
+        required: false
+        default: ""
+      dry_run:
+        description: "Dry run: build the email only, no call to Kit"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: newsletter-email
+  cancel-in-progress: false
+
+jobs:
+  preflight:
+    name: Check the key and find the issue
+    if: github.repository == 'shashwatgtm/ai-trendwatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      has_key: ${{ steps.check.outputs.has_key }}
+      issue: ${{ steps.check.outputs.issue }}
+      dry_run: ${{ steps.check.outputs.dry_run }}
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Check the key and find the issue file
+        id: check
+        env:
+          HAS_KEY: ${{ secrets.KIT_API_KEY != '' }}
+          EVENT: ${{ github.event_name }}
+          BEFORE: ${{ github.event.before }}
+          AFTER: ${{ github.sha }}
+          IN_PATH: ${{ inputs.issue_path }}
+          IN_DRY: ${{ inputs.dry_run }}
+        run: |
+          set -euo pipefail
+          dry=false
+          issue=""
+          if [ "$EVENT" = "workflow_dispatch" ] && [ "$IN_DRY" = "true" ]; then
+            dry=true
+          fi
+          if [ "$HAS_KEY" != "true" ] && [ "$dry" != "true" ]; then
+            echo "SKIPPED: the KIT_API_KEY secret is not set, so the newsletter jobs are skipped. Nothing was built or sent." | tee -a "$GITHUB_STEP_SUMMARY"
+          else
+            if [ "$EVENT" = "workflow_dispatch" ]; then
+              if [ -n "$IN_PATH" ]; then
+                issue="$IN_PATH"
+              else
+                issue=$(ls issues/ | grep -E '^[0-9]{4}-[0-9]{2}-[0-9]{2}\.html$' | sort | tail -n 1 | sed 's#^#issues/#')
+              fi
+            elif [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+              echo "::warning::Cannot compare with the previous commit, so nothing is built. Run the workflow by hand if an issue should be emailed."
+            else
+              changed=$(git diff --name-only --diff-filter=AM "$BEFORE" "$AFTER" -- issues/ | grep -E '^issues/[0-9]{4}-[0-9]{2}-[0-9]{2}\.html$' || true)
+              count=$(printf '%s\n' "$changed" | grep -c . || true)
+              if [ "$count" -eq 0 ]; then
+                echo "No issue page was added or changed in this push. Nothing to email." | tee -a "$GITHUB_STEP_SUMMARY"
+              elif [ "$count" -gt 1 ]; then
+                echo "$count issue pages changed in one push (a bulk edit, not one new issue). Nothing was built or sent. To email one of them, run this workflow by hand with its issue_path." | tee -a "$GITHUB_STEP_SUMMARY"
+              else
+                issue="$changed"
+              fi
+            fi
+            if [ -n "$issue" ]; then
+              if ! printf '%s' "$issue" | grep -Eq '^issues/[0-9]{4}-[0-9]{2}-[0-9]{2}\.html$' || [ ! -f "$issue" ]; then
+                echo "::error::'$issue' is not an issue file in this commit"
+                exit 1
+              fi
+              echo "Issue to email: $issue (dry run: $dry)" | tee -a "$GITHUB_STEP_SUMMARY"
+            fi
+          fi
+          {
+            echo "has_key=$HAS_KEY"
+            echo "issue=$issue"
+            echo "dry_run=$dry"
+          } >> "$GITHUB_OUTPUT"
+
+  build-email:
+    name: "Job 1: build the email"
+    needs: preflight
+    if: needs.preflight.outputs.issue != '' && (needs.preflight.outputs.has_key == 'true' || needs.preflight.outputs.dry_run == 'true')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Build the email (no network call)
+        env:
+          ISSUE: ${{ needs.preflight.outputs.issue }}
+          DRY: ${{ needs.preflight.outputs.dry_run }}
+        run: |
+          set -euo pipefail
+          flag=""
+          if [ "$DRY" = "true" ]; then flag="--dry-run"; fi
+          python3 scripts/newsletter_build_email.py --issue "$ISSUE" --out build/newsletter $flag | tee build-log.txt
+          cat build/newsletter/summary.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Show the Kit request that would be sent (dry run only, no network call)
+        if: needs.preflight.outputs.dry_run == 'true'
+        run: python3 scripts/newsletter_kit_broadcast.py --email build/newsletter/email.json --dry-run
+
+      - name: Upload the email
+        uses: actions/upload-artifact@v4
+        with:
+          name: newsletter-email
+          path: build/newsletter/
+          retention-days: 30
+
+  send:
+    name: "Job 2: create and schedule the Kit broadcast (after approval)"
+    needs: [preflight, build-email]
+    if: needs.preflight.outputs.issue != '' && needs.preflight.outputs.has_key == 'true' && needs.preflight.outputs.dry_run != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment: newsletter-send
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Download the email built by job 1
+        uses: actions/download-artifact@v4
+        with:
+          name: newsletter-email
+          path: build/newsletter
+
+      - name: Create and schedule the Kit broadcast
+        env:
+          KIT_API_KEY: ${{ secrets.KIT_API_KEY }}
+          KIT_SEGMENT_ID: ${{ vars.KIT_SEGMENT_ID }}
+          KIT_PUBLIC: ${{ vars.KIT_PUBLIC }}
+          SEND_DELAY_MINUTES: ${{ vars.SEND_DELAY_MINUTES }}
+        run: python3 scripts/newsletter_kit_broadcast.py --email build/newsletter/email.json
