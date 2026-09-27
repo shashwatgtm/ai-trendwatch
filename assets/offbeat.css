@@ -140,9 +140,10 @@ body.ob-report { font-size: 16px; line-height: 1.55; }
 /* ================= run 9 A2.13 (decisions-addendum2.md) ================= */
 /* The 15 report pages use the shared type scale from helix.css and the header's container width. CSS only: no word,
    number, chart bar (inline width or height) or source changes. */
-/* Container: the same box as the header's .hx-wrap (brand.css: max-width 1200px, 24px side padding, border-box) */
+/* Container: the same box as the header's .hx-wrap */
 .ob-report #root { padding-left: 0; padding-right: 0; }
-.ob-report #root > .max-w-7xl { max-width: 1200px; padding-left: 24px; padding-right: 24px; }
+/* A2.2 made every header 1248 px wide including padding (border-box), so the reports match that box */
+.ob-report #root > .max-w-7xl { box-sizing: border-box; max-width: 1248px; padding-left: 24px; padding-right: 24px; }
 /* Type: report H2s at --fs-h2, H3s at --fs-h3 (so no heading is smaller than the body), body paragraphs and list text at
    --fs-body. The 12 px chart and source labels (text-[10px]) and the large emphasis lines (text-xl) keep their sizes. */
 .ob-report #root h2 { font-size: var(--fs-h2) !important; line-height: 1.12 !important; }
