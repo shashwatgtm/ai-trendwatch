@@ -4,8 +4,10 @@
 Input: the email.json written by scripts/newsletter_build_email.py.
 
 Settings come from environment variables:
-  KIT_API_KEY         the Kit V4 API key (GitHub secret). Used only as the
-                      X-Kit-Api-Key request header. Never printed.
+  KIT_API_KEY         the Kit V4 API key, a secret of the newsletter-send
+                      environment (so only job 2 has it). Used only as the
+                      X-Kit-Api-Key request header. Never printed, and not
+                      read in a dry run.
   KIT_SEGMENT_ID      optional. Send only to this Kit segment. Empty means
                       Kit's default, all subscribers.
   KIT_PUBLIC          optional, "true" (default) or "false". Kit's update
@@ -18,8 +20,8 @@ Settings come from environment variables:
 
 Behaviour:
   - KIT_API_KEY missing: prints one line and exits 0 (clean skip).
-  - --dry-run: prints the request it would send (key hidden) and makes no
-    network call at all.
+  - --dry-run: prints the request it would send and makes no network call at
+    all. It does not read the key.
   - Otherwise: waits until the issue page is live, refuses to create a second
     broadcast for the same issue, then POSTs https://api.kit.com/v4/broadcasts
     with a send_at time.
@@ -152,7 +154,6 @@ def main():
     with open(args.email, encoding="utf-8") as f:
         email = json.load(f)
 
-    key = os.environ.get("KIT_API_KEY") or ""
     now = datetime.now(timezone.utc)
     body, send_at = build_body(email, now)
     when = send_at.astimezone(IST).strftime("%d %b %Y %H:%M IST")
@@ -160,14 +161,17 @@ def main():
     if args.dry_run:
         log("DRY RUN: no network call was made. This is the request that would be sent after approval:")
         log(f"POST {API}/broadcasts")
-        log("Header X-Kit-Api-Key: " + ("[set from the KIT_API_KEY secret, not shown]" if key else "[KIT_API_KEY is not set]"))
+        # A dry run runs in job 1, outside the newsletter-send environment, so it never has the key and never reads it.
+        log("Header X-Kit-Api-Key: [not read in a dry run. Job 2 reads it from the KIT_API_KEY secret of the "
+            "newsletter-send environment and never prints it]")
         log(json.dumps(body, ensure_ascii=False, indent=2))
         log(f"It would be scheduled for {when}, after first checking that {email['issue_url']} is live "
             f"and that no broadcast with the description '{email['marker']}' exists.")
         return
 
+    key = os.environ.get("KIT_API_KEY") or ""
     if not key:
-        log("SKIPPED: the KIT_API_KEY secret is not set, so no Kit broadcast was created.")
+        log("SKIPPED: the KIT_API_KEY secret of the newsletter-send environment is not set, so no Kit broadcast was created.")
         return
 
     wait_until_live(email["issue_url"], email["subject"], int_setting("WAIT_LIVE_MINUTES", 20, 1))

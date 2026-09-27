@@ -1,14 +1,25 @@
 # Offbeat AI Watch newsletter: email each new or changed issue through Kit.
 #
-# Switched off until the owner acts: with no KIT_API_KEY secret, both jobs are
-# skipped with one log line. Job 2 runs in the "newsletter-send" environment,
-# so it waits for the owner's approval before anything reaches Kit.
+# Switched off until the owner acts. Two settings switch it on (owner-steps-kit.md):
+#   environment secret   KIT_API_KEY, stored in the "newsletter-send" environment
+#                        ONLY (run 10 decision R10-11). Only job 2 runs in that
+#                        environment, so only job 2 can read the key. It is used
+#                        only as a request header and never printed.
+#   repository variable  NEWSLETTER_ENABLED = true. The jobs outside the
+#                        environment cannot see the key, so this plain on switch
+#                        tells them whether to build anything. It is not a secret.
+# With NEWSLETTER_ENABLED not "true", both jobs are skipped with one log line.
+# Job 2 runs in the "newsletter-send" environment, so it waits for the owner's
+# approval (and runs only for main) before anything reaches Kit. If the key is
+# missing there, job 2 skips with one log line and nothing is sent.
 #
-# Settings (repository secret and variables, all optional except the key):
-#   secret   KIT_API_KEY         Kit V4 API key. Used only as a request header.
-#   variable KIT_SEGMENT_ID      Kit segment to send to (empty = all subscribers)
-#   variable KIT_PUBLIC          "true" (default) or "false"
-#   variable SEND_DELAY_MINUTES  minutes between approval and sending (default 30)
+# Optional repository variables:
+#   KIT_SEGMENT_ID      Kit segment to send to (empty = all subscribers)
+#   KIT_PUBLIC          "true" (default) or "false"
+#   SEND_DELAY_MINUTES  minutes between approval and sending (default 30)
+#
+# Third-party actions are pinned to a full commit SHA; the version is in the
+# comment next to each.
 #
 # Test without any network call: Actions, "Newsletter: email new issue",
 # Run workflow, leave "dry_run" ticked. Or locally:
@@ -47,19 +58,19 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     outputs:
-      has_key: ${{ steps.check.outputs.has_key }}
       issue: ${{ steps.check.outputs.issue }}
       dry_run: ${{ steps.check.outputs.dry_run }}
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
         with:
           fetch-depth: 0
+          persist-credentials: false
 
-      - name: Check the key and find the issue file
+      - name: Check the on switch and find the issue file
         id: check
         env:
-          HAS_KEY: ${{ secrets.KIT_API_KEY != '' }}
+          ENABLED: ${{ vars.NEWSLETTER_ENABLED }}
           EVENT: ${{ github.event_name }}
           BEFORE: ${{ github.event.before }}
           AFTER: ${{ github.sha }}
@@ -72,8 +83,8 @@ jobs:
           if [ "$EVENT" = "workflow_dispatch" ] && [ "$IN_DRY" = "true" ]; then
             dry=true
           fi
-          if [ "$HAS_KEY" != "true" ] && [ "$dry" != "true" ]; then
-            echo "SKIPPED: the KIT_API_KEY secret is not set, so the newsletter jobs are skipped. Nothing was built or sent." | tee -a "$GITHUB_STEP_SUMMARY"
+          if [ "$ENABLED" != "true" ] && [ "$dry" != "true" ]; then
+            echo "SKIPPED: the newsletter is switched off (the repository variable NEWSLETTER_ENABLED is not true), so the newsletter jobs are skipped. Nothing was built or sent." | tee -a "$GITHUB_STEP_SUMMARY"
           else
             if [ "$EVENT" = "workflow_dispatch" ]; then
               if [ -n "$IN_PATH" ]; then
@@ -103,7 +114,6 @@ jobs:
             fi
           fi
           {
-            echo "has_key=$HAS_KEY"
             echo "issue=$issue"
             echo "dry_run=$dry"
           } >> "$GITHUB_OUTPUT"
@@ -111,12 +121,14 @@ jobs:
   build-email:
     name: "Job 1: build the email"
     needs: preflight
-    if: needs.preflight.outputs.issue != '' && (needs.preflight.outputs.has_key == 'true' || needs.preflight.outputs.dry_run == 'true')
+    if: needs.preflight.outputs.issue != ''
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - name: Check out the repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
 
       - name: Build the email (no network call)
         env:
@@ -134,7 +146,7 @@ jobs:
         run: python3 scripts/newsletter_kit_broadcast.py --email build/newsletter/email.json --dry-run
 
       - name: Upload the email
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
         with:
           name: newsletter-email
           path: build/newsletter/
@@ -143,21 +155,41 @@ jobs:
   send:
     name: "Job 2: create and schedule the Kit broadcast (after approval)"
     needs: [preflight, build-email]
-    if: needs.preflight.outputs.issue != '' && needs.preflight.outputs.has_key == 'true' && needs.preflight.outputs.dry_run != 'true'
+    if: needs.preflight.outputs.issue != '' && needs.preflight.outputs.dry_run != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     environment: newsletter-send
     steps:
+      # The key is a secret of the newsletter-send environment, so only this job can read it. This step only
+      # asks whether it is set (true or false); the value is never printed.
+      - name: Check the key
+        id: key
+        env:
+          HAS_KEY: ${{ secrets.KIT_API_KEY != '' }}
+        run: |
+          if [ "$HAS_KEY" = "true" ]; then
+            echo "The KIT_API_KEY secret of the newsletter-send environment is set."
+            echo "has_key=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "SKIPPED: the KIT_API_KEY secret of the newsletter-send environment is not set, so no Kit broadcast was created. Nothing was sent." | tee -a "$GITHUB_STEP_SUMMARY"
+            echo "has_key=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Check out the repository
-        uses: actions/checkout@v4
+        if: steps.key.outputs.has_key == 'true'
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
 
       - name: Download the email built by job 1
-        uses: actions/download-artifact@v4
+        if: steps.key.outputs.has_key == 'true'
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
         with:
           name: newsletter-email
           path: build/newsletter
 
       - name: Create and schedule the Kit broadcast
+        if: steps.key.outputs.has_key == 'true'
         env:
           KIT_API_KEY: ${{ secrets.KIT_API_KEY }}
           KIT_SEGMENT_ID: ${{ vars.KIT_SEGMENT_ID }}
