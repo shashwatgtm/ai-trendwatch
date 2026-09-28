@@ -117,6 +117,8 @@
 .ob-legal .container { padding-top: clamp(40px, 5vw, 72px); padding-bottom: 24px; display: block; }
 .ob-legal .container > * { max-width: 800px; }
 .ob-legal .container > .page-title { max-width: none; }
+/* on phones "Terms of Service" fits one line in Archivo but two in the fallback font: two lines are reserved so the late font does not shift the page */
+@media (max-width: 600px) { .ob-legal .page-title { min-height: 1.86em; } }
 .ob-legal .page-title { color: var(--ink); margin: 0 0 .25em; }
 .ob-legal .page-title span { color: var(--signal); }
 .ob-legal .effective-date { font-family: var(--mono); font-size: 13px; color: var(--muted); margin: 0 0 32px; }
