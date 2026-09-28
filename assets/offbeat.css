@@ -112,6 +112,7 @@
 /* About page (moved from the run 10 helix.css lines 134 to 139, which the B2 layer no longer carries) */
 .hx7-about-grid { display: grid; grid-template-columns: minmax(0, 280px) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
 .hx7-list a, .ob-legal .contact-info a { display: inline-flex; align-items: center; min-height: 44px; }
+.ob-report #root nav.mb-4 a { display: inline-flex; align-items: center; min-height: 44px; } /* R11-16: the in-report breadcrumb links were 14 px tall */
 @media (max-width: 760px) { .hx7-about-grid { grid-template-columns: 1fr; } .hx7-about-grid .hx7-cred-photo { max-width: 200px; } }
 
 /* Privacy and terms: one document; its H2 and H3 are sub-headings (the helix.css document scale) */
