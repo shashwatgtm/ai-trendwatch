@@ -1,4 +1,5 @@
 # Private files - NOT pushed to GitHub
+.env
 PRIVATE/
 *.local.md
 

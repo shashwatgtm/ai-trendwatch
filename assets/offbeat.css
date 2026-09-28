@@ -18,7 +18,7 @@
 
 /* Home: hero (B2 gradient from helix.css), features, latest issue and report */
 .ob .hero h1 { font-size: var(--h1); margin: 0 0 .25em; max-width: 16ch; } /* R11-A1-7: the D6 inner page H1 (clamp(44px, 7vw, 112px)); the Offbeat home is a site home like a connector home (helix-b2-inner.html), not the gtmhelix.com home */
-.ob .hero h1 span, .ob h2 span, .ob .page-header h1 span { color: var(--signal); }
+.ob .hero h1 span, .ob h2:where(:not(.ob-h3, .ob-h4)) span, .ob .page-header h1 span { color: var(--signal); }
 .ob .hero .tagline { font-size: var(--lead); line-height: 1.45; max-width: 44ch; margin: 0 0 12px; }
 .ob .hero .subtitle, .ob .form-note { color: var(--muted); max-width: 60ch; }
 .ob .form-note { font-family: var(--mono); font-size: 13px; }
@@ -144,6 +144,10 @@
 .ob-report #root h1 { font-size: var(--h1); line-height: .93; letter-spacing: -.045em; font-weight: 800; margin-bottom: .25em; }
 .ob-report #root h2 { font-size: var(--h2); line-height: 1.05; letter-spacing: -.03em; }
 .ob-report #root h3 { font-size: var(--card); line-height: 1.15; letter-spacing: -.02em; }
+.ob-report #root h2:where(.ob-h3) { font-size: var(--card); line-height: 1.15; letter-spacing: -.02em; }
+/* Run 11 R11-A2-11h: headings raised to h2 so no page jumps from the H1 to an h3 or h4; ob-h3 and ob-h4 keep the look the h3 or h4 had (same weight on the tag's own level, so any class rule still wins as before) */
+h2:where(.ob-h3) { font-family: var(--display); font-weight: 800; font-size: var(--card); line-height: 1.04; letter-spacing: -.03em; }
+h2:where(.ob-h4) { font-family: var(--display); font-weight: 700; font-size: 20px; line-height: 1.2; letter-spacing: normal; }
 .ob-report #root p.text-sm, .ob-report #root p.text-xs, .ob-report #root li { font-size: var(--body); line-height: 1.55; }
 .ob-report #root a.hx-text-ox:not(.rounded-lg), .ob-report #root a.hx-text-muted:not(.rounded-lg) { text-decoration: underline; text-decoration-color: rgba(26, 14, 16, .3); text-underline-offset: 3px; }
 /* report tables: words never break inside a cell; the table's own overflow-x-auto wrapper scrolls on phones */
@@ -248,7 +252,7 @@
 
 /* Dark mode (D11): the tokens above swap in helix.css; these pieces sit on colours that do not */
 @media (prefers-color-scheme: dark) {
-  .ob .hero h1 span, .ob h2 span, .ob .page-header h1 span, .ob-legal .page-title span { color: #F2AAB3; }
+  .ob .hero h1 span, .ob h2:where(:not(.ob-h3, .ob-h4)) span, .ob .page-header h1 span, .ob-legal .page-title span { color: #F2AAB3; }
   .ob, .ob-report { --ob-hero: linear-gradient(165deg, #3A0F1A 0%, #2A1020 38%, #15182A 66%, #0E1B2B 100%); --ob-dots: rgba(242, 170, 179, .30); --cmc: #F2AAB3; }
   .feature-icon .hx-ico { color: #F2AAB3; }
   .ob .section-header-purple { background: #C42835; color: #FAF8F6; }  /* paper on #C42835 is 5.3:1 (on #E0303D it was 4.25:1) */

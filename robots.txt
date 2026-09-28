@@ -32,4 +32,3 @@ Allow: /
 # Sitemap locations
 Sitemap: https://gtmhelix.com/ai-trendwatch/sitemap-index.xml
 Sitemap: https://gtmhelix.com/ai-trendwatch/sitemap.xml
-Sitemap: https://gtmhelix.com/ai-trendwatch/sitemap-news.xml
