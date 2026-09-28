@@ -155,7 +155,8 @@ jobs:
   send:
     name: "Job 2: create and schedule the Kit broadcast (after approval)"
     needs: [preflight, build-email]
-    if: needs.preflight.outputs.issue != '' && needs.preflight.outputs.dry_run != 'true'
+    # run 11 R11-07: the send job runs only for main
+    if: github.ref == 'refs/heads/main' && needs.preflight.outputs.issue != '' && needs.preflight.outputs.dry_run != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     environment: newsletter-send
