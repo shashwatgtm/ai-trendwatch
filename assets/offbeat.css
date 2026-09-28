@@ -258,3 +258,8 @@ h2:where(.ob-h4) { font-family: var(--display); font-weight: 700; font-size: 20p
   .ob .section-header-purple { background: #C42835; color: #FAF8F6; }  /* paper on #C42835 is 5.3:1 (on #E0303D it was 4.25:1) */
   .ob-report #root a.hx-text-ox:not(.rounded-lg), .ob-report #root a.hx-text-muted:not(.rounded-lg) { text-decoration-color: rgba(250, 248, 246, .4); }
 }
+
+/* R11-A3-5: report pages; the sticky author card stops below the 77 px sticky top bar (bar + 16 px) instead of sliding under it.
+   Short screens keep the old 16 px, as the bar is not sticky there (helix.css, max-height 500px). */
+.author-card.sticky { top: 93px; }
+@media (max-height: 500px) { .author-card.sticky { top: 16px; } }
