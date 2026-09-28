@@ -17,7 +17,7 @@
 .ob .hero { padding-left: max(var(--gut), calc((100% - var(--maxw)) / 2 + var(--gut))); padding-right: max(var(--gut), calc((100% - var(--maxw)) / 2 + var(--gut))); }
 
 /* Home: hero (B2 gradient from helix.css), features, latest issue and report */
-.ob .hero h1 { font-size: var(--h1-home); margin: 0 0 .25em; max-width: 16ch; }
+.ob .hero h1 { font-size: var(--h1); margin: 0 0 .25em; max-width: 16ch; } /* R11-A1-7: the D6 inner page H1 (clamp(44px, 7vw, 112px)); the Offbeat home is a site home like a connector home (helix-b2-inner.html), not the gtmhelix.com home */
 .ob .hero h1 span, .ob h2 span, .ob .page-header h1 span { color: var(--signal); }
 .ob .hero .tagline { font-size: var(--lead); line-height: 1.45; max-width: 44ch; margin: 0 0 12px; }
 .ob .hero .subtitle, .ob .form-note { color: var(--muted); max-width: 60ch; }
@@ -25,6 +25,7 @@
 .ob .subscribe-form { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 8px; max-width: 560px; }
 .ob .subscribe-form input[type=email] { flex: 1 1 240px; min-height: 50px; padding: 0 16px; font: inherit; font-size: 16px; color: var(--ink);
   background: var(--white); border: 2px solid var(--edge); border-radius: 0; }
+.ob .subscribe-form input[type=email]::placeholder { color: var(--muted); opacity: 1; } /* R11-A1-4: muted #5A4B4E on white (light), #CBB9BC on #261619 (dark); was the browser grey, 3.76:1 in dark */
 .ob .subscribe-form button { min-height: 50px; padding: 0 24px; font: 600 14px/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase;
   color: var(--paper); background: var(--ox); border: 2px solid var(--ox); border-radius: 0; cursor: pointer; }
 .ob .subscribe-form button:hover { background: var(--ink); border-color: var(--ink); }
@@ -171,9 +172,82 @@
   .ob .lead-story, .ob .editor-note-box, .ob .author-bio, .ob .story-item, .ob .trend-item, .ob .tech-item, .ob .product-item, .ob .three-column > div { padding: 16px; }
 }
 
+/* R11-A1-7: B2 hero on the issue and report templates (CSS only, no words moved in the source). The hero gradient runs
+   the full page width through border-image outset, which is paint only (it adds no sideways scroll); the dots sit inside
+   the hero at its top right corner, away from the text, as in helix-b2-inner.html. Crop marks around the H1 are eight
+   background strokes, so no markup is added. */
+.ob, .ob-report {
+  --ob-hero: linear-gradient(165deg, #F4B9C0 0%, #F8DADD 38%, #EEF1F6 62%, #CFE6F5 100%);
+  --ob-dots: rgba(193, 18, 31, .72); --cmc: var(--ink);
+  --ob-crop: linear-gradient(var(--cmc), var(--cmc)) 0 0 / 18px 2px no-repeat, linear-gradient(var(--cmc), var(--cmc)) 0 0 / 2px 18px no-repeat,
+    linear-gradient(var(--cmc), var(--cmc)) 100% 0 / 18px 2px no-repeat, linear-gradient(var(--cmc), var(--cmc)) 100% 0 / 2px 18px no-repeat,
+    linear-gradient(var(--cmc), var(--cmc)) 0 100% / 18px 2px no-repeat, linear-gradient(var(--cmc), var(--cmc)) 0 100% / 2px 18px no-repeat,
+    linear-gradient(var(--cmc), var(--cmc)) 100% 100% / 18px 2px no-repeat, linear-gradient(var(--cmc), var(--cmc)) 100% 100% / 2px 18px no-repeat;
+}
+.ob .container:has(> .header) { padding-top: 0; }
+.ob-report #root { padding-top: 0; }
+.ob .container > .header, .ob-report #root > .max-w-7xl > div:has(h1), .ob-report #root > .max-w-7xl > nav.mb-4 {
+  position: relative; isolation: isolate; border: 0; border-image: var(--ob-hero) fill 0 // 0 100vw; }
+.ob .container > .header::before, .ob-report #root > .max-w-7xl > div:has(h1)::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background-image: radial-gradient(circle, var(--ob-dots) 1.2px, transparent 1.7px); background-size: 7px 7px;
+  -webkit-mask-image: radial-gradient(22% 60% at 100% 0%, #000 0%, rgba(0, 0, 0, .55) 45%, transparent 75%); mask-image: radial-gradient(22% 60% at 100% 0%, #000 0%, rgba(0, 0, 0, .55) 45%, transparent 75%); }
+.ob .container > .header { padding: clamp(16px, 1.8vw, 26px) 0 clamp(18px, 1.8vw, 26px); margin: 0 0 clamp(16px, 1.8vw, 26px); }
+.ob-report #root > .max-w-7xl > nav.mb-4 { margin: 0; padding-top: 4px; }
+.ob .container > .header .header-top, .ob-report #root > .max-w-7xl > div:has(h1) h1 + p {
+  display: inline-block; max-width: 100%; font: 400 22px/1 var(--pixel); letter-spacing: .02em; text-transform: none; padding: 5px 10px 4px;
+  background: var(--ink); color: var(--paper); margin: 0 0 14px; }
+.ob .container > .header .header-title, .ob-report #root > .max-w-7xl > div:has(h1) h1 {
+  width: fit-content; max-width: 100%; margin: 0 0 14px; padding: clamp(16px, 1.8vw, 26px) clamp(8px, 1.2vw, 18px); background: var(--ob-crop); }
+.ob .container > .header .header-meta { margin: 0; }
+/* issue H1s are story headlines of 6 to 11 words: on the D6 inner scale (up to 112 px) they took 3 or 4 lines at 1366 and 1536
+   and pushed the lead story out of the first screen, so the issue H1 stops at 72 px (44 px on phones, as D6) */
+.ob .container > .header .header-title { font-size: clamp(44px, 5.2vw, 72px); padding-top: clamp(12px, 1.2vw, 18px); padding-bottom: clamp(12px, 1.2vw, 18px); }
+.ob .lead-story .story-text { line-height: 1.5; }
+/* report hero: the report's subtitle is the pixel tag above the H1 (visual order only), the byline sits under it */
+.ob-report #root > .max-w-7xl > div:has(h1) { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 4px;
+  padding: clamp(20px, 2.4vw, 32px) 0 clamp(22px, 2.6vw, 36px); margin: 0 0 clamp(20px, 2.4vw, 32px); }
+.ob-report #root > .max-w-7xl > nav.mb-4 + div:has(h1) { padding-top: 8px; }
+.ob-report #root > .max-w-7xl > div:has(h1) > div:first-child > div { display: flex; flex-direction: column; align-items: flex-start; }
+.ob-report #root > .max-w-7xl > div:has(h1) h1 + p { order: -1; }
+/* byline: a 40 px square photo that never shrinks, then "Analysis by Shashwat Ghosh" on one line */
+.ob-report #root > .max-w-7xl > div:has(h1) > div:last-child { display: flex; flex-direction: row-reverse; justify-content: flex-end; align-items: center; gap: 12px; }
+.ob-report #root > .max-w-7xl > div:has(h1) > div:last-child > div { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 6px; text-align: left; }
+.ob-report #root > .max-w-7xl > div:has(h1) > div:last-child p { font: 500 15px/1.35 var(--mono); color: var(--ink); margin: 0; }
+.ob-report #root > .max-w-7xl > div:has(h1) > div:last-child p + p { font-weight: 600; }
+.ob-report #root > .max-w-7xl > div:has(h1) img { width: 40px; height: 40px; min-width: 40px; flex: none; object-fit: cover; }
+
+/* issues: the lead story and the editor's note are windows (black title bar in VT323), side by side from 1440 px; the other
+   stories are cards with the 6 px oxblood top rule and the hard shadow */
+.ob .lead-story, .ob .editor-note-box { border: 2px solid var(--edge); box-shadow: 6px 6px 0 var(--shadow); padding: 0 22px 22px; margin: 0 0 24px; }
+.ob .lead-story > .section-label, .ob .editor-note-box > .column-title { display: flex; margin: 0 -22px 14px; padding: 5px 10px 4px;
+  font: 400 22px/1.1 var(--pixel); letter-spacing: .02em; text-transform: none; background: var(--ink); color: var(--paper); }
+/* the lead story's first paragraph shows before its photo (visual order only; the source order is unchanged) */
+.ob .lead-story { display: flex; flex-direction: column; }
+.ob .lead-story > * { order: 3; }
+.ob .lead-story > .section-label { order: 0; }
+.ob .lead-story > p.story-text:first-of-type { order: 1; }
+.ob .lead-story > .lead-image, .ob .lead-story > .image-caption { order: 2; }
+.ob .lead-story > .source-link { align-self: flex-start; }
+@media (min-width: 1440px) {
+  .ob .container > .lead-story-wrapper { max-width: none; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 32px; align-items: start; }
+}
+.ob .three-column > div, .ob .story-item, .ob .trend-item, .ob .story-item-full, .ob .trend-item-full, .ob .tech-item, .ob .product-item {
+  border: 1.5px solid var(--edge); border-top: 6px solid var(--ox); box-shadow: 6px 6px 0 var(--shadow); }
+.ob .story-grid, .ob .trends-grid, .ob .tech-grid, .ob .product-list, .ob .three-column { gap: 24px; }
+@media (max-width: 600px) {
+  /* phones: a tighter hero so the lead story's first paragraph reaches the first screen */
+  .ob .container > .header { padding: 14px 0 16px; margin-bottom: 16px; }
+  .ob .container > .header .header-top, .ob-report #root > .max-w-7xl > div:has(h1) h1 + p { margin-bottom: 8px; }
+  .ob .container > .header .header-title, .ob-report #root > .max-w-7xl > div:has(h1) h1 { padding: 12px 8px; margin-bottom: 8px; }
+  .ob .lead-story, .ob .editor-note-box { padding: 0 14px 16px; box-shadow: 4px 4px 0 var(--shadow); }
+  .ob .lead-story > .section-label, .ob .editor-note-box > .column-title { margin: 0 -14px 12px; }
+  .ob .three-column > div, .ob .story-item, .ob .trend-item, .ob .story-item-full, .ob .trend-item-full, .ob .tech-item, .ob .product-item { box-shadow: 4px 4px 0 var(--shadow); }
+}
+
 /* Dark mode (D11): the tokens above swap in helix.css; these pieces sit on colours that do not */
 @media (prefers-color-scheme: dark) {
   .ob .hero h1 span, .ob h2 span, .ob .page-header h1 span, .ob-legal .page-title span { color: #F2AAB3; }
+  .ob, .ob-report { --ob-hero: linear-gradient(165deg, #3A0F1A 0%, #2A1020 38%, #15182A 66%, #0E1B2B 100%); --ob-dots: rgba(242, 170, 179, .30); --cmc: #F2AAB3; }
   .feature-icon .hx-ico { color: #F2AAB3; }
   .ob .section-header-purple { background: #C42835; color: #FAF8F6; }  /* paper on #C42835 is 5.3:1 (on #E0303D it was 4.25:1) */
   .ob-report #root a.hx-text-ox:not(.rounded-lg), .ob-report #root a.hx-text-muted:not(.rounded-lg) { text-decoration-color: rgba(250, 248, 246, .4); }
