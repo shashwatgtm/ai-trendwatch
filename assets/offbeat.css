@@ -17,7 +17,7 @@
 .ob .hero { padding-left: max(var(--gut), calc((100% - var(--maxw)) / 2 + var(--gut))); padding-right: max(var(--gut), calc((100% - var(--maxw)) / 2 + var(--gut))); }
 
 /* Home: hero (B2 gradient from helix.css), features, latest issue and report */
-.ob .hero h1 { font-size: var(--h1-home); margin: 0 0 20px; max-width: 16ch; }
+.ob .hero h1 { font-size: var(--h1-home); margin: 0 0 .25em; max-width: 16ch; }
 .ob .hero h1 span, .ob h2 span, .ob .page-header h1 span { color: var(--signal); }
 .ob .hero .tagline { font-size: var(--lead); line-height: 1.45; max-width: 44ch; margin: 0 0 12px; }
 .ob .hero .subtitle, .ob .form-note { color: var(--muted); max-width: 60ch; }
@@ -54,7 +54,7 @@
 .ob .view-all { margin-top: 20px; }
 .ob .issue-card:hover { border-color: var(--ox); }
 .ob .page-header { padding-top: clamp(40px, 5vw, 72px); padding-bottom: 8px; }
-.ob .page-header h1 { margin: 0 0 16px; }
+.ob .page-header h1 { margin: 0 0 .25em; }
 .ob .page-header p { color: var(--muted); max-width: 60ch; font-size: var(--lead); line-height: 1.45; }
 
 /* Issues: one article with the story headline as its H1; text at reading width, left edge on the header's */
@@ -64,7 +64,7 @@
 .ob .header { border-bottom: 3px solid var(--ox); padding: 8px 0 20px; margin-bottom: 28px; }
 .ob .header-top, .ob .header-meta { font-family: var(--mono); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .ob .header-meta { display: flex; flex-wrap: wrap; gap: 4px 16px; }
-.ob .header-title { color: var(--ink); margin: 10px 0 12px; max-width: 22ch; }
+.ob .header-title { color: var(--ink); margin: 10px 0 .25em; max-width: 22ch; }
 .ob .header-meta-label { color: var(--ox); }
 .ob .section-header, .ob .section-header-cyan, .ob .section-header-purple, .ob .section-label, .ob .category-header {
   font: 600 13px var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--paper); background: var(--ox);
@@ -105,18 +105,22 @@
 .ob table { max-width: 100%; }
 .ob .ob-hp { display: none; }
 
+/* About page: room under the hero H1 for its descenders */
+.ob-about .hx-hero h1 { margin-bottom: .25em; }
 /* About page (moved from the run 10 helix.css lines 134 to 139, which the B2 layer no longer carries) */
 .hx7-about-grid { display: grid; grid-template-columns: minmax(0, 280px) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
+.hx7-list a, .ob-legal .contact-info a { display: inline-flex; align-items: center; min-height: 44px; }
 @media (max-width: 760px) { .hx7-about-grid { grid-template-columns: 1fr; } .hx7-about-grid .hx7-cred-photo { max-width: 200px; } }
 
 /* Privacy and terms: one document; its H2 and H3 are sub-headings (the helix.css document scale) */
 .ob-legal { --h2: clamp(28px, 2.6vw, 38px); --card: clamp(22px, 1.8vw, 26px); }
 .ob-legal .container { padding-top: clamp(40px, 5vw, 72px); padding-bottom: 24px; display: block; }
 .ob-legal .container > * { max-width: 800px; }
-.ob-legal .page-title { color: var(--ink); margin: 0 0 14px; }
+.ob-legal .container > .page-title { max-width: none; }
+.ob-legal .page-title { color: var(--ink); margin: 0 0 .25em; }
 .ob-legal .page-title span { color: var(--signal); }
 .ob-legal .effective-date { font-family: var(--mono); font-size: 13px; color: var(--muted); margin: 0 0 32px; }
-.ob-legal h2 { color: var(--ox); margin: 36px 0 12px; }
+.ob-legal h2 { color: var(--ox); line-height: 1.1; margin: 36px 0 12px; }
 .ob-legal h3 { color: var(--ink); margin: 22px 0 8px; }
 .ob-legal p, .ob-legal li { color: var(--ink); line-height: 1.65; }
 .ob-legal ul { padding-left: 22px; }
@@ -131,13 +135,17 @@
    The id selector outranks the report's Tailwind size classes, so no important flag is needed. */
 .ob-report { --h2: clamp(28px, 2.6vw, 38px); --card: clamp(22px, 1.8vw, 26px); }
 .ob-report #root { padding-left: 0; padding-right: 0; }
-.ob-report #root h1 { font-size: var(--h1); line-height: .93; letter-spacing: -.045em; font-weight: 800; }
+.ob-report #root h1 { font-size: var(--h1); line-height: .93; letter-spacing: -.045em; font-weight: 800; margin-bottom: .25em; }
 .ob-report #root h2 { font-size: var(--h2); line-height: 1.05; letter-spacing: -.03em; }
 .ob-report #root h3 { font-size: var(--card); line-height: 1.15; letter-spacing: -.02em; }
 .ob-report #root p.text-sm, .ob-report #root p.text-xs, .ob-report #root li { font-size: var(--body); line-height: 1.55; }
 .ob-report #root a.hx-text-ox:not(.rounded-lg), .ob-report #root a.hx-text-muted:not(.rounded-lg) { text-decoration: underline; text-decoration-color: rgba(26, 14, 16, .3); text-underline-offset: 3px; }
 /* report tables: words never break inside a cell; the table's own overflow-x-auto wrapper scrolls on phones */
 .ob-report #root td, .ob-report #root th { overflow-wrap: normal; word-break: normal; hyphens: none; }
+.ob-report #root .grid > *, .ob-report #root .flex-1 { min-width: 0; }
+/* tap targets: report links that stand alone (tabs, sources, share links) are at least 44 px tall; links inside sentences are inline and keep their size */
+.ob-report #root a { min-height: 44px; }
+.ob-report #root a.text-\[10px\] { display: inline-flex; align-items: center; padding: 0; }
 /* Section tabs on phones: below 640 px the labels were hidden (7 or 8 icons only). Show them, wrapped into rows. */
 @media (max-width: 639.98px) {
   .ob-report #root > .max-w-7xl > .flex-wrap.mb-5 .sm\:inline { display: inline; }

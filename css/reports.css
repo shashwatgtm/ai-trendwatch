@@ -45,7 +45,8 @@ a.text-\[10px\]{display:inline-block;padding:6px 0;min-height:24px}
 .hx-bg-ox.rounded-xl,.hx-bg-ox.shadow-lg,.hx-bg-ox.p-4,.hx-bg-ox.p-6,.hx-bg-ox.p-8{background:#3A2226;color:#FAF8F6;border-left-color:#F2AAB3}
 .hx-bg-ox.rounded-xl *,.hx-bg-ox.shadow-lg *,.hx-bg-ox.p-4 *,.hx-bg-ox.p-6 *,.hx-bg-ox.p-8 *{color:#FAF8F6}
 .hx-bg-ox.rounded-xl .hx-ico,.hx-bg-ox.shadow-lg .hx-ico,.hx-bg-ox.p-4 .hx-ico,.hx-bg-ox.p-6 .hx-ico,.hx-bg-ox.p-8 .hx-ico{color:#F2AAB3}
-.source-badge{background:#261619}
+.source-badge.src-anthropic,.source-badge.src-openai,.source-badge.src-ipsos,.source-badge.src-microsoft{background:#261619}
+#root .quote-box{background:#3A2226;border-left-color:#F2AAB3}#root .author-card{background:#261619}
 .source-badge.src-anthropic{color:#F2AAB3;border-color:#F2AAB3}
 .source-badge.src-openai{color:#F6D4D8;border-color:#E0303D}
 .source-badge.src-ipsos{color:#FAF8F6;border-color:#FAF8F6}
