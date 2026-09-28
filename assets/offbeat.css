@@ -107,6 +107,8 @@
 
 /* About page: room under the hero H1 for its descenders */
 .ob-about .hx-hero h1 { margin-bottom: .25em; }
+.ob-about .hx-hero .hx-eyebrow { margin-bottom: 28px; } /* R11-16: the 107 px H1 glyphs rose 10 px into the tag at 1536 */
+.ob-about .hx7-about-grid h2 { margin-bottom: 20px; }
 /* About page (moved from the run 10 helix.css lines 134 to 139, which the B2 layer no longer carries) */
 .hx7-about-grid { display: grid; grid-template-columns: minmax(0, 280px) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: start; }
 .hx7-list a, .ob-legal .contact-info a { display: inline-flex; align-items: center; min-height: 44px; }
@@ -172,6 +174,6 @@
 @media (prefers-color-scheme: dark) {
   .ob .hero h1 span, .ob h2 span, .ob .page-header h1 span, .ob-legal .page-title span { color: #F2AAB3; }
   .feature-icon .hx-ico { color: #F2AAB3; }
-  .ob .section-header-purple { background: #E0303D; color: #1A0E10; }
+  .ob .section-header-purple { background: #C42835; color: #FAF8F6; }  /* paper on #C42835 is 5.3:1 (on #E0303D it was 4.25:1) */
   .ob-report #root a.hx-text-ox:not(.rounded-lg), .ob-report #root a.hx-text-muted:not(.rounded-lg) { text-decoration-color: rgba(250, 248, 246, .4); }
 }
