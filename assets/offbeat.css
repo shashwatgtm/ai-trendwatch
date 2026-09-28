@@ -186,13 +186,13 @@
 }
 .ob .container:has(> .header) { padding-top: 0; }
 .ob-report #root { padding-top: 0; }
-.ob .container > .header, .ob-report #root > .max-w-7xl > div:has(h1), .ob-report #root > .max-w-7xl > nav.mb-4 {
+.ob .container > .header, .ob-report #root > .max-w-7xl > div:has(h1) {
   position: relative; isolation: isolate; border: 0; border-image: var(--ob-hero) fill 0 // 0 100vw; }
 .ob .container > .header::before, .ob-report #root > .max-w-7xl > div:has(h1)::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
   background-image: radial-gradient(circle, var(--ob-dots) 1.2px, transparent 1.7px); background-size: 7px 7px;
   -webkit-mask-image: radial-gradient(22% 60% at 100% 0%, #000 0%, rgba(0, 0, 0, .55) 45%, transparent 75%); mask-image: radial-gradient(22% 60% at 100% 0%, #000 0%, rgba(0, 0, 0, .55) 45%, transparent 75%); }
 .ob .container > .header { padding: clamp(16px, 1.8vw, 26px) 0 clamp(18px, 1.8vw, 26px); margin: 0 0 clamp(16px, 1.8vw, 26px); }
-.ob-report #root > .max-w-7xl > nav.mb-4 { margin: 0; padding-top: 4px; }
+.ob-report #root > .max-w-7xl > nav.mb-4 { margin: 0; } /* the in-report breadcrumb (4 reports) stays on the page colour above the hero */
 .ob .container > .header .header-top, .ob-report #root > .max-w-7xl > div:has(h1) h1 + p {
   display: inline-block; max-width: 100%; font: 400 22px/1 var(--pixel); letter-spacing: .02em; text-transform: none; padding: 5px 10px 4px;
   background: var(--ink); color: var(--paper); margin: 0 0 14px; }
@@ -208,7 +208,6 @@
 /* report hero: the report's subtitle is the pixel tag above the H1 (visual order only), the byline sits under it */
 .ob-report #root > .max-w-7xl > div:has(h1) { display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 4px;
   padding: clamp(20px, 2.4vw, 32px) 0 clamp(22px, 2.6vw, 36px); margin: 0 0 clamp(20px, 2.4vw, 32px); }
-.ob-report #root > .max-w-7xl > nav.mb-4 + div:has(h1) { padding-top: 8px; }
 .ob-report #root > .max-w-7xl > div:has(h1) > div:first-child > div { display: flex; flex-direction: column; align-items: flex-start; }
 .ob-report #root > .max-w-7xl > div:has(h1) h1 + p { order: -1; }
 /* byline: a 40 px square photo that never shrinks, then "Analysis by Shashwat Ghosh" on one line */
@@ -223,13 +222,14 @@
 .ob .lead-story, .ob .editor-note-box { border: 2px solid var(--edge); box-shadow: 6px 6px 0 var(--shadow); padding: 0 22px 22px; margin: 0 0 24px; }
 .ob .lead-story > .section-label, .ob .editor-note-box > .column-title { display: flex; margin: 0 -22px 14px; padding: 5px 10px 4px;
   font: 400 22px/1.1 var(--pixel); letter-spacing: .02em; text-transform: none; background: var(--ink); color: var(--paper); }
-/* the lead story's first paragraph shows before its photo (visual order only; the source order is unchanged) */
-.ob .lead-story { display: flex; flex-direction: column; }
-.ob .lead-story > * { order: 3; }
-.ob .lead-story > .section-label { order: 0; }
-.ob .lead-story > p.story-text:first-of-type { order: 1; }
-.ob .lead-story > .lead-image, .ob .lead-story > .image-caption { order: 2; }
-.ob .lead-story > .source-link { align-self: flex-start; }
+/* from 900 px the lead story's photo and caption sit at the right, so its first paragraph starts under the title bar
+   (plain block flow: the " | " between the source links stays inline; a flex reorder would have lifted it to the top) */
+@media (min-width: 900px) {
+  .ob .lead-story::after { content: ""; display: block; clear: both; }
+  .ob .container > .lead-story-wrapper { max-width: none; }
+  .ob .lead-story > .lead-image, .ob .lead-story > .image-caption { float: right; clear: right; width: min(40%, 420px); margin-left: 24px; }
+  .ob .lead-story > .image-caption { margin-top: 6px; }
+}
 @media (min-width: 1440px) {
   .ob .container > .lead-story-wrapper { max-width: none; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 32px; align-items: start; }
 }
@@ -238,11 +238,11 @@
 .ob .story-grid, .ob .trends-grid, .ob .tech-grid, .ob .product-list, .ob .three-column { gap: 24px; }
 @media (max-width: 600px) {
   /* phones: a tighter hero so the lead story's first paragraph reaches the first screen */
-  .ob .container > .header { padding: 14px 0 16px; margin-bottom: 16px; }
+  .ob .container > .header { padding: 10px 0 12px; margin-bottom: 12px; }
   .ob .container > .header .header-top, .ob-report #root > .max-w-7xl > div:has(h1) h1 + p { margin-bottom: 8px; }
   .ob .container > .header .header-title, .ob-report #root > .max-w-7xl > div:has(h1) h1 { padding: 12px 8px; margin-bottom: 8px; }
   .ob .lead-story, .ob .editor-note-box { padding: 0 14px 16px; box-shadow: 4px 4px 0 var(--shadow); }
-  .ob .lead-story > .section-label, .ob .editor-note-box > .column-title { margin: 0 -14px 12px; }
+  .ob .lead-story > .section-label, .ob .editor-note-box > .column-title { margin: 0 -14px 10px; }
   .ob .three-column > div, .ob .story-item, .ob .trend-item, .ob .story-item-full, .ob .trend-item-full, .ob .tech-item, .ob .product-item { box-shadow: 4px 4px 0 var(--shadow); }
 }
 
