@@ -1,3 +1,5 @@
+@import url("helix-report.css?v=7129fc8c14"); /* run 13 D22/B34: the Helix report standard, byte for byte from work/run13/report/helix-report.css */
+
 /* Offbeat AI Watch on the B2 design layer (run 11 R11-15; rewritten from the run 7 to run 10 file). Loaded after
    fonts.css and helix.css (the shared B2 layer) on every page; brand.css and app.css are no longer loaded. It restyles the
    pages' existing classes only: no words, numbers, chart values, images or links change here. One layer (B21): type,
@@ -263,3 +265,39 @@ h2:where(.ob-h4) { font-family: var(--display); font-weight: 700; font-size: 20p
    Short screens keep the old 16 px, as the bar is not sticky there (helix.css, max-height 500px). */
 .author-card.sticky { top: 93px; }
 @media (max-height: 500px) { .author-card.sticky { top: 16px; } }
+
+/* Run 13 D22/B34: the Helix report standard, mapped onto the existing issue and report markup (contract.md, apply.md
+   section C). No word, number, image or link changes here; the new hxr-tag and hxr-foot elements in the 21 pages pick
+   up their look from helix-report.css directly. */
+
+/* Title block: a plain 6 px oxblood top rule, no hero gradient behind it (this overrides the border-image hero above) */
+.ob .container > .header, .ob-report #root > .max-w-7xl > div:has(h1) { border-image: none; border-top: 6px solid var(--ox); }
+/* the new hxr-tag sits on its own line above the branding bar's flex row (which stays a plain 2-item space-between) */
+.ob-report #root > .max-w-7xl > div:has(h1) > .hxr-tag { order: -1; flex: 1 0 100%; margin: 0 0 10px; }
+
+/* Report cards: square corners, no soft shadow (Tailwind rounded-* and shadow-* inside the 15 reports; not the round
+   avatar photo or the chart tracks, which keep their shape) */
+.ob-report #root .rounded:not(img), .ob-report #root .rounded-lg:not(img), .ob-report #root .rounded-xl:not(img),
+.ob-report #root .shadow-lg { border-radius: 0; box-shadow: none; }
+
+@media print {
+  /* helix-report.css scopes "only the report prints" on an element carrying class hxr; the 21 Offbeat pages carry no
+     such wrapper (HTML is frozen apart from the tag and footer lines), so the same "nothing but the report column"
+     rule is repeated here directly on the issue and report columns */
+  main:has(.ob .container) :not(.ob .container, .ob .container *) { display: none !important; }
+  main:has(.ob-report #root) :not(.ob-report #root, .ob-report #root *) { display: none !important; }
+  /* the report tab rows ("Section Navigation") never print */
+  .ob-report #root > .max-w-7xl > .flex-wrap.mb-5 { display: none !important; }
+  /* the in-report breadcrumb (3 reports): navigation, not report text */
+  .ob-report #root > .max-w-7xl > nav.mb-4 { display: none !important; }
+  /* section labels print as ink text with a 1.5 px ink border, so they survive "background graphics" off */
+  .ob .section-header, .ob .section-header-cyan, .ob .section-header-purple, .ob .section-label, .ob .category-header,
+  .ob-report .section-header, .ob-report .section-header-cyan, .ob-report .section-header-purple,
+  .ob-report .section-label, .ob-report .category-header {
+    background: none !important; color: #1A0E10 !important; border: 1.5px solid #1A0E10 !important; box-shadow: none !important;
+  }
+  /* chart bars keep their colour with backgrounds off */
+  .ob-report [style*="background"], .ob-report [style*="background"] *, .ob-report .hx-bg-track, .ob-report .hx-bg-track * {
+    print-color-adjust: exact; -webkit-print-color-adjust: exact;
+  }
+}
