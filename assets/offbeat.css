@@ -1,4 +1,4 @@
-@import url("helix-report.css?v=7129fc8c14"); /* run 13 D22/B34: the Helix report standard, byte for byte from work/run13/report/helix-report.css */
+@import url("helix-report.css?v=c50ac3f2c2"); /* run 13 D22/B34: the Helix report standard, byte for byte from work/run13/report/helix-report.css */
 
 /* Offbeat AI Watch on the B2 design layer (run 11 R11-15; rewritten from the run 7 to run 10 file). Loaded after
    fonts.css and helix.css (the shared B2 layer) on every page; brand.css and app.css are no longer loaded. It restyles the
@@ -301,3 +301,7 @@ h2:where(.ob-h4) { font-family: var(--display); font-weight: 700; font-size: 20p
     print-color-adjust: exact; -webkit-print-color-adjust: exact;
   }
 }
+/* Run 13 D22 (lead review): no hard or soft shadows inside a report: the issue cards and every Tailwind shadow-* box in the reports */
+.ob .container .lead-story, .ob .container .editor-note-box, .ob .container .three-column > div, .ob .container .story-item, .ob .container .trend-item,
+.ob .container .story-item-full, .ob .container .trend-item-full, .ob .container .tech-item, .ob .container .product-item,
+.ob-report #root [class*="shadow"] { box-shadow: none !important; }
