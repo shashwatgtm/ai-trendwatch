@@ -1,4 +1,4 @@
-@import url("helix-report.css?v=c50ac3f2c2"); /* run 13 D22/B34: the Helix report standard, byte for byte from work/run13/report/helix-report.css */
+@import url("helix-report.css?v=f78ed582b4"); /* run 13 D22/B34: the Helix report standard, byte for byte from work/run13/report/helix-report.css */
 
 /* Offbeat AI Watch on the B2 design layer (run 11 R11-15; rewritten from the run 7 to run 10 file). Loaded after
    fonts.css and helix.css (the shared B2 layer) on every page; brand.css and app.css are no longer loaded. It restyles the
@@ -253,7 +253,7 @@ h2:where(.ob-h4) { font-family: var(--display); font-weight: 700; font-size: 20p
 }
 
 /* Dark mode (D11): the tokens above swap in helix.css; these pieces sit on colours that do not */
-@media (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: dark) {
   .ob .hero h1 span, .ob h2:where(:not(.ob-h3, .ob-h4)) span, .ob .page-header h1 span, .ob-legal .page-title span { color: #F2AAB3; }
   .ob, .ob-report { --ob-hero: linear-gradient(165deg, #3A0F1A 0%, #2A1020 38%, #15182A 66%, #0E1B2B 100%); --ob-dots: rgba(242, 170, 179, .30); --cmc: #F2AAB3; }
   .feature-icon .hx-ico { color: #F2AAB3; }
@@ -293,12 +293,52 @@ h2:where(.ob-h4) { font-family: var(--display); font-weight: 700; font-size: 20p
   /* section labels print as ink text with a 1.5 px ink border, so they survive "background graphics" off */
   .ob .section-header, .ob .section-header-cyan, .ob .section-header-purple, .ob .section-label, .ob .category-header,
   .ob-report .section-header, .ob-report .section-header-cyan, .ob-report .section-header-purple,
-  .ob-report .section-label, .ob-report .category-header {
+  .ob-report .section-label, .ob-report .category-header,
+  .ob .container > .header .header-top, .ob .editor-note-box > .column-title,
+  .ob-report #root > .max-w-7xl > div:has(h1) h1 + p {
     background: none !important; color: #1A0E10 !important; border: 1.5px solid #1A0E10 !important; box-shadow: none !important;
   }
   /* chart bars keep their colour with backgrounds off */
   .ob-report [style*="background"], .ob-report [style*="background"] *, .ob-report .hx-bg-track, .ob-report .hx-bg-track * {
     print-color-adjust: exact; -webkit-print-color-adjust: exact;
+  }
+  /* R14-10b: helix.css's own dark-mode rule for table headers ("main table th") is not scoped to screen, so it
+     still applies under a print + dark-scheme render; this repo's own CSS cannot edit helix.css (shared, lead
+     owned), so the light-mode look is restored here for print only (logged for the lead to fix at the source) */
+  .ob .container th, .ob-report #root th { background: var(--clay) !important; color: #1A0E10 !important; }
+  /* R14-10c: the label stays with what follows it (helix-report.css only reaches h1 to h6; these are div labels) */
+  .ob .section-header, .ob .section-header-cyan, .ob .section-header-purple, .ob .section-label, .ob .category-header,
+  .ob-report .section-header, .ob-report .section-header-cyan, .ob-report .section-header-purple,
+  .ob-report .section-label, .ob-report .category-header {
+    break-after: avoid; page-break-after: avoid;
+  }
+  .ob .section-header + *, .ob .section-header-cyan + *, .ob .section-header-purple + *, .ob .section-label + *, .ob .category-header + *,
+  .ob-report .section-header + *, .ob-report .section-header-cyan + *, .ob-report .section-header-purple + *,
+  .ob-report .section-label + *, .ob-report .category-header + * {
+    break-before: avoid; page-break-before: avoid;
+  }
+  /* the same keep-with-next companion helix-report.css gives ordinary h1 to h6 headings inside .hxr (break-before
+     avoid on the very next sibling); Offbeat markup carries no .hxr wrapper, so headings there only had the
+     break-after: avoid half of the pair (unscoped, from helix-report.css line 91), never this half. Without it, a
+     heading such as the author card's "Shashwat Ghosh" h3 could still end a page while its own next line (the
+     designation paragraph) starts the next: found in country-comparison and gtm-dual-strategy */
+  .ob .container :is(h1, h2, h3, h4, h5, h6) + *, .ob-report #root :is(h1, h2, h3, h4, h5, h6) + * {
+    break-before: avoid; page-break-before: avoid;
+  }
+  /* R14-10d: outside links in the report column print their address (helix-report.css's rule reaches only .hxr-body;
+     the Offbeat issue and report columns carry no .hxr-body, so the same rule is repeated for them here). Chrome
+     (header, row 2, Menu, tab rows, subscribe blocks) is already hidden above, so this never reaches hidden chrome.
+     Several of these links (.source-link, the author bio links) are display: inline-flex on screen (for the 44 px
+     tap target and icon alignment); an inline-flex box does not wrap its own children, so the long address text
+     generated below just grew the box wider instead of wrapping, and ran off the printed page's edge. Printed
+     link addresses do not need a tap target, so in print these go back to plain inline, letting the address wrap
+     with the surrounding text like any other run of text. */
+  .ob .container a[href^="http"], .ob-report #root a[href^="http"] {
+    display: inline !important; min-height: auto !important;
+  }
+  .ob .container a[href^="http"]::after, .ob-report #root a[href^="http"]::after {
+    content: " (" attr(href) ")"; font: 400 9pt/1.3 var(--mono); color: #5A4B4E; overflow-wrap: anywhere;
+    text-transform: none; letter-spacing: normal;
   }
 }
 /* Run 13 D22 (lead review): no hard or soft shadows inside a report: the issue cards and every Tailwind shadow-* box in the reports */

@@ -31,7 +31,7 @@ a.text-\[10px\]{display:inline-block;padding:6px 0;min-height:24px}
 
 /* run 11 D11: dark mode (device setting only). Page #1A0E10, cards #261619, text #FAF8F6, muted #CBB9BC, labels #F2AAB3;
    chart bars #F2AAB3 (oxblood series), #C42835 (signal series, darker so white labels pass 4.5:1) and grey #9A8A8D; tracks #3A2226. Bar widths are untouched. */
-@media (prefers-color-scheme: dark){
+@media screen and (prefers-color-scheme: dark){
 .hx-bg-paper,.hx-bg-inset{background-color:#1A0E10}.hx-bg-inset{box-shadow:inset 0 0 0 1px rgba(250,248,246,.18)}
 .hx-bg-white,.hx-bg-card{background-color:#261619}.hx-bg-paper20{background-color:rgba(26,14,16,.2)}
 .hx-bg-note,.hx-bg-clay50,.hx-bg-clay{background-color:#3A2226}.hx-bg-track{background-color:#3A2226}
