@@ -305,3 +305,11 @@ h2:where(.ob-h4) { font-family: var(--display); font-weight: 700; font-size: 20p
 .ob .container .lead-story, .ob .container .editor-note-box, .ob .container .three-column > div, .ob .container .story-item, .ob .container .trend-item,
 .ob .container .story-item-full, .ob .container .trend-item-full, .ob .container .tech-item, .ob .container .product-item,
 .ob-report #root [class*="shadow"] { box-shadow: none !important; }
+/* Run 13 D22 (verifier R13-41): in print the title block drops the hero layer (border-image fill, isolation and the dot layer);
+   with "background graphics" off, the crop-mark layer over the H1 printed as a white box and hid it */
+@media print {
+  .ob .container > .header, .ob-report #root > .max-w-7xl > div:has(h1) { border-image: none !important; isolation: auto !important; }
+  .ob .container > .header::before, .ob-report #root > .max-w-7xl > div:has(h1)::before { display: none !important; }
+  .ob .container > .header .header-title::before, .ob-report #root > .max-w-7xl > div:has(h1) h1::before { display: none !important; }
+  .ob-report #root .tab-panel > *, .ob-report #root .tab-panel > * > *, .ob-report #root .rounded-xl, .ob-report #root .rounded-lg, .ob-report #root [class*="hx-bg-"]:has(> h2, > h3), .ob .story-item, .ob .trend-item, .ob .tech-item, .ob .product-item, .ob .editor-note-box, .ob .author-bio { break-inside: avoid; } /* cards, callouts and charts never split (verifier R13-41: Key Insight split) */ /* the crop marks laid over the H1 printed as a white box */
+}
