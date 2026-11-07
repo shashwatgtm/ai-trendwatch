@@ -5,13 +5,33 @@
     <link>https://gtmhelix.com/ai-trendwatch/</link>
     <description>Fortnightly intelligence brief for B2B leaders and GTM professionals on enterprise AI, agentic workflows, AI infrastructure and regulatory developments.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Feb 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 00:00:00 GMT</lastBuildDate>
     <atom:link href="https://gtmhelix.com/ai-trendwatch/feed.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://gtmhelix.com/ai-trendwatch/images/logo.png</url>
       <title>Offbeat AI Watch</title>
       <link>https://gtmhelix.com/ai-trendwatch/</link>
     </image>
+
+    <!-- Issue #7 -->
+    <item>
+      <title>Your AI can't use what your company only knows in people's heads</title>
+      <link>https://gtmhelix.com/ai-trendwatch/issues/2026-11-11</link>
+      <description>Only 10% of large companies give AI a consistent understanding of the business across all systems, the TCS Enterprise AI Study of 1,333 senior leaders finds. Plus CrowdStrike's AI Kill Switch and planned Fiddler acquisition, India's DEPA for AI Training handbook, Pliant's $80M Series C for agent payments over MCP, UK regulators on agent accountability, and Anthropic's smart reports for Claude Enterprise.</description>
+      <pubDate>Wed, 11 Nov 2026 00:00:00 GMT</pubDate>
+      <guid>https://gtmhelix.com/ai-trendwatch/issues/2026-11-11</guid>
+      <author>shashwat@gtmhelix.com (Shashwat Ghosh)</author>
+      <category>Artificial Intelligence</category>
+      <category>Enterprise AI</category>
+      <category>TCS Enterprise AI Study</category>
+      <category>Business Context</category>
+      <category>AI Agents</category>
+      <category>CrowdStrike</category>
+      <category>DEPA</category>
+      <category>Pliant</category>
+      <category>DRCF</category>
+      <category>MCP</category>
+    </item>
 
     <!-- Special Research Report #2: India's AI Paradox: Scale vs Reach -->
     <item>

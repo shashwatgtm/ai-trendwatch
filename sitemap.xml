@@ -4,9 +4,17 @@
   <!-- Homepage -->
   <url>
     <loc>https://gtmhelix.com/ai-trendwatch/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Newsletter Issue #7 - November 11, 2026 -->
+  <url>
+    <loc>https://gtmhelix.com/ai-trendwatch/issues/2026-11-11</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <!-- Newsletter Issue #6 - January 7, 2026 -->
