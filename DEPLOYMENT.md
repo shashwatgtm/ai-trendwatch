@@ -1,16 +1,15 @@
 # Deployment Guide - Offbeat AI Watch
 
-## Current Hosting Setup
+## Current Hosting Setup (updated 7 Nov 2026)
 
 **Live Site:** https://gtmhelix.com/ai-trendwatch/
 
-| Component | Details |
-|-----------|---------|
-| **Hosting** | GoDaddy Managed WordPress |
-| **Domain** | gtmhelix.com (aged domain for SEO) |
-| **Subfolder** | /ai-trendwatch/ |
-| **Deployment** | Automatic via GitHub Actions |
-| **Old URL** | shashwatgtm.github.io/ai-trendwatch (redirects to new domain) |
+- Hosting: Netlify (site gtmhelix-main), not linked to git. GoDaddy is no longer used; its deploy workflow was deleted in run 9.
+- The old GitHub Pages copy (shashwatgtm.github.io/ai-trendwatch) is switched off and returns 404. There is no mirror.
+- Page addresses have no ".html" (Netlify pretty URLs). Canonicals, og:url and sitemaps use the extensionless form.
+- This repository is the source of truth. Each issue is committed here first; the same files are copied into the Netlify publish folder, deployed as a draft, checked, and released to production only on the owner's yes.
+
+The rest of this file describes the old GoDaddy setup and is kept as history only.
 
 ---
 
