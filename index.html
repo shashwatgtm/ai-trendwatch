@@ -190,96 +190,175 @@
 }
     </script>
 <link rel="stylesheet" href="/assets/helix-calm.css?v=bfec0be437">
+<style>
+.obx{--obx-rule:var(--line,rgba(26,14,16,.16));--obx-accent:var(--signal,#C1121F);max-width:1120px;margin:0 auto;padding:20px 20px 48px;color:var(--ink,#1A0E10);font-size:16px;line-height:1.55}
+.obx a{color:inherit;text-decoration-color:var(--obx-accent);text-underline-offset:3px}
+.obx h1,.obx h2,.obx h3{letter-spacing:-.01em;margin:0}
+.obx p{margin:0 0 .6em}
+.obx p,.obx li{text-wrap:pretty}
+.obx h1,.obx h2,.obx h3{text-wrap:balance}
+.obx-mast{display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;text-transform:uppercase;letter-spacing:.06em;border-top:3px solid var(--ink,#1A0E10);border-bottom:1px solid var(--obx-rule);padding:8px 0;margin-bottom:18px}
+.obx-brand{font-weight:700;color:var(--obx-accent)}
+.obx-label{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--obx-accent);font-weight:700;margin:0 0 8px}
+.obx-kick{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted,#5A4B4E);margin:0 0 4px}
+.obx-by{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--muted,#5A4B4E)}
+.obx-sigline{font-size:14.5px}
+.obx-sigline b{color:var(--obx-accent)}
+.obx-src{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;color:var(--muted,#5A4B4E)}
+.obx-mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;color:var(--muted,#5A4B4E)}
+.obx-quotes{margin:0 0 .4em;padding-left:1.1em;font-size:15px;font-weight:600}
+.obx-quotes li{margin:.25em 0}
+.obx-cta a{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12.5px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.obx-cta a::after{content:" \2192"}
+.obx figure{margin:0}
+.obx figure img{width:100%;height:auto;display:block;border:1px solid var(--obx-rule)}
+.obx figcaption{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;color:var(--muted,#5A4B4E);margin-top:4px}
+.obx-tail{display:grid;grid-template-columns:1fr 1fr;gap:28px;border-top:1px solid var(--obx-rule);padding-top:18px;margin-top:28px}
+.obx-prev{list-style:none;padding:0;margin:0 0 8px;font-size:14.5px}
+.obx-prev li{padding:6px 0;border-bottom:1px dotted var(--obx-rule)}
+.obx-prev span{display:block;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;color:var(--muted,#5A4B4E)}
+.obx .subscribe-form{display:flex;gap:8px;flex-wrap:wrap}
+.obx .subscribe-form input[type=email]{flex:1 1 200px;padding:10px;border:1px solid var(--obx-rule);background:transparent;color:inherit}
+.obx .ob-hp{position:absolute;left:-9999px}
+.obx-small{font-size:12.5px;color:var(--muted,#5A4B4E);margin-top:6px}
+.obx-sources{margin-top:22px;border-top:1px solid var(--obx-rule);padding-top:10px;font-size:13.5px}
+.obx-sources summary{cursor:pointer;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.obx-about{margin-top:22px;border-top:1px solid var(--obx-rule);padding-top:14px}
+.obx-author{display:flex;gap:14px;align-items:flex-start;font-size:14.5px}
+.obx-author img{border-radius:50%;flex:none}
+@media (max-width:760px){.obx-tail{grid-template-columns:1fr}}
+
+body{background:linear-gradient(180deg,rgba(207,230,245,.85) 0,rgba(238,241,246,.75) 420px,var(--paper,#FAF8F6) 1100px,var(--paper,#FAF8F6) calc(100% - 1500px),#F8DADD calc(100% - 700px),#F4B9C0 100%) no-repeat,var(--paper,#FAF8F6)}
+@media (prefers-color-scheme:dark){body{background:linear-gradient(180deg,#0E1B2B 0,#15182A 420px,var(--paper,#1A0E10) 1100px,var(--paper,#1A0E10) calc(100% - 1500px),#2A1216 100%) no-repeat,var(--paper,#1A0E10)}}
+.hx-footer .hx-footer-grid a:not(.hx-lockup){justify-content:flex-start}
+.hx-footer .hx-footer-grid p a{display:inline;min-height:0;min-width:0}
+.obx-b .obx-front .obx-note{margin:18px 0 0}
+.obx-b .obx-head{position:relative;isolation:isolate}
+.obx-b .obx-head::before{content:"";position:absolute;inset:-20px -20px 0;z-index:-1;pointer-events:none;background-image:radial-gradient(circle,rgba(193,18,31,.72) 1.2px,transparent 1.7px);background-size:7px 7px;-webkit-mask-image:radial-gradient(30% 110% at 0% 80%,#000 0%,rgba(0,0,0,.7) 50%,transparent 78%),radial-gradient(30% 110% at 100% 30%,#000 0%,rgba(0,0,0,.55) 45%,transparent 75%);mask-image:radial-gradient(30% 110% at 0% 80%,#000 0%,rgba(0,0,0,.7) 50%,transparent 78%),radial-gradient(30% 110% at 100% 30%,#000 0%,rgba(0,0,0,.65) 50%,transparent 78%)}
+@media (prefers-color-scheme:dark){.obx-b .obx-head::before{background-image:radial-gradient(circle,rgba(242,170,179,.30) 1.2px,transparent 1.7px)}}
+@media (max-width:760px){.obx-b .obx-head::before{-webkit-mask-image:radial-gradient(55% 40% at 100% 0%,#000,transparent 75%);mask-image:radial-gradient(55% 40% at 100% 0%,#000,transparent 75%)}}
+.obx-b{font-family:Georgia,"Times New Roman",serif}
+.obx-b h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(28px,4.2vw,42px);line-height:1.1;font-weight:700;text-align:center;margin:6px 0}
+.obx-b .obx-dek{text-align:center;font-size:17px;font-style:italic;color:var(--muted,#5A4B4E);max-width:40em;margin:0 auto 6px}
+.obx-b .obx-by{text-align:center;border-bottom:3px double var(--ink,#1A0E10);padding-bottom:10px;margin-bottom:16px}
+.obx-b .obx-front{display:grid;grid-template-columns:2fr 1fr}
+.obx-b .obx-front>div:first-child{padding-right:22px;border-right:1px solid var(--obx-rule)}
+.obx-b .obx-front>aside{padding-left:22px}
+.obx-b .obx-front h2{font-family:Georgia,serif;font-size:24px;margin:10px 0 8px}
+.obx-b .obx-front p{font-size:16px}
+.obx-b .obx-note{background:var(--white,#fff);border:1px solid var(--obx-rule);padding:12px 14px;margin-bottom:16px}
+.obx-b .obx-note p{font-size:14.5px}
+.obx-b .obx-note .obx-close{font-weight:700;font-style:italic}
+.obx-b .obx-brief{list-style:none;padding:0;margin:0}
+.obx-b .obx-brief li{padding:9px 0;border-bottom:1px solid var(--obx-rule)}
+.obx-b .obx-brief h3{font-family:Georgia,serif;font-size:16px;line-height:1.25;margin-bottom:3px}
+.obx-b .obx-brief p{font-size:14px;margin:0}
+.obx-b .obx-brief .obx-sigline{display:block;font-style:italic;margin-top:3px}
+.obx-b .obx-brief .obx-src{display:block;margin-top:2px}
+.obx-b .obx-trends{margin:26px 0 0;border-top:3px double var(--ink,#1A0E10);padding-top:12px}
+.obx-b .obx-trends ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr)}
+.obx-b .obx-trends li{padding:0 18px;border-left:1px solid var(--obx-rule)}
+.obx-b .obx-trends li:first-child{padding-left:0;border-left:0}
+.obx-b .obx-num{font-family:Georgia,serif;font-size:30px;color:var(--obx-accent);line-height:1}
+.obx-b .obx-trends h3{font-family:Georgia,serif;font-size:18px;margin:4px 0 6px}
+.obx-b .obx-trends p{font-size:14.5px}
+.obx-b .obx-wtm{font-style:italic}
+.obx-b .obx-pair{display:grid;grid-template-columns:1fr 1fr;margin:26px 0 0;border-top:1px solid var(--ink,#1A0E10)}
+.obx-b .obx-box{padding:14px 18px 0 0}
+.obx-b .obx-box+.obx-box{padding-left:18px;border-left:1px solid var(--obx-rule)}
+.obx-b .obx-box h2{font-family:Georgia,serif;font-size:20px;margin-bottom:6px}
+.obx-b .obx-box p{font-size:14.5px}
+.obx-b .obx-tail,.obx-b .obx-about,.obx-b .obx-sources{font-family:Archivo,system-ui,sans-serif}
+@media (max-width:760px){.obx-b .obx-front,.obx-b .obx-trends ol,.obx-b .obx-pair{grid-template-columns:1fr}.obx-b .obx-front>div:first-child{padding-right:0;border-right:0}.obx-b .obx-front>aside{padding-left:0;margin-top:18px}.obx-b .obx-trends li,.obx-b .obx-box+.obx-box{padding-left:0;border-left:0;margin-top:14px}}
+
+.obx-home .obx-head h1{font-size:clamp(40px,6.4vw,72px);letter-spacing:-.02em;margin:10px 0 4px}
+.obx-home .obx-head .obx-dek{max-width:36em}
+.obx-nav{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 20px;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12.5px;text-transform:uppercase;letter-spacing:.06em;border-bottom:3px double var(--ink,#1A0E10);padding:8px 0 10px;margin:8px 0 18px}
+.obx-nav a{text-decoration:none;min-height:32px;display:inline-flex;align-items:center}
+.obx-nav a:hover{text-decoration:underline;text-decoration-color:var(--obx-accent)}
+.obx-home .obx-front>div:first-child h2{font-size:clamp(24px,3vw,32px);line-height:1.15;margin:8px 0 8px}
+.obx-home .obx-front>div:first-child h2 a{text-decoration:none}
+.obx-home .obx-lead-meta{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted,#5A4B4E);margin:12px 0 0}
+.obx-home .obx-inside{list-style:none;padding:0;margin:10px 0 0;font-size:15px}
+.obx-home .obx-inside li{padding:6px 0;border-bottom:1px dotted var(--obx-rule)}
+.obx-home .obx-inside b{color:var(--obx-accent);font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;margin-right:6px}
+.obx-sub{background:var(--white,#fff);border:1px solid var(--obx-rule);padding:14px 16px;margin-bottom:18px}
+.obx-sub h2{font-family:Georgia,serif;font-size:20px;margin:0 0 6px}
+.obx-sub p{font-size:14.5px}
+.obx-free{list-style:none;padding:0;margin:0;font-size:15px}
+.obx-free li{padding:9px 0;border-bottom:1px solid var(--obx-rule)}
+.obx-free a{font-weight:700}
+.obx-free span{display:block;font-size:14px;color:var(--muted,#5A4B4E)}
+.obx-seasons{display:grid;grid-template-columns:2fr 1fr;margin:26px 0 0;border-top:3px double var(--ink,#1A0E10);padding-top:12px}
+.obx-seasons>div:first-child{padding-right:22px;border-right:1px solid var(--obx-rule)}
+.obx-seasons>div:last-child{padding-left:22px}
+.obx-past{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:0 22px}
+.obx-past li{padding:9px 0;border-bottom:1px solid var(--obx-rule)}
+.obx-past a{font-family:Georgia,serif;font-size:16px;font-weight:700;line-height:1.3;text-decoration:none}
+.obx-past span{display:block;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:11px;color:var(--muted,#5A4B4E);margin-top:2px}
+.obx-why{display:grid;grid-template-columns:repeat(3,1fr);margin:26px 0 0;border-top:1px solid var(--ink,#1A0E10);padding-top:12px}
+.obx-why div{padding:0 18px;border-left:1px solid var(--obx-rule)}
+.obx-why div:first-child{padding-left:0;border-left:0}
+.obx-why h3{font-family:Georgia,serif;font-size:18px;margin:0 0 6px}
+.obx-why p{font-size:14.5px}
+@media (max-width:760px){.obx-seasons,.obx-past,.obx-why{grid-template-columns:1fr}.obx-seasons>div:first-child{padding-right:0;border-right:0}.obx-seasons>div:last-child{padding-left:0;margin-top:16px}.obx-why div{padding-left:0;border-left:0;margin-top:12px}}
+.obx-home .obx-rep{font-family:Georgia,serif;font-size:17px;margin:8px 0 4px}.obx-home .obx-rep a{text-decoration:none}</style>
 </head>
-<body class="ob">
-<!-- ob:chrome -->
+<body>
 <a class="hx-skip" href="#main">Skip to content</a>
-<header class="hx9-gh"><div class="hx-wrap hx9-row1"><a class="hx9-logo" href="https://gtmhelix.com/" aria-label="Helix GTM Consulting home"><span class="hx9-mark" aria-hidden="true">h</span><span class="hx9-word">Helix GTM</span></a><nav class="hx9-nav" aria-label="Helix GTM Consulting"><a href="https://gtmhelix.com/#start">Start here</a><a href="https://tools.gtmhelix.com/tools/">All tools</a><a href="https://gtmhelix.com/writing/">Writing</a><a href="https://gtmhelix.com/about/">About</a></nav><a class="hx-btn btn-sm hx9-cta" href="https://gtmhelix.com/lets-get-started/">Work with Shashwat</a><details class="hx9-menu"><summary>Menu</summary><nav class="hx9-menu-nav" aria-label="Helix GTM Consulting menu"><div class="hx9-menu-site" role="group" aria-label="This site"><span class="hx9-menu-lbl" aria-hidden="true">This site</span><a href="https://gtmhelix.com/ai-trendwatch/" class="hx9-on">Home</a><a href="https://gtmhelix.com/ai-trendwatch/archive">Archive</a><a href="https://gtmhelix.com/ai-trendwatch/about">About this newsletter</a><a href="https://gtmhelix.com/ai-trendwatch/feed.xml">RSS</a></div><a href="https://gtmhelix.com/#start">Start here</a><a href="https://tools.gtmhelix.com/tools/">All tools</a><a href="https://gtmhelix.com/writing/">Writing</a><a href="https://gtmhelix.com/about/">About</a></nav></details></div></header><div class="hx9-row2"><div class="hx-wrap hx9-row2-in"><span class="tag">Offbeat AI Watch</span><nav class="hx9-crumbs" aria-label="Breadcrumb"><a href="https://gtmhelix.com/">Helix GTM Consulting</a><span class="hx9-sep" aria-hidden="true">/</span><a href="https://gtmhelix.com/writing/">Writing</a><span class="hx9-sep" aria-hidden="true">/</span><span aria-current="page">Offbeat AI Watch</span></nav><nav class="hx9-site" aria-label="This site"><a href="https://gtmhelix.com/ai-trendwatch/" class="hx9-on">Home</a><a href="https://gtmhelix.com/ai-trendwatch/archive">Archive</a><a href="https://gtmhelix.com/ai-trendwatch/about">About this newsletter</a><a href="https://gtmhelix.com/ai-trendwatch/feed.xml">RSS</a></nav></div></div>
-<!-- /ob:chrome -->
-<main id="main" tabindex="-1">
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Offbeat <span>AI</span> Watch</h1>
-        <p class="tagline">Unconventional AI insights every two weeks, with the signal separated from the noise.</p>
-        <p class="season">A new season starts soon; join the list to get the first issue.</p>
-        <p class="subtitle">Offbeat AI Watch is a free brief every two weeks on the AI news that matters to B2B leaders, written by Shashwat Ghosh of Helix GTM Consulting. The archive holds 6 issues, from October 2025 to January 2026, and research reports on India&#x27;s AI market built from Anthropic, OpenAI, Google/Ipsos and Microsoft data.</p>
-
-        <form class="subscribe-form" name="offbeat-ai-watch" method="POST" action="/writing/subscribed/">
+<main id="main" class="obx obx-b obx-home" tabindex="-1">
+<header class="obx-head">
+<div class="obx-mast"><span class="obx-brand">Offbeat AI Watch</span><span>Season 2</span><span>Every other Wednesday</span><span>Fortnightly intelligence brief</span></div>
+<h1>Offbeat AI Watch</h1>
+<p class="obx-dek">The AI news that matters to B2B leaders, with the signal separated from the noise. Written by Shashwat Ghosh of Helix GTM Consulting.</p>
+<nav class="obx-nav" aria-label="Offbeat AI Watch"><a href="#subscribe">Subscribe</a><a href="#latest">Latest issue</a><a href="https://gtmhelix.com/ai-trendwatch/archive">Archive</a><a href="https://gtmhelix.com/ai-trendwatch/about">About</a><a href="https://gtmhelix.com/ai-trendwatch/feed.xml">RSS</a><a href="https://gtmhelix.com/">Helix GTM</a></nav>
+</header>
+<div class="obx-front">
+<div>
+<section id="latest">
+<p class="obx-label">Latest issue: Season 2, Issue 1</p>
+<figure><a href="https://gtmhelix.com/ai-trendwatch/issues/2026-11-11"><img src="images/tcs-enterprise-ai-business-context-1280x680.jpg" width="1280" height="680" alt="Chart from the TCS Enterprise AI Study 2026: of 1,333 large companies, only 10% have one business context layer that gives AI a consistent view of the business." decoding="async"></a><figcaption>TCS Enterprise AI Study 2026, Figure 9. Independent survey by TCS; chart redrawn by Helix GTM.</figcaption></figure>
+<h2><a href="https://gtmhelix.com/ai-trendwatch/issues/2026-11-11">Your AI doesn't know your business</a></h2>
+<p>Only 10% of large companies give AI one consistent view of the business, a TCS survey of 1,333 senior leaders finds. In a GTM team, that context is your ICP, your win reasons and your positioning.</p>
+<ul class="obx-inside">
+<li><b>Cover</b>The context gap, and what to write down first</li>
+<li><b>News</b>CrowdStrike's AI off switch, India's DEPA, Pliant's $80M, UK agent rules, Anthropic smart reports</li>
+<li><b>Trends</b>Control before autonomy; the AI goes to the data; agents get a budget and an owner</li>
+<li><b>Tool</b>What to ask a CIO before you sell AI, with a link to run it yourself</li>
+</ul>
+<p class="obx-lead-meta"><time datetime="2026-11-11">11 November 2026</time></p>
+<p class="obx-cta"><a href="https://gtmhelix.com/ai-trendwatch/issues/2026-11-11">Read the issue</a></p>
+</section>
+</div>
+<aside>
+<section class="obx-sub" id="subscribe"><h2>Get the next issue</h2><p>A free brief every other Wednesday.</p><form class="subscribe-form" name="offbeat-ai-watch" method="POST" action="/writing/subscribed/">
             <input type="hidden" name="form-name" value="offbeat-ai-watch">
             <label class="hx-sr-only" for="ob-email">Email address</label>
             <input type="email" id="ob-email" name="email" placeholder="Enter your email" autocomplete="email" maxlength="254" required>
             <p class="ob-hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
             <button type="submit">Subscribe</button>
         </form>
-        <p class="form-note">Enter your email, then click the link in the confirmation email from Kit to join. Every issue has a link to leave the list.</p>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features">
-        <h2>What You <span>Get</span></h2>
-        <div class="feature-grid">
-            <div class="feature-item">
-                <div class="feature-icon"><svg class="hx-ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg></div>
-                <h3>Signal Over Noise</h3>
-                <p>Cutting through the hype to deliver actionable intelligence on AI trends that matter.</p>
-            </div>
-            <div class="feature-item">
-                <div class="feature-icon"><svg class="hx-ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="7" width="18" height="13" rx="1.5"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/><path d="M3 12h18"/></svg></div>
-                <h3>B2B Focus</h3>
-                <p>Curated for business leaders, GTM professionals, and enterprise decision-makers.</p>
-            </div>
-            <div class="feature-item">
-                <div class="feature-icon"><svg class="hx-ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 3 5 14h6l-1 7 8-11h-6z"/></svg></div>
-                <h3>Fortnightly Brief</h3>
-                <p>Digestible updates every two weeks, enough to stay informed without inbox overload.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Latest Issue Section -->
-    <section class="latest-issue">
-        <div class="latest-issue-container">
-            <h2>Latest <span>Issue</span></h2>
-            <article class="issue-card">
-                <div class="issue-card-image">
-                    <img class="issue-card-img" src="images/tcs-enterprise-ai-business-context-1280x680-640.webp" width="640" height="340" alt="Chart from the TCS Enterprise AI Study showing that only 10% of large companies give AI a consistent view of the business" loading="lazy" decoding="async">
-                    <span class="issue-number">Season 2, Issue 1</span>
-                </div>
-                <div class="issue-card-content">
-                    <p class="issue-date">November 11, 2026</p>
-                    <h3><a href="https://gtmhelix.com/ai-trendwatch/issues/2026-11-11">Your AI doesn't know your business</a></h3>
-                    <p>TCS finds only 10% of large companies give AI a consistent view of the business. Plus CrowdStrike's AI kill switch, India's DEPA handbook, Pliant and UK agent rules.</p>
-                    <a href="https://gtmhelix.com/ai-trendwatch/issues/2026-11-11" class="read-more">Read Full Issue</a>
-                </div>
-            </article>
-            <div class="view-all">
-                <a href="https://gtmhelix.com/ai-trendwatch/archive">View All Issues →</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Latest Report Section -->
-    <section class="latest-issue">
-        <div class="latest-issue-container">
-            <h2>Latest <span>Report</span></h2>
-            <article class="issue-card">
-                <div class="issue-card-image">
-                    <img class="issue-card-img" src="images/india-ai-paradox-social-640.webp?v=deee09999d" width="640" height="336" alt="" loading="lazy" decoding="async">
-                    <span class="issue-number">Research Report #2</span>
-                </div>
-                <div class="issue-card-content">
-                    <p class="issue-date">February 21, 2026</p>
-                    <h3><a href="https://gtmhelix.com/ai-trendwatch/india-ai-paradox-scale-vs-reach">India's AI Paradox: #2 by Scale, #64-101 by Reach</a></h3>
-                    <p>Four platforms converge: India is the world's #2 AI market by scale but #64-101 per capita. Cross-study analysis triangulating Anthropic, OpenAI, Google/Ipsos, and Microsoft data.</p>
-                    <a href="https://gtmhelix.com/ai-trendwatch/india-ai-paradox-scale-vs-reach" class="read-more">View Full Report</a>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <!-- ob:chrome -->
+<p class="obx-small">Enter your email, then click the link in the confirmation email from Kit to join. Every issue has a link to leave the list.</p></section>
+<section><p class="obx-label">Free from Helix GTM</p>
+<ul class="obx-free">
+<li><a href="https://gtmhelix.com/guides/">30 GTM guides</a><span>Step by step answers to B2B go to market questions.</span></li>
+<li><a href="https://tools.gtmhelix.com/connectors/">6 MCP connectors, 48 tools</a><span>In the browser, or in Claude, ChatGPT, Cursor, VS Code and Windsurf.</span></li>
+<li><a href="https://tools.gtmhelix.com/plugins/">9 Claude plugins, 37 skills</a><span>Step by step GTM skills for Claude Code, Cowork and the Claude apps.</span></li>
+</ul></section>
+</aside>
+</div>
+<div class="obx-seasons">
+<div><p class="obx-label">Previous season</p><ul class="obx-past"><li><a href="https://gtmhelix.com/ai-trendwatch/issues/2026-01-07">Google's AI Content Reckoning: December 2025 Core Update Changes Everything</a><span>Issue 6, 7 January 2026</span></li><li><a href="https://gtmhelix.com/ai-trendwatch/issues/2025-12-17">Tech Giants Unite: Agentic AI Foundation Launches with MCP at Its Core</a><span>Issue 5, 17 December 2025</span></li><li><a href="https://gtmhelix.com/ai-trendwatch/issues/2025-12-03">Anthropic Discloses First AI-Orchestrated Cyber Espionage Campaign</a><span>Issue 4, 3 December 2025</span></li><li><a href="https://gtmhelix.com/ai-trendwatch/issues/2025-11-03">OpenAI DevDay: Enterprise Scaling for Agentic AI</a><span>Issue 3, 3 November 2025</span></li><li><a href="https://gtmhelix.com/ai-trendwatch/issues/2025-10-13">Microsoft's GB300 AI Factory Goes Live</a><span>Issue 2, 13 October 2025</span></li><li><a href="https://gtmhelix.com/ai-trendwatch/issues/2025-10-05">Fusion Energy Gets AI Shield in Milliseconds</a><span>Issue 1, 5 October 2025</span></li></ul><p class="obx-cta"><a href="https://gtmhelix.com/ai-trendwatch/archive">All issues and reports</a></p></div>
+<div><p class="obx-label">Latest report</p>
+<figure><a href="https://gtmhelix.com/ai-trendwatch/india-ai-paradox-scale-vs-reach"><img src="images/india-ai-paradox-social-640.webp?v=deee09999d" width="640" height="336" alt="India's AI Paradox research report cover" loading="lazy" decoding="async"></a></figure>
+<h3 class="obx-rep"><a href="https://gtmhelix.com/ai-trendwatch/india-ai-paradox-scale-vs-reach">India's AI Paradox: #2 by Scale, #64-101 by Reach</a></h3>
+<p class="obx-small">February 2026. A cross-study of Anthropic, OpenAI, Google/Ipsos and Microsoft data.</p></div>
+</div>
+<div class="obx-why">
+<div><h3>Signal over noise</h3><p>Each issue picks the few AI stories a B2B leader should act on, with the source for every figure.</p></div>
+<div><h3>Built for B2B</h3><p>Written for founders, CMOs, CROs and GTM teams, by an operator, not a news desk.</p></div>
+<div><h3>Every other Wednesday</h3><p>One short brief every two weeks: a cover story, the news, three trends and a tool to try.</p></div>
+</div>
 </main>
 <footer class="hx-footer">
         <div class="hx-wrap">
